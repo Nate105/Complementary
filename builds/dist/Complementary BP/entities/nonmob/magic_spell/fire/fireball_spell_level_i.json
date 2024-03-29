@@ -1,0 +1,520 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "complementary:fireball_spell_level_i",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "snowball"
+		},
+		"component_groups": {
+			"complementary:level_i": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_i"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								4,
+								6
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_i": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 2.5,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_ii": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_ii"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								5,
+								7
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_ii": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 2.62,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_iii": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_iii"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								6,
+								8
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_iii": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 2.74,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_iv": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_iv"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								7,
+								9
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_iv": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 2.86,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_v": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_v"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								8,
+								10
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_v": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 2.98,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_vi": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_vi"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								9,
+								11
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_vi": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 3.1,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_vii": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_vii"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								10,
+								12
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_vii": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 3.22,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_viii": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_viii"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								11,
+								13
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_viii": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 3.34,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_ix": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_ix"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								14
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_ix": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 3.46,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			},
+			"complementary:level_x": {
+				"minecraft:projectile": {
+					"gravity": 0,
+					"hit_ground_sound": "explosion",
+					"hit_sound": "explosion",
+					"is_dangerous": true,
+					"on_hit": {
+						"definition_event": {
+							"affect_projectile": true,
+							"event_trigger": {
+								"event": "complementary:explode_level_x"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								13,
+								15
+							],
+							"knockback": true
+						},
+						"stick_in_ground": {
+							"shake_time": 0
+						}
+					}
+				}
+			},
+			"complementary:exploding_level_x": {
+				"minecraft:explode": {
+					"breaks_blocks": true,
+					"power": 3.58,
+					"fuse_lit": true,
+					"fuse_length": 0,
+					"causes_fire": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"fire_spell"
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"complementary:level_i"
+					]
+				}
+			},
+			"complementary:level_i": {
+				"add": {
+					"component_groups": [
+						"complementary:level_i"
+					]
+				}
+			},
+			"complementary:level_ii": {
+				"add": {
+					"component_groups": [
+						"complementary:level_ii"
+					]
+				}
+			},
+			"complementary:level_iii": {
+				"add": {
+					"component_groups": [
+						"complementary:level_iii"
+					]
+				}
+			},
+			"complementary:level_iv": {
+				"add": {
+					"component_groups": [
+						"complementary:level_iv"
+					]
+				}
+			},
+			"complementary:level_v": {
+				"add": {
+					"component_groups": [
+						"complementary:level_v"
+					]
+				}
+			},
+			"complementary:level_vi": {
+				"add": {
+					"component_groups": [
+						"complementary:level_vi"
+					]
+				}
+			},
+			"complementary:level_vii": {
+				"add": {
+					"component_groups": [
+						"complementary:level_vii"
+					]
+				}
+			},
+			"complementary:level_viii": {
+				"add": {
+					"component_groups": [
+						"complementary:level_viii"
+					]
+				}
+			},
+			"complementary:level_ix": {
+				"add": {
+					"component_groups": [
+						"complementary:level_ix"
+					]
+				}
+			},
+			"complementary:level_x": {
+				"add": {
+					"component_groups": [
+						"complementary:level_x"
+					]
+				}
+			},
+			"complementary:explode_level_i": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_i"
+					]
+				}
+			},
+			"complementary:explode_level_ii": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_ii"
+					]
+				}
+			},
+			"complementary:explode_level_iii": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_iii"
+					]
+				}
+			},
+			"complementary:explode_level_iv": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_iv"
+					]
+				}
+			},
+			"complementary:explode_level_v": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_v"
+					]
+				}
+			},
+			"complementary:explode_level_vi": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_vi"
+					]
+				}
+			},
+			"complementary:explode_level_vii": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_vii"
+					]
+				}
+			},
+			"complementary:explode_level_viii": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_viii"
+					]
+				}
+			},
+			"complementary:explode_level_ix": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_ix"
+					]
+				}
+			},
+			"complementary:explode_level_x": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding_level_x"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "complementary:dragon_scales",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 12,
+								"max": 16
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

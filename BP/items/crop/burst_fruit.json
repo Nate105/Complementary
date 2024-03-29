@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:burst_fruit",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.crop"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_burst_fruit"
+			},
+			"minecraft:food": {
+				"can_always_eat": true,
+				"nutrition": 1,
+				"saturation_modifier": 0,
+				"using_converts_to": "complementary:burst_seeds"
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:cooldown": {
+				"category": "burst_fruit",
+				"duration": 1
+			}
+		}
+	}
+}

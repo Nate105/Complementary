@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_crystal_obsidian"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:obsidian"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:amethyst_block"
+			},
+			"B": {
+				"item": "minecraft:obsidian"
+			}
+		},
+		"pattern": [
+			" A ",
+			"ABA",
+			" A "
+		],
+		"result": {
+			"item": "complementary:crystal_obsidian"
+		}
+	}
+}

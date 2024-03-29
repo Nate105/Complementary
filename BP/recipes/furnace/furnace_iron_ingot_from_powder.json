@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "complementary:furnace_iron_ingot_from_powder"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "complementary:raw_iron_powder",
+		"output": "minecraft:iron_ingot"
+	}
+}

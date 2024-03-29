@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:rapid_fertilizer",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.farming"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_rapid_fertilizer"
+			}
+		}
+	}
+}

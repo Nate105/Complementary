@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "complementary:raw_copper_powder",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "complementary:raw_copper_powder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 7
+                }
+            ]
+        }
+    ]
+}

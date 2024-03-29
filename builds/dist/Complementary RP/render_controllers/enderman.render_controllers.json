@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.enderman": {
+			"arrays": {
+				"materials": {
+					"Array.materials": [
+						"Material.default",
+						"Material.invisible"
+					]
+				},
+				"textures": {
+					"Array.skins": [
+						"Texture.teal",
+						"Texture.tealhorned",
+						"Texture.tealhornedcolored",
+						"Texture.purple",
+						"Texture.purplehorned",
+						"Texture.purplehornedcolored",
+						"Texture.yellow",
+						"Texture.yellowhorned",
+						"Texture.yellowhornedcolored"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "array.materials[query.is_invisible]"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant]"
+			],
+			"ignore_lighting": true
+		}
+	}
+}

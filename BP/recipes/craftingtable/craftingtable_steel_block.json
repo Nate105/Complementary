@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_steel_block"
+		},
+		"unlock": [
+			{
+				"item": "complementary:steel_ingot"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:steel_ingot"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"AAA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:steel_block"
+		}
+	}
+}

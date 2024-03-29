@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_bread_from_crushed_wheat"
+		},
+		"unlock": [
+			{
+				"item": "complementary:crushed_wheat"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:crushed_wheat"
+			}
+		},
+		"pattern": [
+			"AAA"
+		],
+		"result": {
+			"item": "minecraft:bread",
+			"count": 1
+		}
+	}
+}

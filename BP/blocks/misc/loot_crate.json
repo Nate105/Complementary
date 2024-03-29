@@ -1,0 +1,52 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:loot_crate",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"events": {
+			"complementary:open": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/loot_crate.json"
+				},
+				"run_command": {
+					"command": [
+						"/playsound block.barrel.open @a ~~~ 10 0.8",
+						"/particle minecraft:water_evaporation_bucket_emitter ~-0.5~0.5~-0.5",
+						"/setblock ~~~ complementary:loot_crate_open"
+					]
+				}
+			},
+			"complementary:broken": {
+				"die": {},
+				"run_command": {
+					"command": [
+						"/playsound mob.zombie.wood @a ~~~",
+						"/particle minecraft:large_explosion ~~~"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/loot_crate.json",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 0
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "complementary:broken"
+			},
+			"minecraft:on_interact": {
+				"event": "complementary:open"
+			},
+			"tag:axeDiggable": {}
+		},
+		"permutations": []
+	}
+}

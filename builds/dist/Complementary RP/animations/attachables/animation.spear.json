@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spear.third_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						87.41193,
+						44.95616,
+						90.66963
+					],
+					"position": [
+						0,
+						15.00653,
+						-1.95043
+					]
+				}
+			}
+		},
+		"animation.spear.first_person_hold": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						-193.84856,
+						363.94525,
+						41.50305
+					],
+					"position": [
+						1.03184,
+						23.53283,
+						2.47818
+					]
+				}
+			}
+		}
+	}
+}

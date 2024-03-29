@@ -1,0 +1,78 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:crop_box",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.farming"
+			}
+		},
+		"events": {
+			"complementary:placed": {
+				"run_command": {
+					"command": [
+						"playsound block.composter.ready @a ~~~",
+						"playsound block.composter.fill @a ~~~"
+					]
+				}
+			},
+			"complementary:irrigate": {
+				"run_command": {
+					"command": [
+						"playsound bucket.empty_water @a ~~~",
+						"particle complementary:water_spill_emitter ~~~",
+						"setblock ~~~ complementary:irrigated_crop_box"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:on_placed": {
+				"event": "complementary:placed"
+			},
+			"minecraft:on_interact": {
+				"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:water_bucket')",
+				"event": "complementary:irrigate"
+			},
+			"minecraft:geometry": "geometry.crop_box",
+			"minecraft:material_instances": {
+				"farmland": {
+					"texture": "complementary_farmland_dry",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "complementary_planter_box_bottom",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "complementary_planter_box_top",
+					"render_method": "alpha_test"
+				},
+				"*": {
+					"texture": "complementary_planter_box_side",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					14,
+					16
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"tag:axeDiggable": {}
+		}
+	}
+}

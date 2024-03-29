@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_bursting_blaze_scroll_level_iv"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:bursting_blaze_scroll_level_iii"
+			},
+			"C": {
+				"item": "minecraft:fire_charge"
+			},
+			"B": {
+				"item": "minecraft:blaze_powder"
+			},
+			"D": {
+				"item": "complementary:dynamite_stick"
+			},
+			"E": {
+				"item": "complementary:uncommon_ink"
+			}
+		},
+		"pattern": [
+			" C ",
+			"BAD",
+			" E "
+		],
+		"result": {
+			"item": "complementary:bursting_blaze_scroll_level_iv"
+		}
+	}
+}

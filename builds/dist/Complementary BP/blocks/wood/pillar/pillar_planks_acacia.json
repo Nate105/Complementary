@@ -1,0 +1,176 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:pillar_planks_acacia",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.acaciaPlanks"
+			},
+			"states": {
+				"complementary:connection": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					5,
+					5
+				],
+				"on_tick": {
+					"event": "complementary:update"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"tag:axeDiggable": {},
+			"tag:complementary_vertical_connecting": {},
+			"tag:wood_tool_materials": {}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('complementary:connection') == 0",
+				"components": {
+					"tag:default": {}
+				}
+			},
+			{
+				"condition": "q.block_state('complementary:connection') == 1",
+				"components": {
+					"tag:top": {},
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "complementary_pillar_planks_topedge_acacia"
+						},
+						"up": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						},
+						"down": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('complementary:connection') == 2",
+				"components": {
+					"tag:bottom": {},
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "complementary_pillar_planks_bottomedge_acacia"
+						},
+						"up": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						},
+						"down": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('complementary:connection') == 3",
+				"components": {
+					"tag:middle": {},
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "complementary_pillar_planks_center_acacia"
+						},
+						"up": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						},
+						"down": {
+							"render_method": "alpha_test",
+							"texture": "complementary_bordered_planks_acacia"
+						}
+					}
+				}
+			}
+		],
+		"events": {
+			"complementary:update": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,-1,0,'default')",
+						"set_block_state": {
+							"complementary:connection": 1
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,1,0,'top')&&!q.block_neighbor_has_any_tag(0,-1,0,'middle')",
+						"set_block_state": {
+							"complementary:connection": 2
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,1,0,'top')&&q.block_neighbor_has_any_tag(0,-1,0,'middle')",
+						"set_block_state": {
+							"complementary:connection": 3
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,-1,0,'top')",
+						"set_block_state": {
+							"complementary:connection": 1
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,-1,0,'bottom')&&(q.block_neighbor_has_any_tag(0,1,0,'top')||q.block_neighbor_has_any_tag(0,1,0,'middle'))",
+						"set_block_state": {
+							"complementary:connection": 3
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,1,0,'top','default','middle','bottom')&&q.block_neighbor_has_any_tag(0,-1,0,'middle','bottom')",
+						"set_block_state": {
+							"complementary:connection": 1
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,1,0,'top','default','middle','bottom')&&!q.block_neighbor_has_any_tag(0,-1,0,'middle','bottom','top','default')",
+						"set_block_state": {
+							"complementary:connection": 0
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,1,0,'top','middle','bottom')&&!q.block_neighbor_has_any_tag(0,-1,0,'middle','bottom','top','default')",
+						"set_block_state": {
+							"complementary:connection": 2
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,1,0,'default')&&q.block_neighbor_has_any_tag(0,-1,0,'default')",
+						"set_block_state": {
+							"complementary:connection": 3
+						}
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_packed_dirt"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:dirt"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:dirt"
+			}
+		},
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"result": {
+			"item": "complementary:packed_dirt",
+			"count": 4
+		}
+	}
+}

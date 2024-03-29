@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_shelf_oak"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:oak_planks"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:oak_slab"
+			},
+			"B": {
+				"item": "minecraft:oak_log"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"  B"
+		],
+		"result": {
+			"item": "complementary:oak_shelf",
+			"count": 6
+		}
+	}
+}

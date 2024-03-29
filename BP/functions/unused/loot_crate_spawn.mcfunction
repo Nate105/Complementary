@@ -1,0 +1,2 @@
+execute at @e[type=complementary:loot_crate_entity] unless block ~~-1~ air run setblock ~~~ complementary:loot_crate
+execute as @e[type=complementary:loot_crate_entity] at @s unless block ~~-1~ air run kill @s

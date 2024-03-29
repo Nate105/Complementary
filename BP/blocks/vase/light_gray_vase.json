@@ -1,0 +1,287 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:light_gray_vase",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.deco.vases"
+			},
+			"states": {
+				"complementary:decal": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"events": {
+			"complementary:apply_decal": {
+				"set_block_state": {
+					"complementary:decal": 1
+				},
+				"run_command": {
+					"command": "/playsound block.false_permissions @a ~~~"
+				},
+				"decrement_stack": {}
+			},
+			"complementary:adjust_decal": {
+				"sequence": [
+					{
+						"condition": "!query.is_sneaking",
+						"set_block_state": {
+							"complementary:decal": "math.min(query.block_state('complementary:decal') + 1, 6)"
+						},
+						"run_command": {
+							"command": "/playsound block.false_permissions @a ~~~"
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:decal') == 6",
+						"set_block_state": {
+							"complementary:decal": 1
+						},
+						"run_command": {
+							"command": "/playsound block.false_permissions @a ~~~"
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:decal') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "nothing",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:gold_nugget')",
+						"event": "complementary:apply_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_indent_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_round_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_wave_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_zigzag_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_dotted_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:decal') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.vase_1",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_light_gray_vase_side",
+							"render_method": "alpha_test"
+						},
+						"up": {
+							"texture": "complementary_light_gray_vase_top",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_light_gray_vase_bottom",
+							"render_method": "alpha_test"
+						},
+						"decal": {
+							"texture": "complementary_rib_decal",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')",
+						"event": "complementary:adjust_decal"
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:woodpickaxeDiggable": {},
+			"minecraft:collision_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					10,
+					8
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					10,
+					8
+				]
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 4.2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.5
+			}
+		}
+	}
+}

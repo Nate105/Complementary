@@ -1,0 +1,48 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:arcane_shot_scroll_level_iii",
+			"category": "equipment"
+		},
+		"events": {
+			"complementary:arcane_shot": {
+				"shoot": {
+					"projectile": "complementary:arcane_beam",
+					"launch_power": 1.4
+				},
+				"run_command": {
+					"command": [
+						"playsound mob.evocation_illager.prepare_summon @a ~~~ 0.5",
+						"scoreboard players remove @p mana 50",
+						"playanimation @p animation.humanoid.wand.shoot"
+					]
+				}
+			}
+		},
+		"components": {
+			"tag:complementary:scroll": {},
+			"tag:complementary:arcane_school": {},
+			"minecraft:icon": {
+				"texture": "complementary_scroll_common"
+			},
+			"minecraft:display_name": {
+				"value": "Spell Scroll\n§dArcane Shot§f\n§7Level III"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.wizardry.scrolls.arcane.shot"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"duration": 0.9,
+				"category": "arcaneshot3"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "(query.scoreboard('mana')>=50)",
+					"event": "complementary:arcane_shot"
+				}
+			}
+		}
+	}
+}

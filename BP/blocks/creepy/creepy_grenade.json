@@ -1,0 +1,48 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:creepy_grenade",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.explosive"
+			}
+		},
+		"events": {
+			"complementary:explode": {
+				"set_block": {
+					"block_type": "air"
+				},
+				"run_command": {
+					"command": [
+						"/execute at @a[r=70] run playsound mob.creeper.death @a ~~~ 10 0.5",
+						"/summon complementary:creepy_grenade ~~-0.5~"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"sides": {
+					"texture": "complementary_creepy_grenade_side",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "complementary_creepy_grenade_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "complementary_creepy_grenade_bottom",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:on_interact": {
+				"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:flint_and_steel')",
+				"event": "complementary:explode"
+			}
+		}
+	}
+}

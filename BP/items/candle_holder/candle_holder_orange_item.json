@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:candle_holder_orange_item",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_candle_holder_orange_item"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.deco.candleHolder"
+			},
+			"minecraft:block_placer": {
+				"block": "complementary:orange_candle_holder"
+			}
+		}
+	}
+}

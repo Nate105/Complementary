@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_chain_chestplate"
+		},
+		"unlock": [
+			{
+				"item": "complementary:chainmail"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:chainmail"
+			}
+		},
+		"pattern": [
+			"A A",
+			"AAA",
+			"AAA"
+		],
+		"result": {
+			"item": "chainmail_chestplate",
+			"count": 1
+		}
+	}
+}

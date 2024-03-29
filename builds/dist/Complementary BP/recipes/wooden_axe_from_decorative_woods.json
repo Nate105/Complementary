@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wooden_axe_from_decorative_woods"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AA",
+			"AB",
+			" B"
+		],
+		"key": {
+			"A": {
+				"tag": "wood_tool_materials"
+			},
+			"B": {
+				"item": "stick"
+			}
+		},
+		"result": {
+			"item": "complementary:wood_axe",
+			"count": 1
+		},
+		"priority": 2
+	}
+}

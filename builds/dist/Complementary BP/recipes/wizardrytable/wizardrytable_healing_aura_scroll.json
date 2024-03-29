@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_healing_aura_scroll"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:paper"
+			},
+			"C": {
+				"item": "complementary:ruby"
+			},
+			"D": {
+				"item": "complementary:ruby"
+			},
+			"E": {
+				"item": "complementary:aroma_pod"
+			},
+			"F": {
+				"item": "complementary:common_ink"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"CDE",
+			"FFF"
+		],
+		"result": {
+			"item": "complementary:healing_aura_scroll_level_i"
+		}
+	}
+}

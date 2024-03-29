@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_shingles"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:brick"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "brick"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:shingles"
+		}
+	}
+}

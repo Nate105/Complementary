@@ -1,0 +1,19 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:crystal_obsidian",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1500
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 250
+			}
+		}
+	}
+}

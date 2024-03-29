@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "complementary:furnace_gold_ingot_from_powder"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "complementary:raw_gold_powder",
+		"output": "minecraft:gold_ingot"
+	}
+}

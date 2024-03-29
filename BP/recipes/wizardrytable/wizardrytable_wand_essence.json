@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_wand_essence"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:ruby"
+			},
+			"B": {
+				"item": "complementary:steel_ingot"
+			},
+			"C": {
+				"item": "complementary:rune_essence"
+			},
+			"D": {
+				"item": "minecraft:stick"
+			}
+		},
+		"pattern": [
+			" A ",
+			"BCB",
+			" D "
+		],
+		"result": {
+			"item": "complementary:wand_essence"
+		}
+	}
+}

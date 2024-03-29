@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "complementary:furnace_brick_diorite_cracked"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "complementary:brick_diorite",
+		"output": "complementary:brick_diorite_cracked"
+	}
+}

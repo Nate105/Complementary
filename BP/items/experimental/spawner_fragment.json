@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:spawner_fragment",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_spawner_fragment"
+			}
+		}
+	}
+}

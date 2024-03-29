@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:endersteel_ingot",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.metal"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_endersteel_ingot"
+			}
+		}
+	}
+}

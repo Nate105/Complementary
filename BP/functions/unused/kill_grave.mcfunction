@@ -1,0 +1,1 @@
+kill @e[family=instadeath,type=complementary:gravestone]

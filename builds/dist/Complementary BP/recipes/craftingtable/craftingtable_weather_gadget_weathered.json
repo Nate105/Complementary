@@ -1,0 +1,41 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_weather_gadget_weathered"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:heart_of_the_sea"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:weathered_copper"
+			},
+			"B": {
+				"item": "minecraft:seagrass"
+			},
+			"C": {
+				"item": "minecraft:redstone"
+			},
+			"D": {
+				"item": "minecraft:heart_of_the_sea"
+			},
+			"E": {
+				"item": "minecraft:copper_ingot"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"CDC",
+			"AEA"
+		],
+		"result": {
+			"item": "complementary:weather_gadget"
+		}
+	}
+}

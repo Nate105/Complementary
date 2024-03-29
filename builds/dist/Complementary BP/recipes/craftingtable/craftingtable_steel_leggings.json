@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_steel_leggings"
+		},
+		"unlock": [
+			{
+				"item": "complementary:steel_ingot"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"B": {
+				"item": "complementary:steel_ingot"
+			}
+		},
+		"pattern": [
+			"BBB",
+			"B B",
+			"B B"
+		],
+		"result": {
+			"item": "complementary:steel_leggings"
+		}
+	}
+}

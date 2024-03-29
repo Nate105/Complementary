@@ -1,0 +1,34 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:torchflower_seeds",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pitcher_pod",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "complementary:aroma_crop_seeds",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "complementary:hook_seeds",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "complementary:burst_seeds",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

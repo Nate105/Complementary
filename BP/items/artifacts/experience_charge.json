@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:experience_charge",
+			"category": "items"
+		},
+		"events": {
+			"complementary:experience_gain": {
+				"swing": {},
+				"run_command": {
+					"command": [
+						"/xp 315 @s",
+						"/playsound random.levelup @a ~~~ 1 0.5",
+						"/playsound random.glass @a ~~~ 1 1"
+					]
+				},
+				"decrement_stack": {}
+			}
+		},
+		"components": {
+			"minecraft:cooldown": {
+				"category": "experience_charge",
+				"duration": 1
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.archeology.artifacts"
+			},
+			"minecraft:icon": {
+				"texture": "complementary_experience_charge"
+			},
+			"minecraft:foil": true,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "complementary:experience_gain"
+				}
+			}
+		}
+	}
+}

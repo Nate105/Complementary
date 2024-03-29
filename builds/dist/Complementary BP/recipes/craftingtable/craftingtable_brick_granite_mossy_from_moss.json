@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_brick_granite_mossy_from_moss"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:moss_block"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:brick_granite",
+				"count": 1
+			},
+			{
+				"item": "minecraft:moss_block",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "complementary:brick_granite_mossy",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_shelf_mangrove"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:mangrove_planks"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:mangrove_slab"
+			},
+			"B": {
+				"item": "minecraft:mangrove_log"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"  B"
+		],
+		"result": {
+			"item": "complementary:mangrove_shelf",
+			"count": 6
+		}
+	}
+}

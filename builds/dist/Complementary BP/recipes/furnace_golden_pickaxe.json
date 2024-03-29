@@ -1,0 +1,19 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "minecraft:furnace_golden_pickaxe"
+		},
+		"unlock": [
+			{
+				"item": "complementary:gold_pickaxe"
+			}
+		],
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "complementary:gold_pickaxe",
+		"output": "minecraft:gold_ingot"
+	}
+}

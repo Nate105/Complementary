@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_shelf_cherry"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:cherry_planks"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:cherry_slab"
+			},
+			"B": {
+				"item": "minecraft:cherry_log"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"  B"
+		],
+		"result": {
+			"item": "complementary:cherry_shelf",
+			"count": 6
+		}
+	}
+}

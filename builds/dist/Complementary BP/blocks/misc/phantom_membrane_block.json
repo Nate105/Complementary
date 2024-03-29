@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:phantom_membrane_block",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"events": {
+			"complementary:shrust_upwards": {
+				"add_mob_effect": {
+					"effect": "levitation",
+					"duration": 1,
+					"amplifier": 1
+				}
+			}
+		},
+		"components": {
+			"minecraft:friction": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "complementary_phantom_membrane_block",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:on_step_on": {
+				"event": "complementary:shrust_upwards"
+			}
+		}
+	}
+}

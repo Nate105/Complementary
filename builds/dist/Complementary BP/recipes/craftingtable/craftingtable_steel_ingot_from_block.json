@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_steel_ingot_from_block"
+		},
+		"unlock": [
+			{
+				"item": "complementary:steel_block"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:steel_block"
+			}
+		],
+		"result": {
+			"item": "complementary:steel_ingot",
+			"count": 9
+		}
+	}
+}

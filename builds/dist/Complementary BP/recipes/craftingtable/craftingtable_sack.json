@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_sack"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:wheat"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wheat"
+			},
+			"B": {
+				"item": "minecraft:string"
+			}
+		},
+		"pattern": [
+			" A ",
+			"ABA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:sack"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:ruby",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_ruby"
+			},
+			"tag:minecraft:transform_materials": {}
+		}
+	}
+}

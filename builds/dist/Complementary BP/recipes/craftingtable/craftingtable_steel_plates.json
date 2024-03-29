@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_steel_plates"
+		},
+		"unlock": [
+			{
+				"item": "complementary:steel_block"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:steel_plate"
+			}
+		},
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"result": {
+			"item": "complementary:steel_plates",
+			"count": 4
+		}
+	}
+}

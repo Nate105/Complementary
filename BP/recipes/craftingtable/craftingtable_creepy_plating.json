@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_creepy_plating"
+		},
+		"unlock": [
+			{
+				"item": "complementary:creepy_nail"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:steel_ingot"
+			},
+			"B": {
+				"item": "complementary:creepy_nail"
+			}
+		},
+		"pattern": [
+			"AB",
+			"BA"
+		],
+		"result": {
+			"item": "complementary:creepy_plating",
+			"count": 2
+		}
+	}
+}

@@ -1,0 +1,1178 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:muncher",
+			"states": {
+				"complementary:rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"complementary:energy": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15
+				],
+				"complementary:mode": [
+					0,
+					1
+				],
+				"complementary:is_blinking": [
+					false,
+					true
+				]
+			}
+		},
+		"events": {
+			"complementary:blink": {
+				"set_block_state": {
+					"complementary:is_blinking": true
+				}
+			},
+			"complementary:stop_blink": {
+				"set_block_state": {
+					"complementary:is_blinking": false
+				}
+			},
+			"complementary:rotate": {
+				"set_block_state": {
+					"complementary:rotation": "(query.cardinal_facing_2d)"
+				}
+			},
+			"complementary:feed": {
+				"sequence": [
+					{
+						"condition": "query.is_sneaking",
+						"swing": {},
+						"set_block_state": {
+							"complementary:mode": 1
+						},
+						"run_command": {
+							"command": [
+								"/playsound item.trident.return @a ~~~ 1 0.75",
+								"/playsound block.composter.ready @a ~~~"
+							]
+						}
+					},
+					//MAX Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cake') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 15, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cake ~~0.85~"
+							]
+						}
+					},
+					//10 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:rabbit_stew') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bowl.json"
+						},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 10, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_rabbit_stew ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:savory_stem') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 10, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_savory_stem ~~0.85~"
+							]
+						}
+					},
+					//8 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_porkchop') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 8, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_porkchop ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:pumpkin_pie') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 8, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_pumpkin_pie ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_beef') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 8, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_beef ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:golden_apple') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 8, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_golden_apple ~~0.85"
+							]
+						}
+					},
+					//6 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:beetroot_soup') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bowl.json"
+						},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_beetroot_soup ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_chicken') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_chicken ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_mutton') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_mutton ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_salmon') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_salmon ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:golden_carrot') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_golden_carrot ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:honey_bottle') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bottle.json"
+						},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_honey_bottle ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:mushroom_stew') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bowl.json"
+						},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_mushroom_stew ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:suspicious_stew') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bowl.json"
+						},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 6, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_suspicious_stew ~~0.85~"
+							]
+						}
+					},
+					//5 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:baked_potato') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 5, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_baked_potato ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:bread') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 5, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_bread ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_cod') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 5, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_cod ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cooked_rabbit') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 5, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cooked_rabbit ~~0.85~"
+							]
+						}
+					},
+					//4 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:apple') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 4, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_apple ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:chorus_fruit') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 4, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_chorus_fruit ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:bone_marrow') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 4, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_bone_marrow ~~0.85~"
+							]
+						}
+					},
+					//3 Hunger Points
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:carrot') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 3, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_carrot ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:beef') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 3, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_beef ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:porkchop') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 3, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_porkchop ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:rabbit') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 3, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_rabbit ~~0.85~"
+							]
+						}
+					},
+					//2 Hunger Point
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cookie') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cookie ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:glow_berries') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_glow_berries ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:melon_slice') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_melon_slice ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:chicken') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_chicken ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:cod') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_cod ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:mutton') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_mutton ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:salmon') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_salmon ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:sweet_berries') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 2, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_sweet_berries ~~0.85~"
+							]
+						}
+					},
+					//1 Hunger Point
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:beetroot') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 1, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_beetroot ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:dried_kelp') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 1, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_dried_kelp ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:potato') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 1, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_potato ~~0.85~"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:tropical_fish') && query.block_state('complementary:energy') < 15",
+						"swing": {},
+						"decrement_stack": {},
+						"set_block_state": {
+							"complementary:energy": "math.min(query.block_state('complementary:energy') + 1, 15)"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_tropical_fish ~~0.85~"
+							]
+						}
+					}
+				]
+			},
+			"complementary:munch": {
+				"sequence": [
+					{
+						"condition": "query.is_sneaking",
+						"swing": {},
+						"set_block_state": {
+							"complementary:mode": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound block.itemframe.remove_item @a ~~~",
+								"/playsound block.composter.ready @a ~~~ 0.5 1"
+							]
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:raw_iron') && query.block_state('complementary:energy') > 1.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_raw_iron.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_raw_iron ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:raw_gold') && query.block_state('complementary:energy') > 1.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_raw_gold.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_raw_gold ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:raw_copper') && query.block_state('complementary:energy') > 0.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_raw_copper.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_raw_copper ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 1"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:netherite_scrap') && query.block_state('complementary:energy') > 7.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_netherite_scrap.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_netherite_scrap ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 8"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:bone') && query.block_state('complementary:energy') > 1.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_bone.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_bone ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:withered_bone') && query.block_state('complementary:energy') > 2.49",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_withered_bone.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_withered_bone ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 3"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:wheat') && query.block_state('complementary:energy') > 1.49",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_wheat.json"
+						},
+						"run_command": {
+							"command": [
+								"/playsound mob.horse.eat @a ~~~ 1 1",
+								"/particle complementary:muncher_eat_wheat ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:mode') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head_feed",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:feed"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:mode') == 0 && query.block_state('complementary:is_blinking') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head_feed",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_blink",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:queued_ticking": {
+						"looping": true,
+						"interval_range": [
+							10,
+							10
+						],
+						"on_tick": {
+							"event": "complementary:stop_blink"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:feed"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:mode') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:munch"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:mode') == 1 && query.block_state('complementary:is_blinking') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_blink",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:queued_ticking": {
+						"looping": true,
+						"interval_range": [
+							10,
+							10
+						],
+						"on_tick": {
+							"event": "complementary:stop_blink"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:munch"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_energized",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 1 && query.block_state('complementary:is_blinking') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_blink",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head_feed",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_energized",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 0 && query.block_state('complementary:is_blinking') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "complementary_muncher_head_feed",
+							"render_method": "alpha_test"
+						},
+						"down": {
+							"texture": "complementary_mucher_butt",
+							"render_method": "alpha_test"
+						},
+						"north": {
+							"texture": "complementary_muncher_face_blink",
+							"render_method": "alpha_test"
+						},
+						"south": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"west": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"east": {
+							"texture": "complementary_muncher_side",
+							"render_method": "alpha_test"
+						},
+						"fang_top": {
+							"texture": "complementary_muncher_fang_top",
+							"render_method": "alpha_test"
+						},
+						"fang_side": {
+							"texture": "complementary_muncher_fang_side",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.muncher",
+			"minecraft:on_player_placing": {
+				"event": "complementary:rotate"
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					50,
+					100
+				],
+				"on_tick": {
+					"event": "complementary:blink"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,111 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:sack",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.deco"
+			},
+			"states": {
+				"complementary:open": [
+					false,
+					true
+				]
+			}
+		},
+		"events": {
+			"complementary:open": {
+				"set_block_state": {
+					"complementary:open": true
+				},
+				"run_command": {
+					"command": "/playsound leashknot.break @a ~~~"
+				}
+			},
+			"complementary:close": {
+				"set_block_state": {
+					"complementary:open": false
+				},
+				"run_command": {
+					"command": "/playsound leashknot.place @a ~~~"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:open') == true",
+				"components": {
+					"minecraft:geometry": "geometry.sack_open",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_sack_side_open"
+						},
+						"up": {
+							"texture": "complementary_sack_top_open"
+						},
+						"down": {
+							"texture": "complementary_sack_bottom"
+						}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:close"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:open') == false",
+				"components": {
+					"minecraft:on_interact": {
+						"event": "complementary:open"
+					},
+					"minecraft:geometry": "geometry.sack",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_sack_side"
+						},
+						"up": {
+							"texture": "complementary_sack_top"
+						},
+						"down": {
+							"texture": "complementary_sack_bottom"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 6
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					12,
+					12
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					12,
+					12
+				]
+			}
+		}
+	}
+}

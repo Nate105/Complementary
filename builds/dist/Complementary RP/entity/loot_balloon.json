@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "complementary:loot_balloon",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/loot_balloon"
+			},
+			"geometry": {
+				"default": "geometry.loot_balloon"
+			},
+			"render_controllers": [
+				"controller.render.loot_balloon"
+			],
+			"scripts": {
+				"animate": [
+					"death_controller"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			}
+		}
+	}
+}

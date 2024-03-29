@@ -1,0 +1,31 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_clay_vase_magenta"
+		},
+		"unlock": [
+			{
+				"item": "complementary:clay_vase"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "magenta_terracotta"
+			},
+			"B": {
+				"item": "brick"
+			}
+		},
+		"pattern": [
+			"B",
+			"A"
+		],
+		"result": {
+			"item": "complementary:magenta_vase"
+		}
+	}
+}

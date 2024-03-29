@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "complementary:creepy_grenade",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:explode": {
+				"breaks_blocks": true,
+				"causes_fire": true,
+				"fuse_length": {
+					"range_min": 1,
+					"range_max": 1
+				},
+				"destroy_affected_by_griefing": true,
+				"fire_affected_by_griefing": true,
+				"fuse_lit": true,
+				"power": 10
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:collision_box": {
+				"height": 0.98,
+				"width": 0.98
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {}
+	}
+}

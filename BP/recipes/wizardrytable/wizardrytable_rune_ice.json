@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_rune_ice"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"unlock": [
+			{
+				"item": "complementary:rune_blank"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "complementary:blue_ice_shard"
+			},
+			"B": {
+				"item": "complementary:rune_blank"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:rune_ice"
+		}
+	}
+}

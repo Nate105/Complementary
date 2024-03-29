@@ -1,0 +1,65 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:wand_fire_power_iii",
+			"category": "commands"
+		},
+		"events": {
+			"complementary:fire_shot": {
+				"shoot": {
+					"projectile": "complementary:fireball_spell_power_iii",
+					"launch_power": 0.5
+				},
+				"damage": {
+					"target": "self",
+					"amount": 1,
+					"type": "magic"
+				},
+				"swing": {},
+				"run_command": {
+					"command": [
+						"playsound mob.blaze.shoot @a ~~~ 5",
+						"clear @p blaze_powder 0 1"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:rune_fire"
+						],
+						"repair_amount": 100
+					}
+				]
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.wizardry"
+			},
+			"minecraft:icon": {
+				"texture": "complementary_wand_fire"
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 100
+			},
+			"minecraft:display_name": {
+				"value": "Fire Wand\n§6Explosive Flames\n§7Power III"
+			},
+			"minecraft:cooldown": {
+				"category": "wand_fire",
+				"duration": 5
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"condition": "t.val=0;t.i=0;loop(27,{t.val=q.is_item_name_any('slot.inventory',t.i,'minecraft:blaze_powder');t.val?{return t.val;}:0;t.i=t.i+1;});t.val=0;t.i=0;loop(9,{t.val=q.is_item_name_any('slot.hotbar',t.i,'minecraft:blaze_powder');t.val?{return t.val;}:0;t.i=t.i+1;});",
+					"event": "complementary:fire_shot"
+				}
+			}
+		}
+	}
+}

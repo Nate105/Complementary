@@ -1,0 +1,198 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:steel_hoe",
+			"category": "equipment"
+		},
+		"events": {
+			"complementary:durability_use": {},
+			"complementary:hoe_use": {
+				"swing": {}
+			}
+		},
+		"components": {
+			"tag:complementary:steel_tier": {},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:steel_hoe"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					},
+					{
+						"items": [
+							"complementary:steel_ingot"
+						],
+						"repair_amount": "query.max_durability*0.25"
+					}
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 472
+			},
+			"minecraft:damage": 0,
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "hoe"
+			},
+			"minecraft:icon": {
+				"texture": "complementary_steel_hoe"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.hoe"
+			},
+			"minecraft:digger": {
+				"on_dig": {
+					"event": "complementary:durability_use"
+				},
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "sculk",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "sculk_catalyst",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "sculk_shrieker",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "calibrated_sculk_sensor",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "nether_wart_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_wart_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "shroomlight",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "hay_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "target",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "dried_kelp_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "sponge",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "leaves",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "leaves2",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "azalea_leaves",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "azalea_leaves_flowered",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_leaves",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_leaves",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "sculk_vein",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "moss_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					}
+				]
+			},
+			"tag:minecraft:is_hoe": {}
+		}
+	}
+}

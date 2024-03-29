@@ -1,0 +1,58 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:steel_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:steel_tier",
+					"minecraft:trimmable_armors"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_feet"
+			},
+			"minecraft:durability": {
+				"max_durability": 390
+			},
+			"minecraft:icon": {
+				"texture": "complementary_steel_boots"
+			},
+			"minecraft:wearable": {
+				"dispensable": true,
+				"protection": 3,
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:steel_boots"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability * 0.50"
+					},
+					{
+						"items": [
+							"complementary:steel_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					}
+				]
+			}
+		}
+	}
+}

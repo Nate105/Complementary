@@ -1,0 +1,586 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:netherite_axe"
+		},
+		"events": {
+			"complementary:durability_use": {
+				"damage": {
+					"amount": 1,
+					"target": "self",
+					"type": "durability"
+				}
+			},
+			"complementary:axe_use": {
+				"swing": {}
+			}
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "equipment"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 2052
+			},
+			"minecraft:mining_speed": 1,
+			"minecraft:damage": 7,
+			"minecraft:enchantable": {
+				"value": 15,
+				"slot": "axe"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:netherite_axe"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability * 0.50"
+					},
+					{
+						"items": [
+							"netherite_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					}
+				]
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "complementary:axe_use"
+				}
+			},
+			"minecraft:use_on": {
+				"blocks": [
+					"log",
+					"log2",
+					"wood"
+				]
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"on_dig": {
+					"event": "complementary:durability_use"
+				},
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('wood', 'pumpkin', 'plant', 'text_sign')"
+						},
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_fence",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_fence",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_door",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_door",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_planks",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cherry_planks",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_planks",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_planks",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_fence",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "stripped_bamboo_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_planks",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_trapdoor",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_trapdoor",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_door",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_door",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_fence_gate",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_fence_gate",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_fence",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_fence",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "stripped_crimson_hyphae",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "stripped_warped_hyphae",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "stripped_crimson_stem",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "stripped_warped_stem",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "beehive",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "soul_campfire",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_door",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_stem",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_stem",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "warped_hyphae",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crimson_hyphae",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cartography_table",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_mosaic_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_slab",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_mosaic_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_stairs",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "trapped_chest",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cartography_table",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "loom",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "lectern",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_mosaic",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "campfire",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "jukebox",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bookshelf",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "chiseled_bookshelf",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "standing_banner",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "wall_banner",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "noteblock",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "mangrove_roots",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "composter",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bamboo",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "bed",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "cocoa",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "daylight_detector",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "red_mushroom_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "brown_mushroom_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "vine",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": {
+							"tags": "query.any_tag('axeDiggable')"
+						},
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "crafting_table",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					},
+					{
+						"block": "complementary:loot_crate",
+						"speed": 10,
+						"on_dig": {
+							"event": "complementary:durability_use"
+						}
+					}
+				]
+			},
+			"minecraft:icon": {
+				"texture": "complementary_netherite_axe"
+			},
+			"minecraft:display_name": {
+				"value": "Netherite Axe"
+			},
+			"tag:minecraft:is_axe": {}
+		}
+	}
+}

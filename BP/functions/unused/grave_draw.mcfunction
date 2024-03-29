@@ -1,0 +1,1 @@
+execute at @e[family=item_taker] run tp @e[type=item, r=5] ~~~

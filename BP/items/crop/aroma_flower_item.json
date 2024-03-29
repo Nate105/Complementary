@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:aroma_flower_item",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.flower"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_aroma_flower_item"
+			},
+			"minecraft:block_placer": {
+				"use_on": [
+					"grass_block",
+					"podzol",
+					"dirt_with_roots",
+					"dirt",
+					"farmland",
+					"moss_block"
+				],
+				"block": "complementary:aroma_flower"
+			}
+		}
+	}
+}

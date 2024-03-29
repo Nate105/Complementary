@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:aroma_crop_seeds",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.seed"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:sniffer_seeds"
+				]
+			},
+			"minecraft:icon": {
+				"texture": "complementary_aroma_crop_seeds"
+			},
+			"minecraft:block_placer": {
+				"block": "complementary:aroma_crop",
+				"use_on": [
+					"minecraft:farmland"
+				]
+			}
+		}
+	}
+}

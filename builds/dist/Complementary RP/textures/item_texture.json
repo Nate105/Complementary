@@ -1,0 +1,408 @@
+{
+	"resource_pack_name": "Complementary",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"netherite_ingot": {
+			"textures": "textures/items/transmutable_ingot"
+		},
+		"netherite_scrap": {
+			"textures": "textures/items/transmutable_scrap"
+		},
+		"complementary_wooden_axe": {
+			"textures": "textures/items/wood_axe"
+		},
+		"complementary_wooden_pickaxe": {
+			"textures": "textures/items/wood_pickaxe"
+		},
+		"complementary_stone_axe": {
+			"textures": "textures/items/stone_axe"
+		},
+		"complementary_stone_pickaxe": {
+			"textures": "textures/items/stone_pickaxe"
+		},
+		"complementary_iron_axe": {
+			"textures": "textures/items/iron_axe"
+		},
+		"complementary_iron_pickaxe": {
+			"textures": "textures/items/iron_pickaxe"
+		},
+		"complementary_golden_axe": {
+			"textures": "textures/items/gold_axe"
+		},
+		"complementary_golden_pickaxe": {
+			"textures": "textures/items/gold_pickaxe"
+		},
+		"complementary_diamond_axe": {
+			"textures": "textures/items/diamond_axe"
+		},
+		"complementary_diamond_pickaxe": {
+			"textures": "textures/items/diamond_pickaxe"
+		},
+		"complementary_netherite_axe": {
+			"textures": "textures/items/netherite_axe"
+		},
+		"complementary_netherite_pickaxe": {
+			"textures": "textures/items/netherite_pickaxe"
+		},
+		"complementary_magnet": {
+			"textures": "textures/items/magnet_copper"
+		},
+		"complementary_magnet_on": {
+			"textures": "textures/items/magnet_copper_on"
+		},
+		"complementary_wood_claymore": {
+			"textures": "textures/items/wood_claymore"
+		},
+		"complementary_stone_claymore": {
+			"textures": "textures/items/stone_claymore"
+		},
+		"complementary_iron_claymore": {
+			"textures": "textures/items/iron_claymore"
+		},
+		"complementary_gold_claymore": {
+			"textures": "textures/items/gold_claymore"
+		},
+		"complementary_diamond_claymore": {
+			"textures": "textures/items/diamond_claymore"
+		},
+		"complementary_netherite_claymore": {
+			"textures": "textures/items/netherite_claymore"
+		},
+		"complementary_wood_spear": {
+			"textures": "textures/items/wood_spear"
+		},
+		"complementary_steel_ingot": {
+			"textures": "textures/items/steel_ingot"
+		},
+		"complementary_creepy_nail": {
+			"textures": "textures/items/creepy_nail"
+		},
+		"complementary_magnet_strong": {
+			"textures": "textures/items/magnet_iron"
+		},
+		"complementary_magnet_strong_on": {
+			"textures": "textures/items/magnet_iron_on"
+		},
+		"complementary_rune_blank": {
+			"textures": "textures/items/rune_blank"
+		},
+		"complementary_rune_evocation": {
+			"textures": "textures/items/rune_evocation"
+		},
+		"complementary_rune_arcane": {
+			"textures": "textures/items/rune_arcane_v2"
+		},
+		"complementary_bucket_water_infinite": {
+			"textures": "textures/items/bucket_water"
+		},
+		"complementary_rune_fire": {
+			"textures": "textures/items/rune_fire_v2"
+		},
+		"complementary_rune_ice": {
+			"textures": "textures/items/rune_ice_v2"
+		},
+		"complementary_wand_amethyst": {
+			"textures": "textures/items/wand_amethyst"
+		},
+		"complementary_bone_frosted": {
+			"textures": "textures/items/bone_frosted"
+		},
+		"complementary_rune_essence": {
+			"textures": "textures/items/rune_essence_v3"
+		},
+		"complementary_rune_nature": {
+			"textures": "textures/items/rune_nature"
+		},
+		"complementary_rune_lightning": {
+			"textures": "textures/items/rune_lightning"
+		},
+		"complementary_aroma_crop_seeds": {
+			"textures": "textures/items/aroma_seeds"
+		},
+		"complementary_aroma_flower_item": {
+			"textures": "textures/items/aroma_crop_stage_4"
+		},
+		"complementary_ancient_flames": {
+			"textures": "textures/items/ancient_flames"
+		},
+		"complementary_copper_nugget": {
+			"textures": "textures/items/copper_nugget"
+		},
+		"complementary_hook_seeds": {
+			"textures": "textures/items/hookplant_seeds"
+		},
+		"complementary_savory_stem": {
+			"textures": "textures/items/savoury_stem"
+		},
+		"complementary_leafy_hook": {
+			"textures": "textures/items/leafy_hook"
+		},
+		"complementary_time_upgrade": {
+			"textures": "textures/items/area_upgrade"
+		},
+		"complementary_effect_upgrade": {
+			"textures": "textures/items/effect_upgrade"
+		},
+		"complementary_power_upgrade": {
+			"textures": "textures/items/power_upgrade"
+		},
+		"complementary_range_upgrade": {
+			"textures": "textures/items/range_upgrade"
+		},
+		"complementary_ruby": {
+			"textures": "textures/items/ruby_gem"
+		},
+		"complementary_ancient_manuscript": {
+			"textures": "textures/items/ancient_recipe_book"
+		},
+		"complementary_pickaxe_fragments": {
+			"textures": "textures/items/pickaxe_fragments"
+		},
+		"complementary_ancient_pickaxe": {
+			"textures": "textures/items/ancient_pickaxe"
+		},
+		"complementary_chainmail": {
+			"textures": "textures/items/chainmail"
+		},
+		"complementary_glowstone_pendant": {
+			"textures": "textures/items/glowstone_pendant"
+		},
+		"complementary_claymore_fragments": {
+			"textures": "textures/items/claymore_fragments"
+		},
+		"complementary_ancient_claymore": {
+			"textures": "textures/items/ancient_claymore"
+		},
+		"complementary_steel_nugget": {
+			"textures": "textures/items/steel_nugget"
+		},
+		"complementary_spawner_fragment": {
+			"textures": "textures/items/spawner_fragment"
+		},
+		"complementary_dynamite_stick": {
+			"textures": "textures/items/dynamite_stick"
+		},
+		"complementary_wand_essence": {
+			"textures": "textures/items/wand_ruby"
+		},
+		"complementary_wand_fire": {
+			"textures": "textures/items/wand_fire"
+		},
+		"complementary_wand_ice": {
+			"textures": "textures/items/wand_ice"
+		},
+		"complementary_blue_ice_shard": {
+			"textures": "textures/items/blue_ice_shard"
+		},
+		"complementary_steel_sword": {
+			"textures": "textures/items/steel_sword"
+		},
+		"complementary_steel_pickaxe": {
+			"textures": "textures/items/steel_pickaxe"
+		},
+		"complementary_steel_axe": {
+			"textures": "textures/items/steel_axe"
+		},
+		"complementary_steel_shovel": {
+			"textures": "textures/items/steel_shovel"
+		},
+		"complementary_steel_hoe": {
+			"textures": "textures/items/steel_hoe"
+		},
+		"complementary_steel_helmet": {
+			"textures": "textures/items/steel_helmet"
+		},
+		"complementary_steel_chestplate": {
+			"textures": "textures/items/steel_chestplate"
+		},
+		"complementary_steel_leggings": {
+			"textures": "textures/items/steel_leggings"
+		},
+		"complementary_steel_boots": {
+			"textures": "textures/items/steel_boots"
+		},
+		"complementary_aroma_pod": {
+			"textures": "textures/items/aroma_pod"
+		},
+		"complementary_potion_saturation": {
+			"textures": "textures/items/potion_bottle_saturation"
+		},
+		"complementary_potion_haste": {
+			"textures": "textures/items/potion_bottle_haste"
+		},
+		"complementary_gloomy_substance": {
+			"textures": "textures/items/gloomy_substance"
+		},
+		"complementary_candle_holder_item": {
+			"textures": "textures/items/candle_holder"
+		},
+		"complementary_candle_holder_black_item": {
+			"textures": "textures/items/candle_holder_black"
+		},
+		"complementary_candle_holder_blue_item": {
+			"textures": "textures/items/candle_holder_blue"
+		},
+		"complementary_candle_holder_brown_item": {
+			"textures": "textures/items/candle_holder_brown"
+		},
+		"complementary_candle_holder_cyan_item": {
+			"textures": "textures/items/candle_holder_cyan"
+		},
+		"complementary_candle_holder_gray_item": {
+			"textures": "textures/items/candle_holder_gray"
+		},
+		"complementary_candle_holder_green_item": {
+			"textures": "textures/items/candle_holder_green"
+		},
+		"complementary_candle_holder_light_blue_item": {
+			"textures": "textures/items/candle_holder_light_blue"
+		},
+		"complementary_candle_holder_light_gray_item": {
+			"textures": "textures/items/candle_holder_light_gray"
+		},
+		"complementary_candle_holder_lime_item": {
+			"textures": "textures/items/candle_holder_lime"
+		},
+		"complementary_candle_holder_magenta_item": {
+			"textures": "textures/items/candle_holder_magenta"
+		},
+		"complementary_candle_holder_orange_item": {
+			"textures": "textures/items/candle_holder_orange"
+		},
+		"complementary_candle_holder_pink_item": {
+			"textures": "textures/items/candle_holder_pink"
+		},
+		"complementary_candle_holder_purple_item": {
+			"textures": "textures/items/candle_holder_purple"
+		},
+		"complementary_candle_holder_red_item": {
+			"textures": "textures/items/candle_holder_red"
+		},
+		"complementary_candle_holder_white_item": {
+			"textures": "textures/items/candle_holder_white"
+		},
+		"complementary_candle_holder_yellow_item": {
+			"textures": "textures/items/candle_holder_yellow"
+		},
+		"complementary_mirror": {
+			"textures": "textures/items/gold_mirror"
+		},
+		"complementary_experience_charge": {
+			"textures": "textures/items/experience_charge"
+		},
+		"complementary_raw_iron_powder": {
+			"textures": "textures/items/raw_iron_powder"
+		},
+		"complementary_raw_gold_powder": {
+			"textures": "textures/items/raw_gold_powder"
+		},
+		"complementary_raw_copper_powder": {
+			"textures": "textures/items/raw_copper_powder"
+		},
+		"complementary_netherite_scrap_powder": {
+			"textures": "textures/items/netherite_scrap_powder"
+		},
+		"complementary_crushed_wheat": {
+			"textures": "textures/items/crushed_wheat"
+		},
+		"complementary_withered_bone": {
+			"textures": "textures/items/withered_bone"
+		},
+		"complementary_bone_marrow": {
+			"textures": "textures/items/bone_marrow"
+		},
+		"complementary_withered_bone_marrow": {
+			"textures": "textures/items/withered_bone_marrow"
+		},
+		"complementary_muncher_egg": {
+			"textures": "textures/items/muncher_egg"
+		},
+		"complementary_scroll_common": {
+			"textures": "textures/items/common_spell_scroll"
+		},
+		"complementary_scroll_uncommon": {
+			"textures": "textures/items/uncommon_spell_scroll"
+		},
+		"complementary_common_ink": {
+			"textures": "textures/items/common_ink"
+		},
+		"complementary_uncommon_ink": {
+			"textures": "textures/items/uncommon_ink"
+		},
+		"complementary_rare_ink": {
+			"textures": "textures/items/rare_ink"
+		},
+		"complementary_epic_ink": {
+			"textures": "textures/items/epic_ink"
+		},
+		"complementary_legendary_ink": {
+			"textures": "textures/items/legendary_ink"
+		},
+		"complementary_withered_sword": {
+			"textures": "textures/items/withered_sword"
+		},
+		"complementary_weather_gadget": {
+			"textures": "textures/items/weather_gadget"
+		},
+		"complementary_orb_power": {
+			"textures": "textures/items/orb_power"
+		},
+		"complementary_netherite_ingot": {
+			"textures": "textures/items/netherite_ingot"
+		},
+		"complementary_raw_netherite": {
+			"textures": "textures/items/raw_netherite"
+		},
+		"complementary_dragon_scales": {
+			"textures": "textures/items/dragon_scales"
+		},
+		"complementary_endersteel_helmet": {
+			"textures": "textures/items/endersteel_helmet"
+		},
+		"complementary_endersteel_chestplate": {
+			"textures": "textures/items/endersteel_chestplate"
+		},
+		"complementary_endersteel_leggings": {
+			"textures": "textures/items/endersteel_leggings"
+		},
+		"complementary_endersteel_boots": {
+			"textures": "textures/items/endersteel_boots"
+		},
+		"complementary_endersteel_ingot": {
+			"textures": "textures/items/endersteel_alloy"
+		},
+		"complementary_endesteel_alloy_upgrade_smithing_template": {
+			"textures": "textures/items/endersteel_alloy_upgrade_smithing_template"
+		},
+		"complementary_wheat_mid": {
+			"textures": "textures/items/wheat_mid"
+		},
+		"complementary_wheat_quality": {
+			"textures": "textures/items/wheat_quality"
+		},
+		"complementary_giant_zombie_egg": {
+			"textures": "textures/items/egg_zombie"
+		},
+		"complementary_rapid_fertilizer": {
+			"textures": "textures/items/rapid_fertilizer"
+		},
+		"complementary_mana_ring_i": {
+			"textures": "textures/items/cooldown_ring_i"
+		},
+		"complementary_mana_ring_ii": {
+			"textures": "textures/items/cooldown_ring_ii"
+		},
+		"complementary_mana_ring_iii": {
+			"textures": "textures/items/cooldown_ring_iii"
+		},
+		"complementary_potion_mana": {
+			"textures": "textures/items/potion_bottle_mana"
+		},
+		"complementary_burst_fruit": {
+			"textures": "textures/items/burst_fruit"
+		},
+		"complementary_burst_seeds": {
+			"textures": "textures/items/burst_seeds"
+		}
+	}
+}

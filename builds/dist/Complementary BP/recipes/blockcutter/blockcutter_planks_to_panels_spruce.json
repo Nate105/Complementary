@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:blockcutter_planks_to_panels_spruce"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:planks",
+				"data": 1
+			}
+		],
+		"unlock": [
+			{
+				"item": "minecraft:planks",
+				"data": 1
+			}
+		],
+		"result": {
+			"item": "complementary:panels_planks_spruce"
+		}
+	}
+}

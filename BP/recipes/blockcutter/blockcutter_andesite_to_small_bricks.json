@@ -1,0 +1,24 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "complementary:blockcutter_andesite_to_brick_small"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:andesite"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:andesite"
+            }
+        ],
+        "result": {
+            "item": "complementary:brick_small_andesite"
+        }
+    }
+}

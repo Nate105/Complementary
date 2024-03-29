@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_candle_holder_gray"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:gray_candle"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:gray_candle"
+			},
+			"B": {
+				"item": "minecraft:iron_nugget"
+			},
+			"C": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"pattern": [
+			"A ",
+			"CB"
+		],
+		"result": {
+			"item": "complementary:candle_holder_gray_item",
+			"count": 1
+		}
+	}
+}

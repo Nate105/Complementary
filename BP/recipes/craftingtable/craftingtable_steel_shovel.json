@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_steel_shovel"
+		},
+		"unlock": [
+			{
+				"item": "complementary:steel_ingot"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "complementary:steel_ingot"
+			}
+		},
+		"pattern": [
+			"B",
+			"A",
+			"A"
+		],
+		"result": {
+			"item": "complementary:steel_shovel"
+		}
+	}
+}

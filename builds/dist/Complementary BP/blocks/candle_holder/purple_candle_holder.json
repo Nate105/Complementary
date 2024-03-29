@@ -1,0 +1,150 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:purple_candle_holder",
+			"menu_category": {
+				"category": "none",
+				"group": "itemGroup.name.deco.candleHolder"
+			},
+			"states": {
+				"complementary:rotation": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"events": {
+			"complementary:rotate": {
+				"set_block_state": {
+					"complementary:rotation": "(query.cardinal_facing_2d)"
+				}
+			},
+			"complementary:fire_particle": {
+				"run_command": {
+					"command": [
+						"particle minecraft:candle_flame_particle ~~0.25~"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:on_player_placing": {
+				"event": "complementary:rotate"
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:queued_ticking": {
+				"interval_range": [
+					20,
+					150
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "complementary:fire_particle"
+				}
+			},
+			"minecraft:geometry": "geometry.candle_holder_v2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "nothing",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				},
+				"down": {
+					"texture": "complementary_candle_holder_down",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				},
+				"body": {
+					"texture": "complementary_candle_holder_body",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				},
+				"candle": {
+					"texture": "complementary_purple_candle_lit",
+					"render_method": "alpha_test",
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_emission": 5,
+			"minecraft:collision_box": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					10,
+					6
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					10,
+					6
+				]
+			}
+		}
+	}
+}

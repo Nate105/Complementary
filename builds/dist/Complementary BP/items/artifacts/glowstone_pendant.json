@@ -1,0 +1,16 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:glowstone_pendant",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.archeology.artifacts"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_glowstone_pendant",
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

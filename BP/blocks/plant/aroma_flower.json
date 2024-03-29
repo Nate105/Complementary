@@ -1,0 +1,72 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:aroma_flower",
+			"menu_category": {
+				"category": "none"
+			}
+		},
+		"events": {
+			"complementary:heal_aura": {
+				"run_command": {
+					"command": [
+						"/effect @a[r=7] instant_health 1 0 true",
+						"/particle complementary:heal_fragrance_particle ~~0.5~"
+					]
+				}
+			},
+			"complementary:harvest": {
+				"swing": {},
+				"spawn_loot": {
+					"table": "loot_tables/blocks/aroma_crop_harvest.json"
+				},
+				"run_command": {
+					"command": [
+						"/playsound mob.sheep.shear @a ~~~",
+						"/setblock ~~~ air"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.plant",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "complementary_aroma_flower",
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					10,
+					8
+				]
+			},
+			"minecraft:collision_box": false,
+			"minecraft:queued_ticking": {
+				"interval_range": [
+					50,
+					50
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "complementary:heal_aura"
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/aroma_flower.json",
+			"minecraft:on_interact": {
+				"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:shears')",
+				"event": "complementary:harvest"
+			}
+		}
+	}
+}

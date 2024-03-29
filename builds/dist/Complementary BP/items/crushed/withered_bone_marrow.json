@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:withered_bone_marrow",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.crushed.mobDrop"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_food"
+				]
+			},
+			"minecraft:icon": "complementary_withered_bone_marrow",
+			"minecraft:food": {
+				"nutrition": 4,
+				"saturation_modifier": 2
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6,
+				"movement_modifier": 0.35
+			},
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

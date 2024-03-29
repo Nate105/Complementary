@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_bonemeal_from_frozen_bone"
+		},
+		"unlock": [
+			{
+				"item": "complementary:bone_frosted"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:bone_frosted"
+			}
+		],
+		"result": {
+			"item": "minecraft:bone_meal",
+			"count": 4
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_quilted_wool_blue"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:blue_wool"
+			},
+			"B": {
+				"item": "minecraft:string"
+			}
+		},
+		"pattern": [
+			" B ",
+			"BAB",
+			" B "
+		],
+		"result": {
+			"item": "complementary:quilted_wool_blue",
+			"count": 3
+		}
+	}
+}

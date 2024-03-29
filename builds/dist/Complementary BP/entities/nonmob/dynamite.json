@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "complementary:dynamite",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "snowball"
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:explode": {
+				"fuse_length": {
+					"range_min": 1.5,
+					"range_max": 2.5
+				},
+				"power": 2,
+				"breaks_blocks": false,
+				"causes_fire": true,
+				"fire_affected_by_griefing": false,
+				"fuse_lit": true
+			},
+			"minecraft:projectile": {
+				"power": 1,
+				"angle_offset": 1,
+				"uncertainty_base": 0.2,
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"impact_damage": {
+						"damage": 1
+					}
+				}
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:collision_box": {
+				"width": 1.5,
+				"height": 1.5
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:scale": {
+				"value": 0.8
+			}
+		},
+		"events": {}
+	}
+}

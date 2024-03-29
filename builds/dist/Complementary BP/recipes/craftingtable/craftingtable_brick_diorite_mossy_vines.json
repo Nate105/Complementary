@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_brick_diorite_mossy_vines"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:vine"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:brick_diorite",
+				"count": 1
+			},
+			{
+				"item": "minecraft:vine",
+				"count": 1
+			}
+		],
+		"result": {
+			"item": "complementary:brick_diorite_mossy",
+			"count": 1
+		}
+	}
+}

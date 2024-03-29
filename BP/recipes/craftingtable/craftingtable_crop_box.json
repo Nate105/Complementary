@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_crop_box"
+		},
+		"unlock": [
+			{
+				"item": "complementary:packed_dirt"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:oak_planks"
+			},
+			"B": {
+				"item": "minecraft:oak_fence"
+			},
+			"C": {
+				"item": "minecraft:oak_slab"
+			},
+			"D": {
+				"item": "complementary:packed_dirt"
+			},
+			"E": {
+				"item": "minecraft:bone_block"
+			}
+		},
+		"pattern": [
+			"CEC",
+			"BDB",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:crop_box",
+			"count": 1
+		}
+	}
+}

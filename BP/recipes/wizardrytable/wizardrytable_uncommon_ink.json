@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_uncommon_ink"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:lapis_lazuli"
+			},
+			"B": {
+				"item": "complementary:steel_nugget"
+			},
+			"C": {
+				"item": "minecraft:emerald"
+			},
+			"D": {
+				"item": "complementary:common_ink"
+			},
+			"E": {
+				"item": "minecraft:ink_sac"
+			},
+			"F": {
+				"item": "minecraft:green_dye"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"CDC",
+			"EFE"
+		],
+		"result": {
+			"item": "complementary:uncommon_ink"
+		}
+	}
+}

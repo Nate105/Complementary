@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "minecraft:stone_axe_from_blackstone"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "XX",
+      "X#",
+      " #"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:blackstone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:blackstone"
+      }
+    ],
+    "result": {
+      "item": "complementary:stone_axe"
+    },
+    "priority": 2
+  }
+}

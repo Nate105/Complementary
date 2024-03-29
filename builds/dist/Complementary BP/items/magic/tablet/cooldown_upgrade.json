@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:cooldown_upgrade",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_time_upgrade"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.wizardry"
+			},
+			"minecraft:display_name": {
+				"value": "Incantation Tablet\n§7Cooldown Upgrade"
+			}
+		}
+	}
+}

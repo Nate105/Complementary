@@ -1,0 +1,590 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "sapling",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_data",
+							"data": {
+								"max": 6,
+								"min": 1
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cherry_sapling",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"max": 1,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mangrove_propagule",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"max": 1,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "dye",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_data",
+							"data": {
+								"min": 1,
+								"max": 16
+							}
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 6
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "red_mushroom",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "brown_mushroom",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"max": 3,
+								"min": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "wheat_seeds",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "melon_seeds",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "pumpkin_seeds",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "beetroot_seeds",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cactus",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "bamboo",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 10
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 1
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "amethyst_shard",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "complementary:copper_nugget",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 9,
+								"max": 27
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "gold_nugget",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 9,
+								"max": 27
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "iron_nugget",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 9,
+								"max": 27
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "raw_copper",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "raw_gold",
+					"weight": 13,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "raw_iron",
+					"weight": 11,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "apple",
+					"weight": 20,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 5
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "bread",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "baked_potato",
+					"weight": 10,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 9
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cooked_chicken",
+					"weight": 5,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "complementary:gold_axe",
+					"count": 1
+				}
+			],
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "log",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 10,
+								"max": 20
+							}
+						},
+						{
+							"function": "set_data",
+							"data": {
+								"min": 0,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "log2",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 10,
+								"max": 20
+							}
+						},
+						{
+							"function": "set_data",
+							"data": {
+								"min": 0,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "mangrove_log",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 10,
+								"max": 20
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "cherry_log",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 10,
+								"max": 20
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"conditions": [
+				{
+					"condition": "match_tool",
+					"item": "complementary:gold_pickaxe",
+					"count": 1
+				}
+			],
+			"rolls": {
+				"min": 1,
+				"max": 3
+			},
+			"entries": [
+				{
+					"type": "item",
+					"name": "iron_ingot",
+					"weight": 25,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "gold_ingot",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 5,
+								"max": 10
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "diamond",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "emerald",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 3,
+								"max": 8
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "complementary:ruby",
+					"weight": 15,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "iron_block",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "gold_block",
+					"weight": 3,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 3
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "diamond_block",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 1
+							}
+						}
+					]
+				},
+				{
+					"type": "item",
+					"name": "emerald_block",
+					"weight": 2,
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 1,
+								"max": 2
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

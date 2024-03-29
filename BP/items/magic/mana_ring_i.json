@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:mana_ring_i",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.wizardry.rings.mana"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_mana_ring_i"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:display_name": {
+				"value": "Ring of Mana\n§7Fast Mana I"
+			}
+		}
+	}
+}

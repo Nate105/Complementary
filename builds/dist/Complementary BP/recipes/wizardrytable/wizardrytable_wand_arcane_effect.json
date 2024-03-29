@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:wizardrytable_wand_arcane_effect"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:wand_arcane"
+			},
+			{
+				"item": "complementary:effect_upgrade"
+			}
+		],
+		"result": {
+			"item": "complementary:wand_arcane_effect"
+		}
+	}
+}

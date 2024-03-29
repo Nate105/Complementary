@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:raw_netherite",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_raw_netherite"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.metal"
+			}
+		}
+	}
+}

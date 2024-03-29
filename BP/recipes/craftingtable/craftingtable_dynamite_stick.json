@@ -1,0 +1,36 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_dynamite_stick"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:gunpowder"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:string"
+			},
+			"B": {
+				"item": "minecraft:paper"
+			},
+			"C": {
+				"item": "minecraft:gunpowder"
+			}
+		},
+		"pattern": [
+			"A",
+			"B",
+			"C"
+		],
+		"result": {
+			"item": "complementary:dynamite_stick",
+			"count": 3
+		}
+	}
+}

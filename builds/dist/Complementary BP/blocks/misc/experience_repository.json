@@ -1,0 +1,172 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:experience_repository",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.misc.xprepos"
+			},
+			"states": {
+				"complementary:fill_stage": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"events": {
+			"complementary:experience_handler": {
+				"sequence": [
+					{
+						"condition": "!query.is_sneaking&&query.block_state('complementary:fill_stage')>0",
+						"run_command": {
+							"command": [
+								"xp 15L @p",
+								"playsound random.levelup @a ~~~",
+								"playsound respawn_anchor.deplete @a ~~~"
+							]
+						}
+					},
+					{
+						"condition": "query.player_level>14&&query.is_sneaking&&query.block_state('complementary:fill_stage')<3",
+						"run_command": {
+							"command": [
+								"xp -15L @p",
+								"playsound respawn_anchor.charge @a ~~~"
+							]
+						},
+						"set_block": {
+							"block_type": "complementary:experience_repository_1"
+						}
+					}
+				]
+			},
+			"complementary:destroy": {
+				"sequence": [
+					{
+						"condition": "query.block_state('complementary:fill_stage')==0",
+						"run_command": {
+							"command": [
+								"playsound beacon.deactivate @a ~~~ 10 0.5"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:fill_stage')==1",
+						"run_command": {
+							"command": [
+								"playsound beacon.deactivate @a ~~~ 10 0.5",
+								"xp 15L @p"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:fill_stage')==2",
+						"run_command": {
+							"command": [
+								"playsound beacon.deactivate @a ~~~ 10 0.5",
+								"xp 30L @p"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:fill_stage')==3",
+						"run_command": {
+							"command": [
+								"playsound beacon.deactivate @a ~~~ 10 0.5",
+								"xp 45L @p"
+							]
+						}
+					}
+				]
+			},
+			"complementary:place": {
+				"run_command": {
+					"command": [
+						"playsound beacon.activate @a ~~~ 10 0.8"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:fill_stage') == 0",
+				"components": {}
+			},
+			{
+				"condition": "query.block_state('complementary:fill_stage') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_experience_repository_1"
+						},
+						"up": {
+							"texture": "complementary_experience_repository_top"
+						},
+						"down": {
+							"texture": "complementary_experience_repository_top"
+						}
+					},
+					"minecraft:light_emission": 5
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:fill_stage') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_experience_repository_2"
+						},
+						"up": {
+							"texture": "complementary_experience_repository_top"
+						},
+						"down": {
+							"texture": "complementary_experience_repository_top"
+						}
+					},
+					"minecraft:light_emission": 10
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:fill_stage') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.block",
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_experience_repository_3"
+						},
+						"up": {
+							"texture": "complementary_experience_repository_top"
+						},
+						"down": {
+							"texture": "complementary_experience_repository_top"
+						}
+					},
+					"minecraft:light_emission": 15
+				}
+			}
+		],
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 25
+			},
+			"minecraft:on_interact": {
+				"event": "complementary:experience_handler"
+			},
+			"minecraft:on_player_destroyed": {
+				"event": "complementary:destroy"
+			},
+			"minecraft:on_player_placing": {
+				"event": "complementary:place"
+			},
+			"tag:ironpickaxeDiggable": {}
+		}
+	}
+}

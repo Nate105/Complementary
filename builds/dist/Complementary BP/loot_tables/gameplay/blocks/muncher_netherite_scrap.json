@@ -1,0 +1,28 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "complementary:netherite_scrap_powder",
+                    "weight": 7
+                },
+                {
+                    "type": "item",
+                    "name": "complementary:netherite_scrap_powder",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 3
+                }
+            ]
+        }
+    ]
+}

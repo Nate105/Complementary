@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_arcane_shot_scroll"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:paper"
+			},
+			"C": {
+				"item": "minecraft:amethyst_shard"
+			},
+			"D": {
+				"item": "minecraft:amethyst_shard"
+			},
+			"E": {
+				"item": "minecraft:arrow"
+			},
+			"F": {
+				"item": "complementary:common_ink"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"CDE",
+			"FFF"
+		],
+		"result": {
+			"item": "complementary:arcane_shot_scroll_level_i"
+		}
+	}
+}

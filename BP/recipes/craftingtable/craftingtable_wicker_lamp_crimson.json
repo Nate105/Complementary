@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_wicker_lamp_crimson"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:crimson_planks"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "crimson_planks"
+			},
+			"B": {
+				"item": "stick"
+			},
+			"C": {
+				"item": "soul_lantern"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"BCB",
+			"ABA"
+		],
+		"result": {
+			"item": "complementary:wicker_lamp_crimson"
+		}
+	}
+}

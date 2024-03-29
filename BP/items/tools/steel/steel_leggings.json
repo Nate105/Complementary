@@ -1,0 +1,68 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:steel_leggings",
+			"category": "equipment"
+		},
+		"events": {
+			"complementary:equip_steel": {
+				"run_command": {
+					"command": "/playsound armor.equip_diamond @a ~~~"
+				}
+			}
+		},
+		"components": {
+			"tag:minecraft:trimmable_armors": {},
+			"tag:complementary:steel_tier": {},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "complementary:equip_steel"
+				}
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 9,
+				"slot": "armor_legs"
+			},
+			"minecraft:durability": {
+				"max_durability": 450
+			},
+			"minecraft:icon": {
+				"texture": "complementary_steel_leggings"
+			},
+			"minecraft:render_offsets": "leggings",
+			"minecraft:armor": {
+				"protection": 6
+			},
+			"minecraft:wearable": {
+				"slot": "slot.armor.legs"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.leggings"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:steel_leggings"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability * 0.50"
+					},
+					{
+						"items": [
+							"complementary:steel_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:chainmail",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_chainmail"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.archeology.basic"
+			}
+		}
+	}
+}

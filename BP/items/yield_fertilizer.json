@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:yield_fertilizer",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.farming"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_yield_fertilizer"
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_shelf_birch"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:birch_planks"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:birch_slab"
+			},
+			"B": {
+				"item": "minecraft:birch_log"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"  B"
+		],
+		"result": {
+			"item": "complementary:birch_shelf",
+			"count": 6
+		}
+	}
+}

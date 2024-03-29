@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:legendary_ink",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.wizardryInk"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_legendary_ink",
+			"minecraft:display_name": {
+				"value": "Bottle o' Ink\n§6Legendary"
+			}
+		}
+	}
+}

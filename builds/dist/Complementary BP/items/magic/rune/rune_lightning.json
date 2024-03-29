@@ -1,0 +1,21 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:rune_lightning",
+			"menu_category": {
+				"category": "none",
+				"group": "itemGroup.name.wizardry.runes"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:magic_runes",
+					"complementary:lightning_school"
+				]
+			},
+			"minecraft:icon": "complementary_rune_lightning"
+		}
+	}
+}

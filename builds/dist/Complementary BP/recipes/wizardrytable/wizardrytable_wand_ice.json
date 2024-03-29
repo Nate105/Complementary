@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_wand_ice"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:blue_ice_shard"
+			},
+			"B": {
+				"item": "minecraft:stick"
+			},
+			"C": {
+				"item": "minecraft:leather"
+			},
+			"D": {
+				"item": "complementary:rune_ice"
+			}
+		},
+		"pattern": [
+			" A ",
+			" B ",
+			"CDC"
+		],
+		"result": {
+			"item": "complementary:wand_ice"
+		}
+	}
+}

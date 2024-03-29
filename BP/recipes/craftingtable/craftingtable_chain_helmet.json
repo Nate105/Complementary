@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_chain_helmet"
+		},
+		"unlock": [
+			{
+				"item": "complementary:chainmail"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:chainmail"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"A A"
+		],
+		"result": {
+			"item": "chainmail_helmet",
+			"count": 1
+		}
+	}
+}

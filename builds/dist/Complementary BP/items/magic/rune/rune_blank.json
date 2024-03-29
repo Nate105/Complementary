@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:rune_blank",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.wizardry.runes"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:magic_runes"
+				]
+			},
+			"minecraft:icon": "complementary_rune_blank"
+		}
+	}
+}

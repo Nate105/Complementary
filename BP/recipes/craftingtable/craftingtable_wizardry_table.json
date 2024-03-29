@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_wizardry_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:crying_obsidian"
+			}
+		],
+		"key": {
+			"B": {
+				"item": "minecraft:crying_obsidian"
+			},
+			"C": {
+				"item": "complementary:rune_blank"
+			},
+			"D": {
+				"item": "minecraft:netherite_ingot"
+			}
+		},
+		"pattern": [
+			" C ",
+			"DBD",
+			"BBB"
+		],
+		"result": {
+			"item": "complementary:wizardry_table"
+		}
+	}
+}

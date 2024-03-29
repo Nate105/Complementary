@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "complementary:furnace_brick_andesite_cracked"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "complementary:brick_andesite",
+		"output": "complementary:brick_andesite_cracked"
+	}
+}

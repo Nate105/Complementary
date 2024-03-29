@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_healing_aura_scroll_level_x"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:healing_aura_scroll_level_ix"
+			},
+			"C": {
+				"item": "complementary:ruby"
+			},
+			"B": {
+				"item": "complementary:ruby"
+			},
+			"D": {
+				"item": "complementary:aroma_pod"
+			},
+			"E": {
+				"item": "complementary:common_ink"
+			}
+		},
+		"pattern": [
+			" C ",
+			"BAD",
+			" E "
+		],
+		"result": {
+			"item": "complementary:healing_aura_scroll_level_x"
+		}
+	}
+}

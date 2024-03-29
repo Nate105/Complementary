@@ -1,0 +1,25 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "complementary:deepslate_ruby_ore_feature"
+		},
+		"count": 8,
+		"replace_rules": [
+			{
+				"places_block": {
+					"name": "complementary:ruby_ore",
+					"states": {}
+				},
+				"may_replace": [
+					{
+						"name": "minecraft:deepslate"
+					},
+					{
+						"name": "minecraft:gravel"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,470 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:mangrove_shelf",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.deco.shelf"
+			},
+			"states": {
+				"complementary:rotation": [
+					1,
+					2,
+					3,
+					4,
+					5
+				],
+				"complementary:connecting_right_horizontal": [
+					false,
+					true
+				],
+				"complementary:connecting_left_horizontal": [
+					false,
+					true
+				],
+				"complementary:connecting_right_vertical": [
+					false,
+					true
+				],
+				"complementary:connecting_left_vertical": [
+					false,
+					true
+				]
+			}
+		},
+		"events": {
+			"complementary:rotate": {
+				"set_block_state": {
+					"complementary:rotation": "(query.cardinal_facing_2d)"
+				}
+			},
+			"complementary:update": {
+				"sequence": [
+					//Horizontal
+					{
+						"condition": "query.block_neighbor_has_any_tag(-1,0,0, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_left_horizontal": true
+						}
+					},
+					{
+						"condition": "query.block_neighbor_has_any_tag(1,0,0, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_right_horizontal": true
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(-1,0,0, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_left_horizontal": false
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(1,0,0, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_right_horizontal": false
+						}
+					},
+					//Vertical
+					{
+						"condition": "query.block_neighbor_has_any_tag(0,0,-1, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_left_vertical": true
+						}
+					},
+					{
+						"condition": "query.block_neighbor_has_any_tag(0,0,1, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_right_vertical": true
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,-1, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_left_vertical": false
+						}
+					},
+					{
+						"condition": "!query.block_neighbor_has_any_tag(0,0,1, 'complementary:shelf_connecting')",
+						"set_block_state": {
+							"complementary:connecting_right_vertical": false
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:rotation') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"right_support": false,
+							"left_support": false,
+							"base": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			//Rotation Value of 2 (180 Degrees)
+			{
+				"condition": "query.block_state('complementary:connecting_left_horizontal') == true && query.block_state('complementary:connecting_right_horizontal') == false && query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_horizontal') == true && query.block_state('complementary:connecting_left_horizontal') == false && query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_horizontal') == true && query.block_state('complementary:connecting_left_horizontal') == true && query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 2",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			//Rotation Value of 3 (0 Degrees)
+			{
+				"condition": "query.block_state('complementary:connecting_left_horizontal') == true && query.block_state('complementary:connecting_right_horizontal') == false && query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_horizontal') == true && query.block_state('complementary:connecting_left_horizontal') == false && query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_horizontal') == true && query.block_state('complementary:connecting_left_horizontal') == true && query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 3",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			//Rotation Value of 4 (270 Degrees)
+			{
+				"condition": "query.block_state('complementary:connecting_left_vertical') == true && query.block_state('complementary:connecting_right_vertical') == false && query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_vertical') == true && query.block_state('complementary:connecting_left_vertical') == false && query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_vertical') == true && query.block_state('complementary:connecting_left_vertical') == true && query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 4",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			//Rotation Value 5 (90 Degrees)
+			{
+				"condition": "query.block_state('complementary:connecting_left_vertical') == true && query.block_state('complementary:connecting_right_vertical') == false && query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_vertical') == true && query.block_state('complementary:connecting_left_vertical') == false && query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:connecting_right_vertical') == true && query.block_state('complementary:connecting_left_vertical') == true && query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.shelf_v2",
+						"bone_visibility": {
+							"left_support": false,
+							"right_support": false,
+							"display_bone": false
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rotation') == 5",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:on_player_placing": {
+				"event": "complementary:rotate"
+			},
+			"minecraft:queued_ticking": {
+				"interval_range": [
+					5,
+					5
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "complementary:update"
+				}
+			},
+			"minecraft:geometry": "geometry.shelf_v2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "complementary_mangrove_shelf_side",
+					"render_method": "alpha_test"
+				},
+				"up": {
+					"texture": "complementary_bordered_planks_mangrove",
+					"render_method": "alpha_test"
+				},
+				"down": {
+					"texture": "complementary_bordered_planks_mangrove",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					14,
+					-8
+				],
+				"size": [
+					16,
+					2,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					14,
+					-8
+				],
+				"size": [
+					16,
+					2,
+					16
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 20
+			},
+			"tag:axeDiggable": {},
+			"tag:complementary:shelf_connecting": {}
+		}
+	}
+}

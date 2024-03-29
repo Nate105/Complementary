@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:burst_seeds",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.seed"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:sniffer_seeds"
+				]
+			},
+			"minecraft:icon": "complementary_burst_seeds",
+			"minecraft:block_placer": {
+				"block": "complementary:burst_crop",
+				"use_on": [
+					"minecraft:farmland"
+				]
+			}
+		}
+	}
+}

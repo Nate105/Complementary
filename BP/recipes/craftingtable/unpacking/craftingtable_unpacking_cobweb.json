@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_unpacking_cobweb"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:web"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:web"
+			}
+		],
+		"result": {
+			"item": "minecraft:string",
+			"count": 9
+		}
+	}
+}

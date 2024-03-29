@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:ancient_manuscript",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.archeology.basic"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_ancient_manuscript"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transform_templates"
+				]
+			}
+		}
+	}
+}

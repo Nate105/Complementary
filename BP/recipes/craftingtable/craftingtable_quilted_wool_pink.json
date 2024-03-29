@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_quilted_wool_pink"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:string"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:pink_wool"
+			},
+			"B": {
+				"item": "minecraft:string"
+			}
+		},
+		"pattern": [
+			" B ",
+			"BAB",
+			" B "
+		],
+		"result": {
+			"item": "complementary:quilted_wool_pink",
+			"count": 3
+		}
+	}
+}

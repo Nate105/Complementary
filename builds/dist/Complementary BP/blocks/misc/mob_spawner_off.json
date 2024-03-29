@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:mob_spawner_off",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"events": {
+			"complementary:activate": {
+				"set_block": {
+					"block_type": "mob_spawner"
+				},
+				"decrement_stack": {},
+				"run_command": {
+					"command": [
+						"playsound respawn_anchor.charge @a ~ ~ ~"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:light_dampening": 5,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:on_interact": {
+				"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'complementary:ruby')",
+				"event": "complementary:activate"
+			}
+		}
+	}
+}

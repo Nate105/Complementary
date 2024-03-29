@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_meteor_slam_scroll"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:paper"
+			},
+			"C": {
+				"item": "minecraft:amethyst_block"
+			},
+			"D": {
+				"item": "complementary:dynamite_stick"
+			},
+			"E": {
+				"item": "minecraft:magma"
+			},
+			"F": {
+				"item": "complementary:uncommon_ink"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"CDE",
+			"FFF"
+		],
+		"result": {
+			"item": "complementary:meteor_slam_scroll_level_i"
+		}
+	}
+}

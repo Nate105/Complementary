@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:gloomy_substance",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_gloomy_substance"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.archeology.artifacts"
+			}
+		}
+	}
+}

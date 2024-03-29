@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "complementary:blockcutter_stone_to_tiles"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stone",
+                "data": 0
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:stone",
+                "data": 0
+            }
+        ],
+        "result": {
+            "item": "complementary:tiles_stone"
+        }
+    }
+}

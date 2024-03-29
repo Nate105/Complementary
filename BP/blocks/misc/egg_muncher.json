@@ -1,0 +1,79 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:egg_muncher"
+		},
+		"events": {
+			"complementary:hatch_muncher": {
+				"run_command": {
+					"command": [
+						"/playsound block.turtle_egg.break @a ~~~",
+						"/particle complementary:muncher_hatch ~~~"
+					]
+				},
+				"set_block": {
+					"block_type": "complementary:muncher"
+				}
+			}
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/muncher_egg.json",
+			"minecraft:geometry": "geometry.egg_muncher",
+			"minecraft:material_instances": {
+				"down": {
+					"texture": "complementary_egg_muncher_down",
+					"render_method": "opaque"
+				},
+				"up": {
+					"texture": "complementary_egg_muncher_up",
+					"render_method": "opaque"
+				},
+				"*": {
+					"texture": "complementary_egg_muncher_side",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					16,
+					14
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					16,
+					14
+				]
+			},
+			"minecraft:queued_ticking": {
+				"looping": false,
+				"interval_range": [
+					24000,
+					29000
+				],
+				"on_tick": {
+					"event": "complementary:hatch_muncher"
+				}
+			}
+		}
+	}
+}

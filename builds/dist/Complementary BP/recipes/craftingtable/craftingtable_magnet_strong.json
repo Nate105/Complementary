@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_magnet_strong"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:redstone"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:netherite_ingot"
+			},
+			"B": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:redstone"
+			}
+		},
+		"pattern": [
+			"A A",
+			"BCB",
+			"BBB"
+		],
+		"result": {
+			"item": "complementary:magnet_strong"
+		}
+	}
+}

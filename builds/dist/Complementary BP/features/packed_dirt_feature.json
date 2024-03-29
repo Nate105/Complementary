@@ -1,0 +1,16 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "complementary:packed_dirt_feature"
+		},
+		"places_block": {
+			"name": "complementary:packed_dirt"
+		},
+		"enforce_survivability_rules": false,
+		"enforce_placement_rules": false,
+		"may_replace": [
+			"minecraft:grass"
+		]
+	}
+}

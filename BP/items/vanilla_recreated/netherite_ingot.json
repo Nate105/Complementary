@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:netherite_ingot",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_netherite_ingot"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.metal"
+			}
+		}
+	}
+}

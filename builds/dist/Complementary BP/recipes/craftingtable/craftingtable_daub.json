@@ -1,0 +1,28 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_daub"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:clay_ball"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:clay"
+			},
+			{
+				"item": "minecraft:wheat"
+			}
+		],
+		"result": {
+			"item": "complementary:daub",
+			"count": 3
+		}
+	}
+}

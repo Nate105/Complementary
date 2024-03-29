@@ -1,0 +1,22 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:quilted_wool_light_blue",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.quiltedWool"
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.8
+			},
+			"tag:woolCustom": {},
+			"tag:minecraft:vibration_damper": {}
+		}
+	}
+}

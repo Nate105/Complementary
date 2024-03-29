@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_unpacking_blue_ice"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:blue_ice"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "minecraft:blue_ice"
+			}
+		],
+		"result": {
+			"item": "complementary:blue_ice_shard",
+			"count": 9
+		}
+	}
+}

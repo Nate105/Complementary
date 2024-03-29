@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_wicker_lamp_birch"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "minecraft:birch_planks"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "birch_planks"
+			},
+			"B": {
+				"item": "stick"
+			},
+			"C": {
+				"item": "lantern"
+			}
+		},
+		"pattern": [
+			"ABA",
+			"BCB",
+			"ABA"
+		],
+		"result": {
+			"item": "complementary:wicker_lamp_birch"
+		}
+	}
+}
