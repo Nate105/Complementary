@@ -1,31 +1,28 @@
 {
-	"format_version": "1.20.0",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "complementary:stone_axe"
-		},
-		"events": {
-			"complementary:durability_use": {
-				"damage": {
-					"amount": 1,
-					"target": "self",
-					"type": "durability"
-				}
-			},
-			"complementary:axe_use": {
-				"swing": {}
+			"identifier": "complementary:stone_axe",
+			"menu_category": {
+				"category": "equipment"
 			}
 		},
 		"components": {
-			"minecraft:creative_category": {
-				"category": "equipment"
+			"minecraft:icon": {
+				"texture": "complementary_stone_axe"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:stone_tier",
+					"minecraft:is_axe",
+					"minecraft:is_tool"
+				]
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
 				"max_durability": 132
 			},
-			"minecraft:mining_speed": 1,
 			"minecraft:damage": 4,
 			"minecraft:enchantable": {
 				"value": 5,
@@ -47,552 +44,307 @@
 					},
 					{
 						"items": [
-							"cobblestone"
-						],
-						"repair_amount": "query.max_durability * 0.25"
-					},
-					{
-						"items": [
-							"blackstone"
-						],
-						"repair_amount": "query.max_durability * 0.25"
-					},
-					{
-						"items": [
-							"cobbled_deepslate"
+							"minecraft:cobblestone",
+							"minecraft:blackstone",
+							"minecraft:cobbled_deepslate"
 						],
 						"repair_amount": "query.max_durability * 0.25"
 					}
 				]
 			},
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "complementary:axe_use"
-				}
-			},
-			"minecraft:use_on": {
-				"blocks": [
-					"log",
-					"log2",
-					"wood"
-				]
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
-				"on_dig": {
-					"event": "complementary:durability_use"
-				},
 				"destroy_speeds": [
 					{
 						"block": {
 							"tags": "query.any_tag('wood', 'pumpkin', 'plant', 'text_sign')"
 						},
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cherry_fence",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_fence",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cherry_door",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_door",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cherry_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cherry_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_planks",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cherry_planks",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_planks",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_planks",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_fence",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "stripped_bamboo_block",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_planks",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_trapdoor",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_trapdoor",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_door",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_door",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_fence_gate",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_fence_gate",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_fence",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_fence",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "stripped_crimson_hyphae",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "stripped_warped_hyphae",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "stripped_crimson_stem",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "stripped_warped_stem",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "beehive",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "soul_campfire",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_door",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_stem",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_stem",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "warped_hyphae",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crimson_hyphae",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cartography_table",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_mosaic_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_slab",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_mosaic_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_stairs",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "trapped_chest",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cartography_table",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "loom",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "lectern",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_mosaic",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "campfire",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo_block",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "jukebox",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bookshelf",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "chiseled_bookshelf",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "standing_banner",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "wall_banner",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "noteblock",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "mangrove_roots",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "composter",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bamboo",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "bed",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "cocoa",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "daylight_detector",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "red_mushroom_block",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "brown_mushroom_block",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "vine",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": {
 							"tags": "query.any_tag('axeDiggable')"
 						},
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "minecraft:chest",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "minecraft:melon_block",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "crafting_table",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					},
 					{
 						"block": "complementary:loot_crate",
-						"speed": 4,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 4
 					}
 				]
-			},
-			"minecraft:icon": {
-				"texture": "complementary_stone_axe"
-			},
-			"minecraft:display_name": {
-				"value": "Stone Axe"
-			},
-			"tag:minecraft:is_axe": {}
+			}
 		}
 	}
 }

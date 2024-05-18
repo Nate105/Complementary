@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:crafting_table_name_tag"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:rabbit_hide"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:rabbit_hide"
+			},
+			"B": {
+				"item": "minecraft:tripwire_hook"
+			}
+		},
+		"pattern": [
+			"  A",
+			" B ",
+			"B  "
+		],
+		"result": {
+			"item": "minecraft:name_tag",
+			"count": 2
+		}
+	}
+}

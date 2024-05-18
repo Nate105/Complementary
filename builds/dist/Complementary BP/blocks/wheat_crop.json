@@ -38,6 +38,21 @@
 				}
 			},
 			{
+				"condition": "query.block_state('complementary:fertilizer_type') == 2 && query.block_state('complementary:age') < 7",
+				"components": {
+					"minecraft:queued_ticking": {
+						"interval_range": [
+							1200,
+							2400
+						],
+						"looping": true,
+						"on_tick": {
+							"event": "complementary:grow"
+						}
+					}
+				}
+			},
+			{
 				"condition": "query.block_state('complementary:fertilizer_type') == 1 && query.block_state('complementary:age') < 7",
 				"components": {
 					"minecraft:queued_ticking": {
@@ -221,7 +236,7 @@
 				}
 			},
 			{
-				"condition": "query.block_state('complementary:age') == 7",
+				"condition": "query.block_state('complementary:age') == 7 && query.block_state('complementary:fertilizer_type') < 2",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -230,6 +245,41 @@
 						}
 					},
 					"minecraft:loot": "loot_tables/blocks/wheat_crop_mature_unmodified.json",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							15,
+							16
+						]
+					},
+					"minecraft:queued_ticking": {
+						"interval_range": [
+							0,
+							0
+						],
+						"looping": false,
+						"on_tick": {}
+					},
+					"minecraft:on_interact": {
+						"event": "complementary:smart_harvest"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:age') == 7 && query.block_state('complementary:fertilizer_type') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "complementary_wheat_7",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/blocks/wheat_crop_mature_yield.json",
 					"minecraft:selection_box": {
 						"origin": [
 							-8,
@@ -287,6 +337,12 @@
 						"condition": "query.block_neighbor_has_any_tag(0,-1,0,'complementary:rapid_fertilizer')",
 						"set_block_state": {
 							"complementary:fertilizer_type": 1
+						}
+					},
+					{
+						"condition": "query.block_neighbor_has_any_tag(0,-1,0,'complementary:yield_fertilizer')",
+						"set_block_state": {
+							"complementary:fertilizer_type": 2
 						}
 					}
 				]

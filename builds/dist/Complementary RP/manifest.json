@@ -6,7 +6,7 @@
 		],
 		"generated_with": {
 			"bridge": [
-				"2.7.15"
+				"2.7.16"
 			],
 			"dash": [
 				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
@@ -24,8 +24,8 @@
 		"uuid": "869b909d-7b89-4089-bc2a-362f00038fba",
 		"version": [
 			3,
-			0,
-			12
+			1,
+			0
 		]
 	},
 	"modules": [
@@ -34,8 +34,8 @@
 			"uuid": "37063e0b-d7ea-4340-81ad-454f0fa4d4e5",
 			"version": [
 				3,
-				0,
-				12
+				1,
+				0
 			]
 		}
 	]

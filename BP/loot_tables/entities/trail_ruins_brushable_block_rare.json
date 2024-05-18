@@ -68,12 +68,12 @@
         },
         {
           "type": "item",
-          "name": "complementary:pickaxe_fragments",
+          "name": "complementary:fragmented_platinum_pickaxe",
           "weight": 3
         },
         {
           "type": "item",
-          "name": "complementary:claymore_fragments",
+          "name": "complementary:fragmented_platinum_sword",
           "weight": 3
         },
         {

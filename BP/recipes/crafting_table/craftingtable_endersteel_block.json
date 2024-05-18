@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_endersteel_block"
+		},
+		"unlock": [
+			{
+				"item": "complementary:endersteel_ingot"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:endersteel_ingot",
+				"count": 9
+			}
+		],
+		"result": {
+			"item": "complementary:endersteel_block",
+			"count": 1
+		}
+	}
+}

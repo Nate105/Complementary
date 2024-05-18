@@ -203,7 +203,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_sword",
+          "name": "complementary:steel_sword",
           "weight": 3,
           "functions": [
             {
@@ -218,7 +218,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_boots",
+          "name": "complementary:steel_boots",
           "weight": 3,
           "functions": [
             {
@@ -233,7 +233,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_chestplate",
+          "name": "complementary:steel_chestplate",
           "weight": 3,
           "functions": [
             {
@@ -248,7 +248,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_leggings",
+          "name": "complementary:steel_leggings",
           "weight": 3,
           "functions": [
             {
@@ -263,7 +263,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_helmet",
+          "name": "complementary:steel_helmet",
           "weight": 3,
           "functions": [
             {
@@ -278,7 +278,7 @@
         },
         {
           "type": "item",
-          "name": "complementary:iron_pickaxe",
+          "name": "complementary:steel_pickaxe",
           "weight": 3,
           "functions": [
             {
@@ -293,7 +293,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:iron_shovel",
+          "name": "complementary:steel_shovel",
           "weight": 3,
           "functions": [
             {
@@ -305,6 +305,11 @@
               }
             }
           ]
+        },
+        {
+          "type": "item",
+          "name": "complementary:endersteel_ingot",
+          "weight": 1
         }
       ]
     },
@@ -313,12 +318,27 @@
       "entries": [
         {
           "type": "empty",
-          "weight": 14
+          "weight": 13
         },
         {
           "type": "item",
           "name": "minecraft:spire_armor_trim_smithing_template",
           "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "complementary:broken_endersteel_upgrade_smithing_template",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§r§7Endersteel Upgrade",
+                "",
+                "§r§4Requires Repair"
+              ]
+            }
+          ]
         }
       ]
     }

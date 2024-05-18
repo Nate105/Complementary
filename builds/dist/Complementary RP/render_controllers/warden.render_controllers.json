@@ -1,0 +1,151 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.warden": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.warden_bioluminescent_layer": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"texture.bioluminescent_layer"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "0.7"
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		},
+		"controller.render.warden_spots_1": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"texture.spots_1"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "variable.spots_1_alpha"
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		},
+		"controller.render.warden_spots_2": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"texture.spots_2"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "variable.spots_2_alpha"
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		},
+		"controller.render.warden_tendrils": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"texture.tendrils"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "variable.tendrils_alpha"
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		},
+		"controller.render.warden_heart": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.bioluminescent_layer"
+				}
+			],
+			"textures": [
+				"texture.heart"
+			],
+			"ignore_lighting": true,
+			"color": {
+				"r": 1,
+				"g": 1,
+				"b": 1,
+				"a": "query.hurt_time>0?0.2:variable.heart_alpha"
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

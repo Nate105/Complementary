@@ -89,7 +89,7 @@
         },
         {
           "type": "item",
-          "name": "complementary:golden_axe",
+          "name": "complementary:gold_axe",
           "functions": [
             {
               "function": "enchant_randomly"
@@ -119,7 +119,7 @@
         },
         {
           "type": "item",
-          "name": "complementary:golden_pickaxe",
+          "name": "complementary:gold_pickaxe",
           "functions": [
             {
               "function": "enchant_randomly"

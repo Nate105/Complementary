@@ -20,25 +20,42 @@
 			}
 		},
 		"events": {
+			"complementary:destroyed": {
+				"run_command": {
+					"command": [
+						"/playsound break.decorated_pot @a ~~~"
+					]
+				}
+			},
 			"complementary:apply_decal": {
 				"set_block_state": {
 					"complementary:decal": 1
 				},
 				"run_command": {
-					"command": "/playsound block.false_permissions @a ~~~"
+					"command": [
+						"/playsound game.player.attack.nodamage @a ~~~",
+						"/playsound smithing_table.use @a ~-0.5~~-0.5",
+						"/particle complementary:adjust_decal_emitter ~~~"
+					]
 				},
-				"decrement_stack": {}
+				"decrement_stack": {},
+				"swing": {}
 			},
 			"complementary:adjust_decal": {
 				"sequence": [
 					{
-						"condition": "!query.is_sneaking",
+						"condition": "!query.is_sneaking && query.block_state('complementary:decal') < 6",
 						"set_block_state": {
 							"complementary:decal": "math.min(query.block_state('complementary:decal') + 1, 6)"
 						},
 						"run_command": {
-							"command": "/playsound block.false_permissions @a ~~~"
-						}
+							"command": [
+								"/playsound game.player.attack.nodamage @a ~~~",
+								"/playsound smithing_table.use @a ~~~",
+								"/particle complementary:adjust_decal_emitter ~~~"
+							]
+						},
+						"swing": {}
 					},
 					{
 						"condition": "query.block_state('complementary:decal') == 6",
@@ -46,8 +63,13 @@
 							"complementary:decal": 1
 						},
 						"run_command": {
-							"command": "/playsound block.false_permissions @a ~~~"
-						}
+							"command": [
+								"/playsound game.player.attack.nodamage @a ~~~",
+								"/playsound smithing_table.use @a ~~~",
+								"/particle complementary:adjust_decal_emitter ~~~"
+							]
+						},
+						"swing": {}
 					}
 				]
 			}

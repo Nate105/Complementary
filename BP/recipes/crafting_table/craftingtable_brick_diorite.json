@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_brick_diorite"
+		},
+		"unlock": [
+			{
+				"item": "complementary:tiles_diorite"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:tiles_diorite"
+			}
+		},
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"result": {
+			"item": "complementary:brick_diorite",
+			"count": 4
+		}
+	}
+}

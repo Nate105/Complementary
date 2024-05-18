@@ -76,5 +76,17 @@
         "flipbook_texture": "textures/blocks/gloomy_eye",
         "ticks_per_frame": 30,
         "blend_frames": false
+    },
+    {
+        "atlas_tile": "complementary_muncher_face",
+        "flipbook_texture": "textures/blocks/muncher_face",
+        "ticks_per_frame": 15,
+        "blend_frames": false
+    },
+    {
+        "atlas_tile": "complementary_muncher_face_energized",
+        "flipbook_texture": "textures/blocks/muncher_face_energized",
+        "ticks_per_frame": 15,
+        "blend_frames": false
     }
 ]

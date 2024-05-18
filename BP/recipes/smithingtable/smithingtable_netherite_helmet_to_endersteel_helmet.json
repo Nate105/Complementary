@@ -7,7 +7,7 @@
 		"tags": [
 			"smithing_table"
 		],
-		"template": "complementary:endersteel_alloy_upgrade_smithing_template",
+		"template": "complementary:endersteel_upgrade_smithing_template",
 		"base": "minecraft:netherite_helmet",
 		"addition": "minecraft:netherite_ingot",
 		"result": "complementary:endersteel_helmet"

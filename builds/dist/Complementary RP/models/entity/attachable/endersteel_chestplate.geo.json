@@ -147,7 +147,7 @@
 								12,
 								4
 							],
-							"inflate": 1,
+							"inflate": 0.95,
 							"uv": {
 								"north": {
 									"uv": [
@@ -222,7 +222,7 @@
 								12,
 								4
 							],
-							"inflate": 1.25,
+							"inflate": 1.1,
 							"uv": {
 								"north": {
 									"uv": [
@@ -317,7 +317,7 @@
 								12,
 								4
 							],
-							"inflate": 1.25,
+							"inflate": 1.1,
 							"uv": {
 								"north": {
 									"uv": [
@@ -392,7 +392,7 @@
 								12,
 								4
 							],
-							"inflate": 1,
+							"inflate": 0.95,
 							"uv": {
 								"north": {
 									"uv": [

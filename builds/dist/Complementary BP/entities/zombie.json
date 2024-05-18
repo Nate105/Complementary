@@ -122,7 +122,7 @@
 				"minecraft:health": {
 					"max": 150,
 					"value": {
-						"range_min": 100,
+						"range_min": 125,
 						"range_max": 150
 					}
 				},
@@ -245,7 +245,7 @@
 			"minecraft:can_climb": {},
 			"minecraft:health": {
 				"value": {
-					"range_min": 20,
+					"range_min": 25,
 					"range_max": 30
 				},
 				"max": 30

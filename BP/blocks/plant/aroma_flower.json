@@ -11,7 +11,7 @@
 			"complementary:heal_aura": {
 				"run_command": {
 					"command": [
-						"/effect @a[r=7] instant_health 1 0 true",
+						"/effect @a[r=7] regeneration 3 2 true",
 						"/particle complementary:heal_fragrance_particle ~~0.5~"
 					]
 				}
@@ -24,7 +24,8 @@
 				"run_command": {
 					"command": [
 						"/playsound mob.sheep.shear @a ~~~",
-						"/setblock ~~~ air"
+						"/setblock ~~~ air",
+						"/playsound dig.vines @a ~~~"
 					]
 				}
 			}

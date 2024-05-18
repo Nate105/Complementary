@@ -17,15 +17,21 @@
 				"item": "minecraft:bone_meal"
 			},
 			"B": {
-				"item": "complementary:leafy_hook"
+				"item": "minecraft:rotten_flesh"
 			},
 			"C": {
 				"item": "complementary:sack"
+			},
+			"D": {
+				"item": "minecraft:bone"
+			},
+			"E": {
+				"item": "minecraft:spider_eye"
 			}
 		},
 		"pattern": [
 			"AAA",
-			"ABA",
+			"DBE",
 			" C "
 		],
 		"result": {

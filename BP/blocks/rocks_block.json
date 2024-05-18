@@ -1,0 +1,168 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "complementary:rocks_block",
+			"states": {
+				"complementary:rock_amount": [
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"events": {
+			"complementary:add_rocks": {
+				"set_block_state": {
+					"complementary:rock_amount": "query.block_state('complementary:rock_amount') + 1"
+				},
+				"run_command": {
+					"command": [
+						"/playsound use.stone @a ~~~"
+					]
+				},
+				"decrement_stack": {
+					"ignore_game_mode": false
+				},
+				"swing": {}
+			},
+			"complementary:drop_extra_rocks": {
+				"sequence": [
+					{
+						"condition": "query.block_state('complementary:rock_amount') == 2",
+						"run_command": {
+							"command": [
+								"/function block/drop_extra_rocks"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:rock_amount') == 3",
+						"run_command": {
+							"command": [
+								"/function block/drop_extra_rocks",
+								"/function block/drop_extra_rocks"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:rock_amount') == 4",
+						"run_command": {
+							"command": [
+								"/function block/drop_extra_rocks",
+								"/function block/drop_extra_rocks",
+								"/function block/drop_extra_rocks"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('complementary:rock_amount') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.rocks",
+						"bone_visibility": {
+							"main_rock": true,
+							"rock_2": false,
+							"rock_3": false,
+							"rock_4": false
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:rocks')",
+						"event": "complementary:add_rocks"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rock_amount') == 2",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.rocks",
+						"bone_visibility": {
+							"main_rock": true,
+							"rock_2": true,
+							"rock_3": false,
+							"rock_4": false
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:rocks')",
+						"event": "complementary:add_rocks"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rock_amount') == 3",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.rocks",
+						"bone_visibility": {
+							"main_rock": true,
+							"rock_2": true,
+							"rock_3": true,
+							"rock_4": false
+						}
+					},
+					"minecraft:on_interact": {
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:rocks')",
+						"event": "complementary:add_rocks"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:rock_amount') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.rocks",
+						"bone_visibility": {
+							"main_rock": true,
+							"rock_2": true,
+							"rock_3": true,
+							"rock_4": true
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "complementary_rocks",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "stone",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					6,
+					6
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/rocks.json",
+			"minecraft:on_player_destroyed": {
+				"event": "complementary:drop_extra_rocks"
+			}
+		}
+	}
+}

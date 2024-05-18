@@ -17,12 +17,13 @@
 			"minecraft:icon": "complementary_savory_stem",
 			"minecraft:food": {
 				"nutrition": 5,
-				"saturation_modifier": 0.75
+				"saturation_modifier": 0.75,
+				"can_always_eat": false
 			},
 			"minecraft:hand_equipped": true,
 			"minecraft:use_modifiers": {
 				"use_duration": 1,
-				"movement_modifier": 0.25
+				"movement_modifier": 0.35
 			},
 			"minecraft:use_animation": "eat"
 		}

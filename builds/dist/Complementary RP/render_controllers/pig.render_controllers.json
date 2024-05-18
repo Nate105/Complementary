@@ -1,0 +1,45 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.pig": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.pink",
+						"Texture.pink_saddled",
+						"Texture.mottled",
+						"Texture.mottled_saddled",
+						"Texture.piebald",
+						"Texture.piebald_saddled",
+						"Texture.spotted",
+						"Texture.spotted_saddled",
+						"Texture.pale",
+						"Texture.pale_saddled",
+						"Texture.sooty",
+						"Texture.sooty_saddled",
+						"Texture.pink_footed",
+						"Texture.pink_footed_saddled"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.variant+query.is_saddled]"
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

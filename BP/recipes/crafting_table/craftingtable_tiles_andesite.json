@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_tiles_andesite"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:polished_andesite"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:polished_andesite"
+			}
+		},
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"result": {
+			"item": "complementary:tiles_andesite",
+			"count": 4
+		}
+	}
+}

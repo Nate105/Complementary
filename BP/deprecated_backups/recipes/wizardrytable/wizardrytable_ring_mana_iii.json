@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_ring_mana_iii"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:mana_ring_ii"
+			},
+			"B": {
+				"item": "minecraft:crying_obsidian"
+			}
+		},
+		"pattern": [
+			" B ",
+			"BAB",
+			" B "
+		],
+		"result": {
+			"item": "complementary:mana_ring_iii"
+		}
+	}
+}

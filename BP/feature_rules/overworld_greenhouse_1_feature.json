@@ -1,0 +1,55 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "complementary:overworld_greenhouse_1_feature",
+			"places_feature": "complementary:greenhouse_1_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "plains"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "flower_forest"
+						}
+					]
+				}
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"y": "query.heightmap(variable.worldx,variable.worldz) - 1",
+			"z": {
+				"extent": [
+					0,
+					16
+				],
+				"distribution": "uniform"
+			},
+			"scatter_chance": {
+				"numerator": 1,
+				"denominator": 120
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_soulstealer"
+		},
+		"unlock": [
+			{
+				"item": "minecraft:echo_shard"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:echo_shard"
+			},
+			"B": {
+				"item": "complementary:withered_bone"
+			},
+			"C": {
+				"item": "complementary:ruby"
+			}
+		},
+		"pattern": [
+			"  A",
+			"CA ",
+			"BC "
+		],
+		"result": {
+			"item": "complementary:soulstealer"
+		}
+	}
+}

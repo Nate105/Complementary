@@ -1,0 +1,261 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"num_to_select": 2,
+					"trades": [
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:common_ink",
+									"quantity": 1
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:uncommon_ink",
+									"quantity": 1
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 2
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:rare_ink",
+									"quantity": 1
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:emerald",
+									"quantity": 3
+								}
+							],
+							"reward_exp": true
+						}
+					]
+				},
+				{
+					"num_to_select": 1,
+					"trades": [
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:arcane_shot_scroll_level_i"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_shard",
+									"quantity": 24
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:arcane_shot_scroll_level_ii"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_shard",
+									"quantity": 34
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:arcane_shot_scroll_level_iii"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_shard",
+									"quantity": 44
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:arcane_shot_scroll_level_iv"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_shard",
+									"quantity": 54
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:arcane_shot_scroll_level_v"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_shard",
+									"quantity": 64
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						}
+					]
+				},
+				{
+					"num_to_select": 1,
+					"trades": [
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:meteor_slam_scroll_level_i"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_block",
+									"quantity": 10
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:meteor_slam_scroll_level_ii"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_block",
+									"quantity": 15
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:meteor_slam_scroll_level_iii"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_block",
+									"quantity": 20
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:meteor_slam_scroll_level_iv"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_block",
+									"quantity": 25
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						},
+						{
+							"max_uses": 3,
+							"gives": [
+								{
+									"item": "complementary:meteor_slam_scroll_level_v"
+								}
+							],
+							"wants": [
+								{
+									"item": "minecraft:amethyst_block",
+									"quantity": 30
+								},
+								{
+									"item": "minecraft:paper",
+									"quantity": 1
+								}
+							],
+							"reward_exp": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

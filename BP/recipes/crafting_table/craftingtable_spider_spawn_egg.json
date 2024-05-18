@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_spider_spawn_egg"
+		},
+		"unlock": [
+			{
+				"item": "complementary:blank_spawn_egg"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:blank_spawn_egg"
+			},
+			"B": {
+				"item": "complementary:soul"
+			},
+			"C": {
+				"item": "minecraft:string"
+			}
+		},
+		"pattern": [
+			" B ",
+			"CAC",
+			" C "
+		],
+		"result": {
+			"item": "minecraft:spider_spawn_egg"
+		}
+	}
+}

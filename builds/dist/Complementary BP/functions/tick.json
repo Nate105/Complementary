@@ -8,12 +8,6 @@
 		"items/mirror/mirror_arrow",
 		"items/mirror/mirror_b3lv3d",
 		"items/mirror/mirror_trident",
-		"items/mirror/mirror_ice_beam",
-		"magic/items/arcane_meteor_help",
-		"magic/items/mana_ring_handler",
-		"magic/mana_modifier_particle_handler",
-		"magic/magic_particle",
-		"magic/mana_handler",
-		"magic/mana_boost_handler"
+		"items/mirror/mirror_ice_beam"
 	]
 }

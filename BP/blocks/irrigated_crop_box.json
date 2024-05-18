@@ -35,6 +35,7 @@
 				}
 			},
 			"complementary:interact_handler": {
+				"swing": {},
 				"sequence": [
 					//Fertilizer
 					{
@@ -46,6 +47,19 @@
 							"command": [
 								"/playsound item.bone_meal.use @a ~~~",
 								"/particle complementary:rapid_fertilizer_emitter ~~~"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:yield_fertilizer')",
+						"set_block_state": {
+							"complementary:boosted": 2
+						},
+						"run_command": {
+							"command": [
+								"/playsound item.bone_meal.use @a ~~~",
+								"/particle complementary:yield_fertilizer_emitter ~~~"
 							]
 						},
 						"decrement_stack": {}
@@ -64,6 +78,17 @@
 					},
 					{
 						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:wheat_seeds') && query.block_state('complementary:boosted') == 1'",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:wheat_crop destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:wheat_seeds') && query.block_state('complementary:boosted') == 2'",
 						"run_command": {
 							"command": [
 								"/setblock ~~1~ complementary:wheat_crop destroy",
@@ -96,6 +121,17 @@
 						},
 						"decrement_stack": {}
 					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:carrot') && query.block_state('complementary:boosted') == 2",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:carrot_crop destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
 					//Potato
 					{
 						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:potato') && query.block_state('complementary:boosted') == 0",
@@ -110,6 +146,17 @@
 					},
 					{
 						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:potato') && query.block_state('complementary:boosted') == 1",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:potato_crop destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:potato') && query.block_state('complementary:boosted') == 2",
 						"run_command": {
 							"command": [
 								"/setblock ~~1~ complementary:potato_crop destroy",
@@ -136,6 +183,119 @@
 						"run_command": {
 							"command": [
 								"/setblock ~~1~ complementary:beetroot_crop destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:beetroot_seeds') && query.block_state('complementary:boosted') == 2",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:beetroot_crop destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					//Hookplant
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:hook_seeds') && query.block_state('complementary:boosted') == 0",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:hookplant_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:hook_seeds') && query.block_state('complementary:boosted') == 1",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:hookplant_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:hook_seeds') && query.block_state('complementary:boosted') == 2",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:hookplant_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					//Aroma Blossom
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:aroma_crop_seeds') && query.block_state('complementary:boosted') == 0",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:aroma_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:aroma_crop_seeds') && query.block_state('complementary:boosted') == 1",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:aroma_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:aroma_crop_seeds') && query.block_state('complementary:boosted') == 2",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:aroma_crop_boxed destroy",
+								"/playsound dig.vines @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					//Burst Fruit
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:burst_seeds') && query.block_state('complementary:boosted') == 0",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:burst_crop_boxed destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:burst_seeds') && query.block_state('complementary:boosted') == 1",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:burst_crop_boxed destroy",
+								"/playsound dig.grass @a ~~~",
+								"/playsound crop.place.inbox @a ~~~ 1 0.8"
+							]
+						},
+						"decrement_stack": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:burst_seeds') && query.block_state('complementary:boosted') == 2",
+						"run_command": {
+							"command": [
+								"/setblock ~~1~ complementary:burst_crop_boxed destroy",
 								"/playsound dig.grass @a ~~~",
 								"/playsound crop.place.inbox @a ~~~ 1 0.8"
 							]
@@ -195,6 +355,22 @@
 				"condition": "query.block_state('complementary:boosted') == 1",
 				"components": {
 					"tag:complementary:rapid_fertilizer": {},
+					"minecraft:queued_ticking": {
+						"interval_range": [
+							120000,
+							120000
+						],
+						"looping": true,
+						"on_tick": {
+							"event": "complementary:boost_removal"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('complementary:boosted') == 2",
+				"components": {
+					"tag:complementary:yield_fertilizer": {},
 					"minecraft:queued_ticking": {
 						"interval_range": [
 							120000,

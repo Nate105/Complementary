@@ -1,0 +1,29 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_brick_small_diorite"
+		},
+		"unlock": [
+			{
+				"item": "complementary:brick_diorite"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:brick_diorite"
+			}
+		},
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"result": {
+			"item": "complementary:brick_small_diorite",
+			"count": 4
+		}
+	}
+}

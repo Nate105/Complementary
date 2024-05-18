@@ -112,8 +112,21 @@
         },
         {
           "type": "item",
-          "name": "complementary:ancient_manuscript",
-          "weight": 2
+          "name": "complementary:restoration_smithing_template",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§r§7Archeological Restoration",
+                "",
+                "§r§7Applies to:",
+                "§r§9 Fragmented Tools",
+                "§r§7Ingredients:",
+                "§r§9 Transmutable Alloy"
+              ]
+            }
+          ]
         },
         {
           "type": "item",
@@ -122,7 +135,17 @@
         },
         {
           "type": "item",
-          "name": "complementary:muncher_egg",
+          "name": "complementary:muncher_egg_item",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "complementary:experience_charge",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "complementary:blank_spawn_egg",
           "weight": 1
         }
       ]

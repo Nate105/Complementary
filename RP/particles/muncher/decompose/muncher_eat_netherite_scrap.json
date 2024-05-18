@@ -5,7 +5,7 @@
 			"identifier": "complementary:muncher_eat_netherite_scrap",
 			"basic_render_parameters": {
 				"material": "particles_alpha",
-				"texture": "textures/items/netherite_scrap"
+				"texture": "textures/items/transmutable_scrap"
 			}
 		},
 		"components": {
@@ -57,7 +57,8 @@
 				"collision_drag": 5,
 				"coefficient_of_restitution": 0.1,
 				"collision_radius": 0.1
-			}
+			},
+			"minecraft:particle_appearance_lighting": {}
 		}
 	}
 }

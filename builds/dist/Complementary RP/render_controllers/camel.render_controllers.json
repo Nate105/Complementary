@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.camel": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"part_visibility": [
+				{
+					"saddle": "query.is_saddled"
+				},
+				{
+					"bridle": "query.is_saddled"
+				},
+				{
+					"reins*": "query.is_saddled && query.has_rider"
+				}
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

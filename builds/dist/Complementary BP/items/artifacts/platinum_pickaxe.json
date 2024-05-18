@@ -1,0 +1,1197 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:platinum_pickaxe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.pickaxe"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_platinum_pickaxe",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_pickaxe",
+					"minecraft:is_tool",
+					"complementary:platinum_tier"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 6104
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:platinum_pickaxe"
+						],
+						"repair_amount": "context.other->query.remaining_durability+0.12*context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability*0.5"
+					}
+				]
+			},
+			"minecraft:damage": 5,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('stone', 'metal')"
+						},
+						"speed": 25
+					},
+					{
+						"block": {
+							"tags": "query.any_tag('woodpickaxeDiggable','ironpickaxeDiggable')"
+						},
+						"speed": 29
+					},
+					{
+						"block": "complementary:crystal_obsidian",
+						"speed": 29
+					},
+					{
+						"block": "complementary:wizardry_table",
+						"speed": 29
+					},
+					{
+						"block": "complementary:creepy_plating",
+						"speed": 25
+					},
+					{
+						"block": "normal_stone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "stone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "stonebrick",
+						"speed": 25
+					},
+					{
+						"block": "quartz_ore",
+						"speed": 25
+					},
+					{
+						"block": "nether_gold_ore",
+						"speed": 25
+					},
+					{
+						"block": "observer",
+						"speed": 25
+					},
+					{
+						"block": "grindstone",
+						"speed": 25
+					},
+					{
+						"block": "brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "mossy_cobblestone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "nether_brick",
+						"speed": 25
+					},
+					{
+						"block": "nether_brick_fence",
+						"speed": 25
+					},
+					{
+						"block": "nether_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "chiseled_nether_bricks",
+						"speed": 25
+					},
+					{
+						"block": "cracked_nether_bricks",
+						"speed": 25
+					},
+					{
+						"block": "red_nether_brick",
+						"speed": 25
+					},
+					{
+						"block": "red_nether_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "blackstone",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone",
+						"speed": 25
+					},
+					{
+						"block": "chiseled_polished_blackstone",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_bricks",
+						"speed": 25
+					},
+					{
+						"block": "cracked_polished_blackstone_bricks",
+						"speed": 25
+					},
+					{
+						"block": "gilded_blackstone",
+						"speed": 25
+					},
+					{
+						"block": "blackstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "blackstone_wall",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_brick_wall",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_wall",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "blackstone_slab",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_slab",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_brick_slab",
+						"speed": 25
+					},
+					{
+						"block": "undyed_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "gray_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "light_gray_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "white_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "black_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "brown_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "red_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "orange_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "yellow_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "lime_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "light_blue_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "blue_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "purple_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "magenta_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "pink_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "red_concrete",
+						"speed": 25
+					},
+					{
+						"block": "blue_concrete",
+						"speed": 25
+					},
+					{
+						"block": "gray_concrete",
+						"speed": 25
+					},
+					{
+						"block": "lime_concrete",
+						"speed": 25
+					},
+					{
+						"block": "pink_concrete",
+						"speed": 25
+					},
+					{
+						"block": "green_concrete",
+						"speed": 25
+					},
+					{
+						"block": "black_concrete",
+						"speed": 25
+					},
+					{
+						"block": "brown_concrete",
+						"speed": 25
+					},
+					{
+						"block": "cyan_concrete",
+						"speed": 25
+					},
+					{
+						"block": "white_concrete",
+						"speed": 25
+					},
+					{
+						"block": "orange_concrete",
+						"speed": 25
+					},
+					{
+						"block": "purple_concrete",
+						"speed": 25
+					},
+					{
+						"block": "yellow_concrete",
+						"speed": 25
+					},
+					{
+						"block": "magenta_concrete",
+						"speed": 25
+					},
+					{
+						"block": "light_blue_concrete",
+						"speed": 25
+					},
+					{
+						"block": "light_gray_concrete",
+						"speed": 25
+					},
+					{
+						"block": "green_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "andesite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "polished_andesite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "granite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "polished_granite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "diorite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "polished_diorite_stairs",
+						"speed": 25
+					},
+					{
+						"block": "prismarine",
+						"speed": 25
+					},
+					{
+						"block": "prismarine_stairs",
+						"speed": 25
+					},
+					{
+						"block": "prismarine_bricks_stairs",
+						"speed": 25
+					},
+					{
+						"block": "dark_prismarine_stairs",
+						"speed": 25
+					},
+					{
+						"block": "purpur_block",
+						"speed": 25
+					},
+					{
+						"block": "purpur_stairs",
+						"speed": 25
+					},
+					{
+						"block": "smooth_stone",
+						"speed": 25
+					},
+					{
+						"block": "stone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "stone_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "mossy_stone_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "amethyst_block",
+						"speed": 25
+					},
+					{
+						"block": "tuff",
+						"speed": 25
+					},
+					{
+						"block": "mud_bricks",
+						"speed": 25
+					},
+					{
+						"block": "mud_brick_slab",
+						"speed": 25
+					},
+					{
+						"block": "mud_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "mud_brick_wall",
+						"speed": 25
+					},
+					{
+						"block": "hardened_clay",
+						"speed": 25
+					},
+					{
+						"block": "white_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "light_gray_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "gray_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "black_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "brown_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "red_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "orange_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "yellow_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "lime_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "green_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "cyan_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "light_blue_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "blue_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "purple_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "magenta_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "pink_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "white_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "silver_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "gray_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "black_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "brown_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "red_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "orange_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "yellow_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "lime_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "green_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "cyan_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "light_blue_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "blue_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "purple_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "magenta_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "pink_glazed_terracotta",
+						"speed": 25
+					},
+					{
+						"block": "basalt",
+						"speed": 25
+					},
+					{
+						"block": "polished_basalt",
+						"speed": 25
+					},
+					{
+						"block": "smooth_basalt",
+						"speed": 25
+					},
+					{
+						"block": "quartz_block",
+						"speed": 25
+					},
+					{
+						"block": "quartz_bricks",
+						"speed": 25
+					},
+					{
+						"block": "quartz_bricks",
+						"speed": 25
+					},
+					{
+						"block": "quartz_stairs",
+						"speed": 25
+					},
+					{
+						"block": "smooth_quartz_stairs",
+						"speed": 25
+					},
+					{
+						"block": "sandstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "smooth_sandstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "red_sandstone",
+						"speed": 25
+					},
+					{
+						"block": "red_sandstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "smooth_red_sandstone_stairs",
+						"speed": 25
+					},
+					{
+						"block": "calcite",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_button",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_pressure_plate",
+						"speed": 25
+					},
+					{
+						"block": "magma",
+						"speed": 25
+					},
+					{
+						"block": "netherrack",
+						"speed": 25
+					},
+					{
+						"block": "crimson_nylium",
+						"speed": 25
+					},
+					{
+						"block": "warped_nylium",
+						"speed": 25
+					},
+					{
+						"block": "cyan_shulker_box",
+						"speed": 25
+					},
+					{
+						"block": "bone_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:anvil",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:bell",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:coal_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:emerald_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:redstone_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:chain",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:enchanting_table",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:iron_bars",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:iron_door",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:iron_trapdoor",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:mob_spawner",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_coal_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:blast_furnace",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cobbled_deepslate",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:chiseled_deepslate",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_bricks",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cracked_deepslate_bricks",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_tiles",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cracked_deepslate_tiles",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_brick_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_tile_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:polished_deepslate",
+						"speed": 25
+					},
+					{
+						"block": "polished_deepslate_slab",
+						"speed": 25
+					},
+					{
+						"block": "cobbled_deepslate_stairs",
+						"speed": 25
+					},
+					{
+						"block": "polished_deepslate_stairs",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_tile_stairs",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "cobbled_deepslate_wall",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_tile_wall",
+						"speed": 25
+					},
+					{
+						"block": "polished_deepslate_wall",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_brick_wall",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:dispenser",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:dropper",
+						"speed": 25
+					},
+					{
+						"block": "stonecutter_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:dropper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:furnace",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lantern",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lodestone",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:smoker",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:stonecutter",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:conduit",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:coal_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:hopper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 25
+					},
+					{
+						"block": "end_bricks",
+						"speed": 25
+					},
+					{
+						"block": "end_brick_stairs",
+						"speed": 25
+					},
+					{
+						"block": "stone_block_slab",
+						"speed": 25
+					},
+					{
+						"block": "stone_block_slab2",
+						"speed": 25
+					},
+					{
+						"block": "stone_block_slab3",
+						"speed": 25
+					},
+					{
+						"block": "stone_block_slab4",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:iron_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_iron_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:copper_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_copper_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lapis_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_lapis_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:copper_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:exposed_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_exposed_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:weathered_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_weathered_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:oxidized_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_oxidized_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:exposed_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:weathered_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_stairs",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:raw_iron_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lapis_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:redstone_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_redstone_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lit_redstone_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lit_deepslate_redstone_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:gold_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_gold_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:diamond_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_diamond_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:emerald_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:deepslate_emerald_ore",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:gold_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:emerald_block",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:diamond_block",
+						"speed": 25
+					},
+					{
+						"block": "obsidian",
+						"speed": 25
+					},
+					{
+						"block": "crying_obsidian",
+						"speed": 25
+					},
+					{
+						"block": "ancient_debris",
+						"speed": 25
+					},
+					{
+						"block": "netherite_block",
+						"speed": 25
+					},
+					{
+						"block": "double_stone_block_slab",
+						"speed": 25
+					},
+					{
+						"block": "double_stone_block_slab2",
+						"speed": 25
+					},
+					{
+						"block": "double_stone_block_slab3",
+						"speed": 25
+					},
+					{
+						"block": "double_stone_block_slab4",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_tile_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "deepslate_brick_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "cobbled_deepslate_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "polished_deepslate_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "blackstone_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "polished_blackstone_brick_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "mud_brick_double_slab",
+						"speed": 25
+					},
+					{
+						"block": "double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "waxed_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "exposed_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "oxidized_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "weathered_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "waxed_exposed_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "waxed_oxidized_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "waxed_weathered_double_cut_copper_slab",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lit_furnace",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lit_smoker",
+						"speed": 25
+					},
+					{
+						"block": "minecraft:lit_blast_furnace",
+						"speed": 25
+					},
+					{
+						"block": "rail",
+						"speed": 25
+					},
+					{
+						"block": "golden_rail",
+						"speed": 25
+					},
+					{
+						"block": "detector_rail",
+						"speed": 25
+					},
+					{
+						"block": "activator_rail",
+						"speed": 25
+					}
+				]
+			}
+		}
+	}
+}

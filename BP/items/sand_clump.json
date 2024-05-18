@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:sand_clump",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.crushed"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_sand_clump"
+		}
+	}
+}

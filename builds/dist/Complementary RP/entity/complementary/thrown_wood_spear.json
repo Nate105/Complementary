@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "complementary:thrown_wood_spear",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/wood_spear_held"
+			},
+			"geometry": {
+				"default": "geometry.spear_thrown"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+				"move": "animation.weapon.default_thrown"
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			}
+		}
+	}
+}

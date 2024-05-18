@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.strider": {
+			"arrays": {
+				"textures": {
+					"Array.base": [
+						"Texture.default",
+						"Texture.saddled"
+					],
+					"Array.suffocated": [
+						"Texture.suffocated",
+						"Texture.suffocated_saddled"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"query.is_shaking?array.suffocated[query.is_saddled]:array.base[query.is_saddled]"
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

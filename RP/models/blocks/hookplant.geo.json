@@ -16,7 +16,7 @@
 			},
 			"bones": [
 				{
-					"name": "bb_main",
+					"name": "root",
 					"pivot": [
 						0,
 						0,

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:soul",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.mobDrop"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_soul"
+			}
+		}
+	}
+}

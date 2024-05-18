@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:endersteel_upgrade_smithing_template",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.smithing_templates"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_endersteel_upgrade_smithing_template",
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:transform_templates"
+				]
+			}
+		}
+	}
+}

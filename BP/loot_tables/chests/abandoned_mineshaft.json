@@ -30,21 +30,6 @@
         },
         {
           "type": "item",
-          "name": "complementary:arcane_shot_scroll_level_i",
-          "weight": 10
-        },
-        {
-          "type": "item",
-          "name": "complementary:arcane_shot_scroll_level_ii",
-          "weight": 7.5
-        },
-        {
-          "type": "item",
-          "name": "complementary:arcane_shot_scroll_level_iii",
-          "weight": 5
-        },
-        {
-          "type": "item",
           "name": "complementary:iron_pickaxe",
           "weight": 5,
           "functions": [

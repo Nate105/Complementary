@@ -1,0 +1,43 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:crafting_table_diffuser"
+		},
+		"unlock": [
+			{
+				"item": "complementary:aroma_pod"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:aroma_pod"
+			},
+			"C": {
+				"item": "minecraft:cobblestone"
+			},
+			"D": {
+				"item": "minecraft:dispenser"
+			},
+			"#": {
+				"item": "minecraft:potion",
+				"data": 4
+			},
+			"B": {
+				"item": "minecraft:blaze_powder"
+			}
+		},
+		"pattern": [
+			"BAB",
+			"CDC",
+			"C#C"
+		],
+		"result": {
+			"item": "complementary:diffuser",
+			"count": 1
+		}
+	}
+}

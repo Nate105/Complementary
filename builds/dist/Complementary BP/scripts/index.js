@@ -1,8 +1,20 @@
-import { world, system } from '@minecraft/server'
-
 import "./items/itemlore";
-import "./items/foodeffects";
+import "./items/food/bottle_recalling";
+import "./items/food/burst_fruit_effects";
+import "./items/food/experience_charge_effects";
+import "./items/food/potion_mana_effects";
+import "./items/food/withered_bone_marrow_effects";
 import "./items/tools/durability";
 import "./items/tools/interactions";
+import "./items/tools/enchants";
+import "./items/tools/hit_effects/wither_damage";
+import "./items/tools/hit_effects/soul_damage";
+import "./items/tools/hit_effects/low_damage";
+import "./items/tools/hit_effects/mid_damage";
+import "./items/tools/hit_effects/high_damage";
+import "./items/tools/hit_effects/higher_damage";
+import "./items/tools/hit_effects/immense_damage";
+import "./items/misc/magnet";
+import "./items/misc/magnet_strong";
 
 console.warn("index.js has been successfully loaded.");

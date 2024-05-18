@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:blank_spawn_egg",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.archeology.artifacts"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_blank_spawn_egg"
+			}
+		}
+	}
+}

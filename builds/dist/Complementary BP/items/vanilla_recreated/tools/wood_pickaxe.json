@@ -1,29 +1,27 @@
 {
-	"format_version": "1.20.0",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "complementary:wood_pickaxe"
-		},
-		"events": {
-			"complementary:durability_use": {
-				"damage": {
-					"amount": 1,
-					"target": "self",
-					"type": "durability"
-				}
+			"identifier": "complementary:wood_pickaxe",
+			"menu_category": {
+				"category": "equipment"
 			}
 		},
 		"components": {
-			"minecraft:creative_category": {
-				"category": "equipment"
+			"minecraft:icon": {
+				"texture": "complementary_wooden_pickaxe"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:wooden_tier",
+					"minecraft:is_pickaxe",
+					"minecraft:is_tool"
+				]
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:durability": {
 				"max_durability": 60
-			},
-			"minecraft:icon": {
-				"texture": "complementary_wooden_pickaxe"
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -41,67 +39,21 @@
 					},
 					{
 						"items": [
-							"oak_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"spruce_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"birch_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"dark_oak_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"jungle_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"acacia_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"cherry_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"mangrove_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"warped_planks"
-						],
-						"repair_amount": "query.max_durability*0.25"
-					},
-					{
-						"items": [
-							"crimson_planks"
+							"minecraft:oak_planks",
+							"minecraft:spruce_planks",
+							"minecraft:birch_planks",
+							"minecraft:dark_oak_planks",
+							"minecraft:jungle_planks",
+							"minecraft:acacia_planks",
+							"minecraft:cherry_planks",
+							"minecraft:mangrove_planks",
+							"minecraft:warped_planks",
+							"minecraft:crimson_planks"
 						],
 						"repair_amount": "query.max_durability*0.25"
 					}
 				]
 			},
-			"minecraft:mining_speed": 1,
 			"minecraft:damage": 2,
 			"minecraft:enchantable": {
 				"value": 15,
@@ -109,1543 +61,885 @@
 			},
 			"minecraft:digger": {
 				"use_efficiency": true,
-				"on_dig": {
-					"event": "complementary:durability_use"
-				},
 				"destroy_speeds": [
 					{
 						"block": {
 							"tags": "query.any_tag('stone')"
 						},
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": {
 							"tags": "query.any_tag('woodpickaxeDiggable','ironpickaxeDiggable')"
 						},
-						"speed": 6,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 6
 					},
 					{
 						"block": "brewing_stand",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:lit_furnace",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:lit_smoker",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:lit_blast_furnace",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "complementary:creepy_plating",
-						"speed": 6,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 6
 					},
 					{
 						"block": "normal_stone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stonebrick",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "quartz_ore",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "nether_gold_ore",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "observer",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "grindstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mossy_cobblestone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "nether_brick",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "nether_brick_fence",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "nether_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "chiseled_nether_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cracked_nether_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_nether_brick",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_nether_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blackstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "chiseled_polished_blackstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cracked_polished_blackstone_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "gilded_blackstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blackstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blackstone_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_brick_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blackstone_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_brick_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "undyed_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "gray_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_gray_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "white_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "black_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "brown_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "orange_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "yellow_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "lime_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_blue_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blue_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purple_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "magenta_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "pink_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blue_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "gray_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "lime_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "pink_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "green_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "black_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "brown_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cyan_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "white_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "orange_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purple_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "yellow_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "magenta_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_blue_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_gray_concrete",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "green_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "andesite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_andesite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "granite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_granite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "diorite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_diorite_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "prismarine",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "prismarine_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "prismarine_bricks_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "dark_prismarine_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purpur_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purpur_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "smooth_stone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mossy_stone_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "amethyst_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "tuff",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mud_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mud_brick_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mud_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mud_brick_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "hardened_clay",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "white_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_gray_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "gray_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "black_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "brown_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "orange_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "yellow_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "lime_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "green_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cyan_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_blue_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blue_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purple_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "magenta_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "pink_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "white_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "silver_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "gray_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "black_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "brown_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "orange_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "yellow_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "lime_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "green_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cyan_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "light_blue_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blue_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "purple_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "magenta_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "pink_glazed_terracotta",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "basalt",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_basalt",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "smooth_basalt",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "quartz_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "quartz_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "quartz_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "quartz_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "smooth_quartz_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "sandstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "smooth_sandstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_sandstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "red_sandstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "smooth_red_sandstone_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "calcite",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_button",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_pressure_plate",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "magma",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "netherrack",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "crimson_nylium",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "warped_nylium",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cyan_shulker_box",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "bone_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:ender_chest",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:anvil",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:bell",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:coal_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:emerald_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:redstone_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:chain",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:enchanting_table",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:iron_bars",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:iron_door",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:iron_trapdoor",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:mob_spawner",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate_coal_ore",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:blast_furnace",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:cobbled_deepslate",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:chiseled_deepslate",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:cracked_deepslate_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate_tiles",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:cracked_deepslate_tiles",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:cobbled_deepslate_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate_brick_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:deepslate_tile_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:polished_deepslate",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_deepslate_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cobbled_deepslate_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_deepslate_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_tile_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cobbled_deepslate_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_tile_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_deepslate_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_brick_wall",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:dispenser",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:dropper",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stonecutter_block",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:dropper",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:furnace",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:lantern",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:lodestone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:smoker",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:stonecutter",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:conduit",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:coal_ore",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:hopper",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:end_stone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "end_bricks",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "end_brick_stairs",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_block_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_block_slab2",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_block_slab3",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "stone_block_slab4",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:ice",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "minecraft:sandstone",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "double_stone_block_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "double_stone_block_slab2",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "double_stone_block_slab3",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "double_stone_block_slab4",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_tile_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "deepslate_brick_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "cobbled_deepslate_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_deepslate_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "blackstone_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "polished_blackstone_brick_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "mud_brick_double_slab",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "rail",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "golden_rail",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "detector_rail",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					},
 					{
 						"block": "activator_rail",
-						"speed": 2,
-						"on_dig": {
-							"event": "complementary:durability_use"
-						}
+						"speed": 2
 					}
 				]
-			},
-			"tag:minecraft:is_pickaxe": {}
+			}
 		}
 	}
 }

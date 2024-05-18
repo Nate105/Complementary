@@ -10,7 +10,7 @@
 		"enforce_survivability_rules": false,
 		"enforce_placement_rules": false,
 		"may_replace": [
-			"minecraft:grass"
+			"minecraft:grass_block"
 		]
 	}
 }

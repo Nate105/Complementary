@@ -1,0 +1,72 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "complementary:burst_dynamite",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "snowball"
+		},
+		"component_groups": {
+			"complementary:exploding": {
+				"minecraft:explode": {
+					"fuse_length": {
+						"range_min": 0,
+						"range_max": 0
+					},
+					"power": 3,
+					"breaks_blocks": true,
+					"causes_fire": false,
+					"fire_affected_by_griefing": false,
+					"fuse_lit": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"power": 1.5,
+				"angle_offset": 1,
+				"uncertainty_base": 0.25,
+				"on_hit": {
+					"stick_in_ground": {
+						"shake_time": 0
+					},
+					"impact_damage": {
+						"damage": 1
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "complementary:explode"
+						}
+					}
+				}
+			},
+			"minecraft:physics": {
+				"has_collision": true,
+				"has_gravity": true
+			},
+			"minecraft:collision_box": {
+				"width": 1.5,
+				"height": 1.5
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:scale": {
+				"value": 0.8
+			}
+		},
+		"events": {
+			"complementary:explode": {
+				"add": {
+					"component_groups": [
+						"complementary:exploding"
+					]
+				}
+			}
+		}
+	}
+}

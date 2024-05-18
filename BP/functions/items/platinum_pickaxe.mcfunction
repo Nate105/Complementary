@@ -1,0 +1,1 @@
+execute as @a[hasItem={item=complementary:platinum_pickaxe,location=slot.weapon.mainhand}] at @s run effect @s haste 1 2 true

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "minecraft:spruce_trapdoor"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"priority": 0,
+		"group": "wooden_trap_door",
+		"pattern": [
+			"###",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:planks",
+				"data": 1
+			}
+		},
+		"unlock": [
+			{
+				"item": "minecraft:spruce_planks"
+			}
+		],
+		"result": {
+			"item": "minecraft:spruce_trapdoor",
+			"count": 32
+		}
+	}
+}

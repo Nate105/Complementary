@@ -16,6 +16,7 @@
 		},
 		"events": {
 			"complementary:open": {
+				"swing": {},
 				"set_block_state": {
 					"complementary:open": true
 				},
@@ -24,6 +25,7 @@
 				}
 			},
 			"complementary:close": {
+				"swing": {},
 				"set_block_state": {
 					"complementary:open": false
 				},

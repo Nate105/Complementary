@@ -15,8 +15,7 @@
 			"minecraft:food": {
 				"can_always_eat": true,
 				"nutrition": 1,
-				"saturation_modifier": 0,
-				"using_converts_to": "complementary:burst_seeds"
+				"saturation_modifier": 0
 			},
 			"minecraft:use_modifiers": {
 				"use_duration": 1.6

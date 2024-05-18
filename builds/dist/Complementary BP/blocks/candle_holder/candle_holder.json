@@ -81,6 +81,7 @@
 			}
 		],
 		"components": {
+			"minecraft:loot": "loot_tables/blocks/candle_holder/candle_holder.json",
 			"minecraft:on_player_placing": {
 				"event": "complementary:rotate"
 			},

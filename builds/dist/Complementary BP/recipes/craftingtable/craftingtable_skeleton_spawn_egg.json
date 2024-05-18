@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_skeleton_spawn_egg"
+		},
+		"unlock": [
+			{
+				"item": "complementary:blank_spawn_egg"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:blank_spawn_egg"
+			},
+			"B": {
+				"item": "complementary:soul"
+			},
+			"C": {
+				"item": "minecraft:bone"
+			}
+		},
+		"pattern": [
+			" B ",
+			"CAC",
+			" C "
+		],
+		"result": {
+			"item": "minecraft:skeleton_spawn_egg"
+		}
+	}
+}

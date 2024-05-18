@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:transmutable_powder",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.crushed.metals"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_transmutable_powder"
+		}
+	}
+}

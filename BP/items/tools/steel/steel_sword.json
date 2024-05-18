@@ -18,7 +18,7 @@
 			},
 			"minecraft:can_destroy_in_creative": false,
 			"minecraft:durability": {
-				"max_durability": 452
+				"max_durability": 904
 			},
 			"minecraft:damage": 7,
 			"minecraft:digger": {
@@ -35,7 +35,7 @@
 				]
 			},
 			"minecraft:enchantable": {
-				"value": 14,
+				"value": 10,
 				"slot": "sword"
 			},
 			"minecraft:hand_equipped": true,

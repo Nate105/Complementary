@@ -77,6 +77,26 @@
                     ]
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "complementary:soulstealer"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 80
+                },
+                {
+                    "type": "item",
+                    "name": "complementary:soul",
+                    "weight": 20
+                }
+            ]
         }
     ]
 }

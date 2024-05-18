@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "complementary:surface_rocks_select_feature"
+		},
+		"features": [
+			[
+				"complementary:rocks_feature",
+				5
+			],
+			[
+				"complementary:double_rocks_feature",
+				5
+			]
+		]
+	}
+}

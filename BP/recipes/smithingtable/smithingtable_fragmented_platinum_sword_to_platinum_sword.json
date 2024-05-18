@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_smithing_transform": {
+		"description": {
+			"identifier": "complementary:smithingtable_fragmented_platinum_sword_to_platinum_sword"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"template": "complementary:restoration_smithing_template",
+		"base": "complementary:fragmented_platinum_sword",
+		"addition": "minecraft:netherite_ingot",
+		"result": "complementary:platinum_sword"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.donkey.v1.and.v2": {
+			"part_visibility": [
+				{
+					"*saddle*": "query.is_saddled"
+				},
+				{
+					"SaddleMouthLine": "query.is_saddled && query.has_rider"
+				},
+				{
+					"SaddleMouthLineR": "query.is_saddled && query.has_rider"
+				},
+				{
+					"Bag*": "query.is_chested"
+				},
+				{
+					"Ear*": false
+				}
+			],
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.donkey",
+				"texture.markings_none",
+				"texture.armor_none"
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

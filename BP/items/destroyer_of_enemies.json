@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:destroyer_of_enemies"
+		},
+		"events": {
+			"complementary:destroy_enemies": {
+				"run_command": {
+					"command": [
+						"/effect @e[r=25] clear",
+						"/effect @p resistance 1 255 true",
+						"/effect @p health_boost 1 255 true",
+						"/effect @p regeneration 1 255 true",
+						"/effect @p absorption 1 255 true",
+						"/damage @e[r=25] 9999 fall"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_destroyer_of_enemies"
+			},
+			"minecraft:creative_category": {
+				"category": "commands"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "complementary:destroy_enemies"
+				}
+			}
+		}
+	}
+}

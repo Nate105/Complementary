@@ -152,14 +152,14 @@
 		"complementary_ruby": {
 			"textures": "textures/items/ruby_gem"
 		},
-		"complementary_ancient_manuscript": {
-			"textures": "textures/items/ancient_recipe_book"
+		"complementary_restoration_upgrade_smithing_template": {
+			"textures": "textures/items/restoration_upgrade_smithing_template"
 		},
-		"complementary_pickaxe_fragments": {
-			"textures": "textures/items/pickaxe_fragments"
+		"complementary_fragmented_platinum_pickaxe": {
+			"textures": "textures/items/fragmented_platinum_pickaxe"
 		},
-		"complementary_ancient_pickaxe": {
-			"textures": "textures/items/ancient_pickaxe"
+		"complementary_platinum_pickaxe": {
+			"textures": "textures/items/platinum_pickaxe_new"
 		},
 		"complementary_chainmail": {
 			"textures": "textures/items/chainmail"
@@ -167,11 +167,11 @@
 		"complementary_glowstone_pendant": {
 			"textures": "textures/items/glowstone_pendant"
 		},
-		"complementary_claymore_fragments": {
-			"textures": "textures/items/claymore_fragments"
+		"complementary_fragmented_platinum_sword": {
+			"textures": "textures/items/fragmented_platinum_sword"
 		},
-		"complementary_ancient_claymore": {
-			"textures": "textures/items/ancient_claymore"
+		"complementary_platinum_sword": {
+			"textures": "textures/items/platinum_sword_new"
 		},
 		"complementary_steel_nugget": {
 			"textures": "textures/items/steel_nugget"
@@ -180,7 +180,7 @@
 			"textures": "textures/items/spawner_fragment"
 		},
 		"complementary_dynamite_stick": {
-			"textures": "textures/items/dynamite_stick"
+			"textures": "textures/items/dynamite_stick_new"
 		},
 		"complementary_wand_essence": {
 			"textures": "textures/items/wand_ruby"
@@ -195,31 +195,31 @@
 			"textures": "textures/items/blue_ice_shard"
 		},
 		"complementary_steel_sword": {
-			"textures": "textures/items/steel_sword"
+			"textures": "textures/items/steel_sword_new"
 		},
 		"complementary_steel_pickaxe": {
-			"textures": "textures/items/steel_pickaxe"
+			"textures": "textures/items/steel_pickaxe_new"
 		},
 		"complementary_steel_axe": {
-			"textures": "textures/items/steel_axe"
+			"textures": "textures/items/steel_axe_new"
 		},
 		"complementary_steel_shovel": {
-			"textures": "textures/items/steel_shovel"
+			"textures": "textures/items/steel_shovel_new"
 		},
 		"complementary_steel_hoe": {
-			"textures": "textures/items/steel_hoe"
+			"textures": "textures/items/steel_hoe_new"
 		},
-		"complementary_steel_helmet": {
-			"textures": "textures/items/steel_helmet"
+		"steel_helmet": {
+			"textures": "textures/items/steel_helmet_new"
 		},
-		"complementary_steel_chestplate": {
-			"textures": "textures/items/steel_chestplate"
+		"steel_chestplate": {
+			"textures": "textures/items/steel_chestplate_new"
 		},
-		"complementary_steel_leggings": {
-			"textures": "textures/items/steel_leggings"
+		"steel_leggings": {
+			"textures": "textures/items/steel_leggings_new"
 		},
-		"complementary_steel_boots": {
-			"textures": "textures/items/steel_boots"
+		"steel_boots": {
+			"textures": "textures/items/steel_boots_new"
 		},
 		"complementary_aroma_pod": {
 			"textures": "textures/items/aroma_pod"
@@ -299,8 +299,8 @@
 		"complementary_raw_copper_powder": {
 			"textures": "textures/items/raw_copper_powder"
 		},
-		"complementary_netherite_scrap_powder": {
-			"textures": "textures/items/netherite_scrap_powder"
+		"complementary_transmutable_powder": {
+			"textures": "textures/items/transmutable_powder"
 		},
 		"complementary_crushed_wheat": {
 			"textures": "textures/items/crushed_wheat"
@@ -356,23 +356,23 @@
 		"complementary_dragon_scales": {
 			"textures": "textures/items/dragon_scales"
 		},
-		"complementary_endersteel_helmet": {
+		"endersteel_helmet": {
 			"textures": "textures/items/endersteel_helmet"
 		},
-		"complementary_endersteel_chestplate": {
+		"endersteel_chestplate": {
 			"textures": "textures/items/endersteel_chestplate"
 		},
-		"complementary_endersteel_leggings": {
+		"endersteel_leggings": {
 			"textures": "textures/items/endersteel_leggings"
 		},
-		"complementary_endersteel_boots": {
+		"endersteel_boots": {
 			"textures": "textures/items/endersteel_boots"
 		},
 		"complementary_endersteel_ingot": {
-			"textures": "textures/items/endersteel_alloy"
+			"textures": "textures/items/endersteel_ingot"
 		},
-		"complementary_endesteel_alloy_upgrade_smithing_template": {
-			"textures": "textures/items/endersteel_alloy_upgrade_smithing_template"
+		"complementary_endersteel_upgrade_smithing_template": {
+			"textures": "textures/items/endersteel_upgrade_smithing_template_new"
 		},
 		"complementary_wheat_mid": {
 			"textures": "textures/items/wheat_mid"
@@ -402,7 +402,76 @@
 			"textures": "textures/items/burst_fruit"
 		},
 		"complementary_burst_seeds": {
-			"textures": "textures/items/burst_seeds"
+			"textures": "textures/items/burst_pod"
+		},
+		"complementary_yield_fertilizer": {
+			"textures": "textures/items/yield_fertilizer"
+		},
+		"complementary_burst_dynamite_stick": {
+			"textures": "textures/items/burst_dynamite_stick"
+		},
+		"complementary_blank_spawn_egg": {
+			"textures": "textures/items/spawn_egg_blank_new"
+		},
+		"complementary_soulstealer": {
+			"textures": "textures/items/soulstealer"
+		},
+		"complementary_soul": {
+			"textures": "textures/items/soul"
+		},
+		"complementary_salt": {
+			"textures": "textures/items/salt"
+		},
+		"complementary_broken_endersteel_upgrade_smithing_template": {
+			"textures": "textures/items/broken_endersteel_upgrade_smithing_template"
+		},
+		"complementary_bundle": {
+			"textures": "textures/items/bundle"
+		},
+		"complementary_totem_of_recalling": {
+			"textures": "textures/items/totem_recalling"
+		},
+		"complementary_bottle_recalling": {
+			"textures": "textures/items/bottle_recalling"
+		},
+		"complementary_endersteel_sword": {
+			"textures": "textures/items/endersteel_sword_v2"
+		},
+		"complementary_endersteel_pickaxe": {
+			"textures": "textures/items/endersteel_pickaxe_v2"
+		},
+		"complementary_endersteel_axe": {
+			"textures": "textures/items/endersteel_axe_v2"
+		},
+		"complementary_endersteel_hoe": {
+			"textures": "textures/items/endersteel_hoe_v2"
+		},
+		"complementary_endersteel_shovel": {
+			"textures": "textures/items/endersteel_shovel_v2"
+		},
+		"complementary_rocks": {
+			"textures": "textures/items/rock"
+		},
+		"complementary_dirt_clump": {
+			"textures": "textures/items/dirt"
+		},
+		"complementary_sand_clump": {
+			"textures": "textures/items/sand"
+		},
+		"complementary_enchantment_codex": {
+			"textures": "textures/items/incantation_codex"
+		},
+		"complementary_sweet_berry_cookie": {
+			"textures": "textures/items/sweet_berry_cookie"
+		},
+		"complementary_sweet_berry_pie": {
+			"textures": "textures/items/sweet_berry_pie"
+		},
+		"complementary_glow_berry_cookie": {
+			"textures": "textures/items/glow_berry_cookie"
+		},
+		"complementary_glow_berry_pie": {
+			"textures": "textures/items/glow_berry_pie"
 		}
 	}
 }

@@ -15,7 +15,8 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 6
 			},
-            "tag:woodpickaxeDiggable": {}
+            "tag:woodpickaxeDiggable": {},
+            "tag:shingles": {}
         }
     }
 }

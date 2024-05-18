@@ -31,24 +31,10 @@
 				"complementary:mode": [
 					0,
 					1
-				],
-				"complementary:is_blinking": [
-					false,
-					true
 				]
 			}
 		},
 		"events": {
-			"complementary:blink": {
-				"set_block_state": {
-					"complementary:is_blinking": true
-				}
-			},
-			"complementary:stop_blink": {
-				"set_block_state": {
-					"complementary:is_blinking": false
-				}
-			},
 			"complementary:rotate": {
 				"set_block_state": {
 					"complementary:rotation": "(query.cardinal_facing_2d)"
@@ -618,6 +604,26 @@
 					}
 				]
 			},
+			"complementary:munch_drop": {
+				"sequence": [
+					{
+						"condition": "query.is_name_any('Raw Iron')&&query.block_state('complementary:energy')>1.99",
+						"die": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_raw_iron.json"
+						},
+						"run_command": {
+							"command": [
+								"playsound mob.horse.eat @a ~~~ 1 1",
+								"particle complementary:muncher_eat_raw_iron ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					}
+				]
+			},
 			"complementary:munch": {
 				"sequence": [
 					{
@@ -719,7 +725,7 @@
 						}
 					},
 					{
-						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'complementary:withered_bone')&&query.block_state('complementary:energy')>2.49",
+						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'complementary:withered_bone')&&query.block_state('complementary:energy')>2.99",
 						"swing": {},
 						"decrement_stack": {},
 						"spawn_loot": {
@@ -736,7 +742,7 @@
 						}
 					},
 					{
-						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:wheat')&&query.block_state('complementary:energy')>1.49",
+						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:wheat')&&query.block_state('complementary:energy')>1.99",
 						"swing": {},
 						"decrement_stack": {},
 						"spawn_loot": {
@@ -750,6 +756,57 @@
 						},
 						"set_block_state": {
 							"complementary:energy": "query.block_state('complementary:energy') - 2"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:sand')&&query.block_state('complementary:energy')>0.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_sand.json"
+						},
+						"run_command": {
+							"command": [
+								"playsound mob.horse.eat @a ~~~ 1 1",
+								"particle complementary:muncher_eat_sand ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 1"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:dirt')&&query.block_state('complementary:energy')>0.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_dirt.json"
+						},
+						"run_command": {
+							"command": [
+								"playsound mob.horse.eat @a ~~~ 1 1",
+								"particle complementary:muncher_eat_dirt ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 1"
+						}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand',0,'minecraft:cobblestone')&&query.block_state('complementary:energy')>0.99",
+						"swing": {},
+						"decrement_stack": {},
+						"spawn_loot": {
+							"table": "loot_tables/gameplay/blocks/muncher_cobblestone.json"
+						},
+						"run_command": {
+							"command": [
+								"playsound mob.horse.eat @a ~~~ 1 1",
+								"particle complementary:muncher_eat_cobblestone ~~0.85~"
+							]
+						},
+						"set_block_state": {
+							"complementary:energy": "query.block_state('complementary:energy') - 1"
 						}
 					}
 				]
@@ -791,58 +848,6 @@
 						"fang_side": {
 							"texture": "complementary_muncher_fang_side",
 							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:on_interact": {
-						"event": "complementary:feed"
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('complementary:mode') == 0 && query.block_state('complementary:is_blinking') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "complementary_muncher_head_feed",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "complementary_mucher_butt",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "complementary_muncher_face_blink",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"east": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"fang_top": {
-							"texture": "complementary_muncher_fang_top",
-							"render_method": "alpha_test"
-						},
-						"fang_side": {
-							"texture": "complementary_muncher_fang_side",
-							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:queued_ticking": {
-						"looping": true,
-						"interval_range": [
-							10,
-							10
-						],
-						"on_tick": {
-							"event": "complementary:stop_blink"
 						}
 					},
 					"minecraft:on_interact": {
@@ -893,58 +898,6 @@
 				}
 			},
 			{
-				"condition": "query.block_state('complementary:mode') == 1 && query.block_state('complementary:is_blinking') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "complementary_muncher_head",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "complementary_mucher_butt",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "complementary_muncher_face_blink",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"east": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"fang_top": {
-							"texture": "complementary_muncher_fang_top",
-							"render_method": "alpha_test"
-						},
-						"fang_side": {
-							"texture": "complementary_muncher_fang_side",
-							"render_method": "alpha_test"
-						}
-					},
-					"minecraft:queued_ticking": {
-						"looping": true,
-						"interval_range": [
-							10,
-							10
-						],
-						"on_tick": {
-							"event": "complementary:stop_blink"
-						}
-					},
-					"minecraft:on_interact": {
-						"event": "complementary:munch"
-					}
-				}
-			},
-			{
 				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 1",
 				"components": {
 					"minecraft:material_instances": {
@@ -984,45 +937,6 @@
 				}
 			},
 			{
-				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 1 && query.block_state('complementary:is_blinking') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "complementary_muncher_head",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "complementary_mucher_butt",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "complementary_muncher_face_blink",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"east": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"fang_top": {
-							"texture": "complementary_muncher_fang_top",
-							"render_method": "alpha_test"
-						},
-						"fang_side": {
-							"texture": "complementary_muncher_fang_side",
-							"render_method": "alpha_test"
-						}
-					}
-				}
-			},
-			{
 				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 0",
 				"components": {
 					"minecraft:material_instances": {
@@ -1036,45 +950,6 @@
 						},
 						"north": {
 							"texture": "complementary_muncher_face_energized",
-							"render_method": "alpha_test"
-						},
-						"south": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"west": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"east": {
-							"texture": "complementary_muncher_side",
-							"render_method": "alpha_test"
-						},
-						"fang_top": {
-							"texture": "complementary_muncher_fang_top",
-							"render_method": "alpha_test"
-						},
-						"fang_side": {
-							"texture": "complementary_muncher_fang_side",
-							"render_method": "alpha_test"
-						}
-					}
-				}
-			},
-			{
-				"condition": "query.block_state('complementary:energy') > 0 && query.block_state('complementary:mode') == 0 && query.block_state('complementary:is_blinking') == true",
-				"components": {
-					"minecraft:material_instances": {
-						"up": {
-							"texture": "complementary_muncher_head_feed",
-							"render_method": "alpha_test"
-						},
-						"down": {
-							"texture": "complementary_mucher_butt",
-							"render_method": "alpha_test"
-						},
-						"north": {
-							"texture": "complementary_muncher_face_blink",
 							"render_method": "alpha_test"
 						},
 						"south": {
@@ -1153,16 +1028,6 @@
 			"minecraft:geometry": "geometry.muncher",
 			"minecraft:on_player_placing": {
 				"event": "complementary:rotate"
-			},
-			"minecraft:queued_ticking": {
-				"looping": true,
-				"interval_range": [
-					50,
-					100
-				],
-				"on_tick": {
-					"event": "complementary:blink"
-				}
 			}
 		}
 	}

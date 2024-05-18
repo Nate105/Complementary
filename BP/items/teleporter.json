@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:teleporter"
+		},
+		"events": {
+			"complementary:teleport_up": {
+				"run_command": {
+					"command": [
+						"/tp @p ~~15~",
+						"/effect @p instant_health 15 255 true",
+						"/effect @p resistance 15 255 true"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_teleporter"
+			},
+			"minecraft:creative_category": {
+				"category": "commands"
+			},
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "complementary:teleport_up"
+				}
+			}
+		}
+	}
+}

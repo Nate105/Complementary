@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "complementary:double_rocks_feature"
+		},
+		"places_block": {
+			"name": "complementary:rocks_block",
+			"states": {
+				"complementary:rock_amount": 2
+			}
+		},
+		"enforce_survivability_rules": false,
+		"enforce_placement_rules": false,
+		"may_replace": [
+			"minecraft:air"
+		],
+		"may_attach_to": {
+			"all": [
+				"minecraft:grass_block",
+				"minecraft:dirt",
+				"minecraft:stone",
+				"minecraft:gravel",
+				"minecraft:sand",
+				"complementary:packed_dirt"
+			]
+		}
+	}
+}

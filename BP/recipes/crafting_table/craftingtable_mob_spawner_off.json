@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_mob_spawner_off"
+		},
+		"unlock": [
+			{
+				"item": "complementary:spawner_fragment"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:echo_shard"
+			},
+			"B": {
+				"item": "complementary:spawner_fragment"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:mob_spawner_off"
+		}
+	}
+}

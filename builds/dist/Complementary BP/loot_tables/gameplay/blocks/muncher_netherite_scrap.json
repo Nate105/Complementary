@@ -10,7 +10,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "complementary:netherite_scrap_powder",
+                    "name": "complementary:transmutable_powder",
                     "functions": [
                         {
                             "function": "set_count",

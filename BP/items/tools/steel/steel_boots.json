@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.50",
+	"format_version": "1.20.60",
 	"minecraft:item": {
 		"description": {
 			"identifier": "complementary:steel_boots",
@@ -12,22 +12,20 @@
 			"minecraft:tags": {
 				"tags": [
 					"complementary:steel_tier",
-					"minecraft:trimmable_armors"
+					"minecraft:trimmable_armors",
+					"minecraft:is_armor"
 				]
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
-				"value": 9,
+				"value": 10,
 				"slot": "armor_feet"
 			},
 			"minecraft:durability": {
 				"max_durability": 390
 			},
-			"minecraft:icon": {
-				"texture": "complementary_steel_boots"
-			},
+			"minecraft:icon": "steel_boots",
 			"minecraft:wearable": {
-				"dispensable": true,
 				"protection": 3,
 				"slot": "slot.armor.feet"
 			},

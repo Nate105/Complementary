@@ -1,0 +1,17 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.weapon.default_thrown": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						"query.body_x_rotation",
+						"-query.body_y_rotation",
+						0
+					]
+				}
+			}
+		}
+	}
+}

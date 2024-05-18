@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.20.10",
   "minecraft:entity": {
     "description": {
       "identifier": "complementary:burst_fruit_explosion",
@@ -9,27 +9,22 @@
       "runtime_identifier": "snowball"
     },
     "components": {
-      "minecraft:physics": {},
+      "minecraft:timer": {
+        "time": 1,
+        "time_down_event": {
+          "event": "complementary:explode"
+        }
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
       "minecraft:projectile": {
         "gravity": 0.05,
         "on_hit": {
           "stick_in_ground": {
             "shake_time": 0
-          },
-          "particle_on_hit": {
-            "particle_type": "evaporation",
-            "num_particles": 5
           }
-        }
-      },
-      "minecraft:collision_box": {
-        "height": 1,
-        "width": 1
-      },
-      "minecraft:timer": {
-        "time": 1,
-        "time_down_event": {
-          "event": "complementary:explode"
         }
       }
     },

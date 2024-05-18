@@ -1,0 +1,49 @@
+{
+	"format_version": "1.20.60",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:endersteel_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:tags": {
+				"tags": [
+					"complementary:endersteel_tier",
+					"minecraft:trimmable_armors",
+					"minecraft:is_armor"
+				]
+			},
+			"minecraft:enchantable": {
+				"value": 18,
+				"slot": "armor_feet"
+			},
+			"minecraft:durability": {
+				"max_durability": 962
+			},
+			"minecraft:icon": "endersteel_boots",
+			"minecraft:wearable": {
+				"protection": 7,
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:endersteel_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					},
+					{
+						"items": [
+							"complementary:endersteel_boots"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			}
+		}
+	}
+}

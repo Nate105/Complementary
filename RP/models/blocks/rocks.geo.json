@@ -1,0 +1,89 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rocks",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "main_rock",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 0, -5],
+							"size": [6, 6, 6],
+							"uv": {
+								"north": {"uv": [26, 6], "uv_size": [6, 6]},
+								"east": {"uv": [26, 6], "uv_size": [6, 6]},
+								"south": {"uv": [26, 6], "uv_size": [6, 6]},
+								"west": {"uv": [26, 6], "uv_size": [6, 6]},
+								"up": {"uv": [32, 6], "uv_size": [-6, -6]},
+								"down": {"uv": [32, 18], "uv_size": [-6, -6]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rock_2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [5, 4, 5],
+							"uv": {
+								"north": {"uv": [21, 5], "uv_size": [5, 4]},
+								"east": {"uv": [21, 5], "uv_size": [5, 4]},
+								"south": {"uv": [21, 5], "uv_size": [5, 4]},
+								"west": {"uv": [21, 5], "uv_size": [5, 4]},
+								"up": {"uv": [26, 5], "uv_size": [-5, -5]},
+								"down": {"uv": [26, 14], "uv_size": [-5, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rock_3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 0, 2],
+							"size": [5, 4, 5],
+							"uv": {
+								"north": {"uv": [21, 5], "uv_size": [5, 4]},
+								"east": {"uv": [21, 5], "uv_size": [5, 4]},
+								"south": {"uv": [21, 5], "uv_size": [5, 4]},
+								"west": {"uv": [21, 5], "uv_size": [5, 4]},
+								"up": {"uv": [26, 5], "uv_size": [-5, -5]},
+								"down": {"uv": [26, 14], "uv_size": [-5, -5]}
+							}
+						}
+					]
+				},
+				{
+					"name": "rock_4",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, 1],
+							"size": [4, 3, 4],
+							"uv": {
+								"north": {"uv": [17, 4], "uv_size": [4, 3]},
+								"east": {"uv": [17, 4], "uv_size": [4, 3]},
+								"south": {"uv": [17, 4], "uv_size": [4, 3]},
+								"west": {"uv": [17, 4], "uv_size": [4, 3]},
+								"up": {"uv": [21, 4], "uv_size": [-4, -4]},
+								"down": {"uv": [21, 12], "uv_size": [-4, -4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

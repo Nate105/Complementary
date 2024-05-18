@@ -1,0 +1,19 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.guardian": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "query.is_ghost ? Material.ghost : Material.default" } ],
+      "textures": [ "query.is_elder ? Texture.elder : Texture.default" ],
+      "is_hurt_color": {
+        "r": 1,
+        "g": 0,
+        "b": 0,
+        "a": 0.25
+      },
+      "on_fire_color": {
+        "a": 0
+      }
+    }
+  }
+}

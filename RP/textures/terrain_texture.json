@@ -17,10 +17,10 @@
 			"textures": {
 				"variations": [
 					{
-						"path": "textures/blocks/waterlily_var1"
+						"path": "textures/blocks/waterlily/waterlily_1"
 					},
 					{
-						"path": "textures/blocks/waterlily_var2"
+						"path": "textures/blocks/waterlily/waterlily_2"
 					}
 				]
 			}
@@ -30,6 +30,27 @@
 		},
 		"nothing": {
 			"textures": "textures/blocks/nothing"
+		},
+		"complementary_grass_new": {
+			"textures": {
+				"variations": [
+					{
+						"path": "textures/blocks/tallgrass"
+					},
+					{
+						"path": "textures/blocks/grass/grass1"
+					},
+					{
+						"path": "textures/blocks/grass/grass2"
+					},
+					{
+						"path": "textures/blocks/grass/grass3"
+					},
+					{
+						"path": "textures/blocks/grass/grass4"
+					}
+				]
+			}
 		},
 		"complementary_bordered_planks_oak": {
 			"textures": "textures/blocks/bordered_planks_oak"
@@ -1176,6 +1197,87 @@
 		},
 		"complementary_burst_crop_stage_4": {
 			"textures": "textures/blocks/burst_crop_stage_3"
+		},
+		"complementary_empty_crate_side": {
+			"textures": "textures/blocks/empty_crate_side"
+		},
+		"complementary_empty_crate_top": {
+			"textures": "textures/blocks/empty_crate_top"
+		},
+		"complementary_apple_crate_side": {
+			"textures": "textures/blocks/apple_crate_side"
+		},
+		"complementary_apple_crate_top": {
+			"textures": "textures/blocks/apple_crate_top"
+		},
+		"complementary_aroma_crate_side": {
+			"textures": "textures/blocks/aroma_crate_side"
+		},
+		"complementary_aroma_crate_top": {
+			"textures": "textures/blocks/aroma_crate_top"
+		},
+		"complementary_beetroot_crate_side": {
+			"textures": "textures/blocks/beetroot_crate_side"
+		},
+		"complementary_beetroot_crate_top": {
+			"textures": "textures/blocks/beetroot_crate_top"
+		},
+		"complementary_burst_crate_side": {
+			"textures": "textures/blocks/burst_crate_side"
+		},
+		"complementary_burst_crate_top": {
+			"textures": "textures/blocks/burst_crate_top"
+		},
+		"complementary_carrot_crate_side": {
+			"textures": "textures/blocks/carrot_crate_side"
+		},
+		"complementary_carrot_crate_top": {
+			"textures": "textures/blocks/carrot_crate_top"
+		},
+		"complementary_chorus_crate_side": {
+			"textures": "textures/blocks/chorus_crate_side"
+		},
+		"complementary_chorus_crate_top": {
+			"textures": "textures/blocks/chorus_crate_top"
+		},
+		"complementary_cocoa_crate_side": {
+			"textures": "textures/blocks/cocoa_crate_side"
+		},
+		"complementary_cocoa_crate_top": {
+			"textures": "textures/blocks/cocoa_crate_top"
+		},
+		"complementary_melon_crate_side": {
+			"textures": "textures/blocks/melon_crate_side"
+		},
+		"complementary_melon_crate_top": {
+			"textures": "textures/blocks/melon_crate_top"
+		},
+		"complementary_potato_crate_side": {
+			"textures": "textures/blocks/potato_crate_side"
+		},
+		"complementary_potato_crate_top": {
+			"textures": "textures/blocks/potato_crate_top"
+		},
+		"complementary_stem_crate_side": {
+			"textures": "textures/blocks/stem_crate_side"
+		},
+		"complementary_stem_crate_top": {
+			"textures": "textures/blocks/stem_crate_top"
+		},
+		"complementary_wart_crate_side": {
+			"textures": "textures/blocks/wart_crate_side"
+		},
+		"complementary_wart_crate_top": {
+			"textures": "textures/blocks/wart_crate_top"
+		},
+		"complementary_pedestal": {
+			"textures": "textures/blocks/pedestal"
+		},
+		"complementary_endersteel_block": {
+			"textures": "textures/blocks/endersteel_block"
+		},
+		"complementary_rocks": {
+			"textures": "textures/blocks/rocks"
 		}
 	}
 }

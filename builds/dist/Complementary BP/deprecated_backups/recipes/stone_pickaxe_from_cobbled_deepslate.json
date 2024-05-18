@@ -1,0 +1,33 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "minecraft:stone_pickaxe_from_cobbled_deepslate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "XXX",
+      " # ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:cobbled_deepslate"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:deepslate"
+      }
+    ],
+    "result": {
+      "item": "complementary:stone_pickaxe"
+    },
+    "priority": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.bee": {
+			"arrays": {
+				"textures": {
+					"array.skins": [
+						"texture.default",
+						"texture.nectar",
+						"texture.angry",
+						"texture.angry_nectar"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"array.skins[query.property('minecraft:has_nectar')+query.is_angry*2]"
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

@@ -139,11 +139,6 @@
 			}
 		},
 		"components": {
-			"minecraft:behavior.open_door": {
-				"close_door_after": false,
-				"priority": 5
-			},
-			"minecraft:variant": {},
 			"minecraft:is_hidden_when_invisible": {},
 			"minecraft:experience_reward": {
 				"on_death": "query.last_hit_by_player?5:0"
@@ -164,11 +159,8 @@
 				"table": "loot_tables/entities/enderman.json"
 			},
 			"minecraft:health": {
-				"value": {
-					"range_min": 40,
-					"range_max": 80
-				},
-				"max": 80
+				"value": 40,
+				"max": 40
 			},
 			"minecraft:hurt_on_condition": {
 				"damage_conditions": [
@@ -192,6 +184,9 @@
 						"damage_per_tick": 1
 					}
 				]
+			},
+			"minecraft:attack": {
+				"damage": 7
 			},
 			"minecraft:follow_range": {
 				"value": 64,
@@ -302,81 +297,93 @@
 		},
 		"events": {
 			"minecraft:entity_spawned": {
-				"remove": {},
-				"add": {
-					"component_groups": [
-						"minecraft:enderman_calm"
-					]
-				},
 				"randomize": [
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_purple"
+								"complementary:enderman_purple",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_purple_horned"
+								"complementary:enderman_purple_horned",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_purple_horned_colored"
+								"complementary:enderman_purple_horned_colored",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_teal"
+								"complementary:enderman_teal",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_teal_horned"
+								"complementary:enderman_teal_horned",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_teal_horned_colored"
+								"complementary:enderman_teal_horned_colored",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_yellow"
+								"complementary:enderman_yellow",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_yellow_horned"
+								"complementary:enderman_yellow_horned",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11
 					},
 					{
+						"remove": {},
 						"add": {
 							"component_groups": [
-								"complementary:enderman_yellow_horned_colored"
+								"complementary:enderman_yellow_horned_colored",
+								"minecraft:enderman_calm"
 							]
 						},
 						"weight": 11

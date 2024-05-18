@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:rocks",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.crushed"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_rocks",
+			"minecraft:block_placer": {
+				"block": "complementary:rocks_block"
+			}
+		}
+	}
+}

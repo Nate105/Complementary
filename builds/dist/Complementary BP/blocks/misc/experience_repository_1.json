@@ -10,15 +10,17 @@
 		},
 		"events": {
 			"complementary:experience_handler": {
+				"swing": {},
 				"sequence": [
 					{
 						"condition": "!query.is_sneaking",
 						"run_command": {
 							"command": [
-								"xp 15L @p",
+								"xp 15L @s",
 								"playsound random.levelup @a ~~~",
 								"playsound respawn_anchor.deplete @a ~~~"
-							]
+							],
+							"target": "other"
 						},
 						"set_block": {
 							"block_type": "complementary:experience_repository"
@@ -28,9 +30,10 @@
 						"condition": "query.player_level>14&&query.is_sneaking",
 						"run_command": {
 							"command": [
-								"xp -15L @p",
+								"xp -15L @s",
 								"playsound respawn_anchor.charge @a ~~~"
-							]
+							],
+							"target": "other"
 						},
 						"set_block": {
 							"block_type": "complementary:experience_repository_2"

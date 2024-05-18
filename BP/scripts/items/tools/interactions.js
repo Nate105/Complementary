@@ -4,17 +4,20 @@ import { system, world, ItemStack, GameMode } from '@minecraft/server';
 
 // Defines hoes
 const hoeIds = [
-    'complementary:steel_hoe'
+    'complementary:steel_hoe',
+    'complementary:endersteel_hoe'
 ]
 
 // Defines shovels
 const shovelIds = [
-    'complementary:steel_shovel'
+    'complementary:steel_shovel',
+    'complementary:endersteel_shovel'
 ]
 
 // Defines axes
 const axeIds = [
-    'complementary:steel_axe'
+    'complementary:steel_axe',
+    'complementary:endersteel_axe'
 ]
 
 world.beforeEvents.itemUseOn.subscribe(evd => {
@@ -118,10 +121,13 @@ world.beforeEvents.itemUseOn.subscribe(evd => {
                     playerEquippableComp.setEquipment("Mainhand", new ItemStack('minecraft:air', 1));
                 });
             }
-            else;
+            else if (currentDamage < maxDurability) {
 
-            // This sets the item in the player's selected slot.
-            playerEquippableComp.setEquipment("Mainhand", itemUsed);
+                // This sets the item in the player's selected slot.
+                system.run(() => {
+                    playerEquippableComp.setEquipment("Mainhand", itemUsed);
+                });
+            }
         })
     }
 })

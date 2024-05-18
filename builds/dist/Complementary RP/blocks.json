@@ -589,10 +589,6 @@
 		"sound": "cloth",
 		"textures": "complementary_quilted_wool_brown"
 	},
-	"complementary:wizardry_table": {
-		"sound": "metal",
-		"brightness_gamma": 15
-	},
 	"complementary:creepy_grenade": {
 		"textures": {
 			"down": "complementary_creepy_grenade_bottom",
@@ -1000,5 +996,97 @@
 	},
 	"complementary:burst_crop": {
 		"sound": "grass"
+	},
+	"complementary:apple_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_apple_crate_top",
+			"side": "complementary_apple_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:aroma_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_aroma_crate_top",
+			"side": "complementary_aroma_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:beetroot_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_beetroot_crate_top",
+			"side": "complementary_beetroot_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:burst_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_burst_crate_top",
+			"side": "complementary_burst_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:carrot_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_carrot_crate_top",
+			"side": "complementary_carrot_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:chorus_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_chorus_crate_top",
+			"side": "complementary_chorus_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:cocoa_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_cocoa_crate_top",
+			"side": "complementary_cocoa_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:melon_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_melon_crate_top",
+			"side": "complementary_melon_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:potato_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_potato_crate_top",
+			"side": "complementary_potato_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:stem_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_stem_crate_top",
+			"side": "complementary_stem_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:wart_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_wart_crate_top",
+			"side": "complementary_wart_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:endersteel_block": {
+		"sound": "netherite",
+		"textures": "complementary_endersteel_block"
 	}
 }

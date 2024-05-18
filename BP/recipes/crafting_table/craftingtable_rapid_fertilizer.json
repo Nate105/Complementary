@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_rapid_fertilizer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "complementary:leafy_hook"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:bone_meal"
+			},
+			"B": {
+				"item": "minecraft:rotten_flesh"
+			},
+			"C": {
+				"item": "complementary:sack"
+			},
+			"D": {
+				"item": "minecraft:gunpowder"
+			},
+			"E": {
+				"item": "minecraft:spider_eye"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"DBE",
+			" C "
+		],
+		"result": {
+			"item": "complementary:rapid_fertilizer",
+			"count": 4
+		}
+	}
+}

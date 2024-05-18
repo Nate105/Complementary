@@ -1,9 +1,12 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "complementary:experience_charge",
-			"category": "items"
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.archeology.artifacts"
+			}
 		},
 		"events": {
 			"complementary:experience_gain": {
@@ -19,22 +22,18 @@
 			}
 		},
 		"components": {
-			"minecraft:cooldown": {
-				"category": "experience_charge",
-				"duration": 1
+			"minecraft:icon": "complementary_experience_charge",
+			"minecraft:glint": true,
+			"minecraft:food": {
+				"can_always_eat": true,
+				"nutrition": 0,
+				"saturation_modifier": 0
 			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.archeology.artifacts"
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.35,
+				"use_duration": 1.6
 			},
-			"minecraft:icon": {
-				"texture": "complementary_experience_charge"
-			},
-			"minecraft:foil": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "complementary:experience_gain"
-				}
-			}
+			"minecraft:use_animation": "drink"
 		}
 	}
 }

@@ -1,0 +1,373 @@
+{
+	"tiers": [
+		{
+			"groups": [
+				{
+					"num_to_select": 9,
+					"trades": [
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:wooden_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:wooden_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:stone_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:stone_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:iron_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:iron_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:golden_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:golden_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "complementary:steel_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "complementary:steel_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:diamond_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:diamond_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "minecraft:netherite_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "minecraft:netherite_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "complementary:endersteel_sword"
+								}
+							],
+							"gives": [
+								{
+									"item": "complementary:endersteel_sword",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						},
+						{
+							"wants": [
+								{
+									"item": "complementary:enchanted_codex_chain_strike_i",
+									"quantity": 1
+								},
+								{
+									"item": "complementary:soulstealer"
+								}
+							],
+							"gives": [
+								{
+									"item": "complementary:soulstealer",
+									"quantity": 1,
+									"functions": [
+										{
+											"function": "set_lore",
+											"lore": [
+												"§r§l§7Chain Strike I"
+											]
+										},
+										{
+											"function": "specific_enchants",
+											"enchants": [
+												{
+													"id": "sharpness",
+													"level": 5
+												},
+												{
+													"id": "unbreaking",
+													"level": 3
+												}
+											]
+										}
+									]
+								}
+							],
+							"max_uses": 5,
+							"reward_exp": true
+						}
+					]
+				}
+			]
+		}
+	]
+}

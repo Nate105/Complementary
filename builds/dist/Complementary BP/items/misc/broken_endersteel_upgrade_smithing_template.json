@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:broken_endersteel_upgrade_smithing_template",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.smithing_templates"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_broken_endersteel_upgrade_smithing_template"
+			}
+		}
+	}
+}

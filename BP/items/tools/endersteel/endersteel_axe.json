@@ -1,0 +1,349 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:endersteel_axe",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.axe"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_endersteel_axe"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"complementary:endersteel_tier",
+					"minecraft:is_axe",
+					"minecraft:is_tool"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 4104
+			},
+			"minecraft:damage": 8,
+			"minecraft:enchantable": {
+				"value": 18,
+				"slot": "axe"
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:endersteel_axe"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability * 0.50"
+					},
+					{
+						"items": [
+							"complementary:endersteel_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					}
+				]
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('wood', 'pumpkin', 'plant', 'text_sign')"
+						},
+						"speed": 12
+					},
+					{
+						"block": "cherry_fence",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_fence",
+						"speed": 12
+					},
+					{
+						"block": "cherry_door",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_door",
+						"speed": 12
+					},
+					{
+						"block": "cherry_slab",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_slab",
+						"speed": 12
+					},
+					{
+						"block": "cherry_stairs",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_stairs",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_planks",
+						"speed": 12
+					},
+					{
+						"block": "cherry_planks",
+						"speed": 12
+					},
+					{
+						"block": "crimson_planks",
+						"speed": 12
+					},
+					{
+						"block": "warped_planks",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_fence",
+						"speed": 12
+					},
+					{
+						"block": "stripped_bamboo_block",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_planks",
+						"speed": 12
+					},
+					{
+						"block": "crimson_stairs",
+						"speed": 12
+					},
+					{
+						"block": "warped_stairs",
+						"speed": 12
+					},
+					{
+						"block": "crimson_slab",
+						"speed": 12
+					},
+					{
+						"block": "warped_slab",
+						"speed": 12
+					},
+					{
+						"block": "crimson_trapdoor",
+						"speed": 12
+					},
+					{
+						"block": "warped_trapdoor",
+						"speed": 12
+					},
+					{
+						"block": "crimson_door",
+						"speed": 12
+					},
+					{
+						"block": "warped_door",
+						"speed": 12
+					},
+					{
+						"block": "crimson_fence_gate",
+						"speed": 12
+					},
+					{
+						"block": "warped_fence_gate",
+						"speed": 12
+					},
+					{
+						"block": "crimson_fence",
+						"speed": 12
+					},
+					{
+						"block": "warped_fence",
+						"speed": 12
+					},
+					{
+						"block": "stripped_crimson_hyphae",
+						"speed": 12
+					},
+					{
+						"block": "stripped_warped_hyphae",
+						"speed": 12
+					},
+					{
+						"block": "stripped_crimson_stem",
+						"speed": 12
+					},
+					{
+						"block": "stripped_warped_stem",
+						"speed": 12
+					},
+					{
+						"block": "beehive",
+						"speed": 12
+					},
+					{
+						"block": "soul_campfire",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_door",
+						"speed": 12
+					},
+					{
+						"block": "warped_stem",
+						"speed": 12
+					},
+					{
+						"block": "crimson_stem",
+						"speed": 12
+					},
+					{
+						"block": "warped_hyphae",
+						"speed": 12
+					},
+					{
+						"block": "crimson_hyphae",
+						"speed": 12
+					},
+					{
+						"block": "cartography_table",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_mosaic_slab",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_slab",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_mosaic_stairs",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_stairs",
+						"speed": 12
+					},
+					{
+						"block": "trapped_chest",
+						"speed": 12
+					},
+					{
+						"block": "cartography_table",
+						"speed": 12
+					},
+					{
+						"block": "loom",
+						"speed": 12
+					},
+					{
+						"block": "lectern",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_mosaic",
+						"speed": 12
+					},
+					{
+						"block": "campfire",
+						"speed": 12
+					},
+					{
+						"block": "bamboo_block",
+						"speed": 12
+					},
+					{
+						"block": "jukebox",
+						"speed": 12
+					},
+					{
+						"block": "bookshelf",
+						"speed": 12
+					},
+					{
+						"block": "chiseled_bookshelf",
+						"speed": 12
+					},
+					{
+						"block": "standing_banner",
+						"speed": 12
+					},
+					{
+						"block": "wall_banner",
+						"speed": 12
+					},
+					{
+						"block": "noteblock",
+						"speed": 12
+					},
+					{
+						"block": "mangrove_roots",
+						"speed": 12
+					},
+					{
+						"block": "composter",
+						"speed": 12
+					},
+					{
+						"block": "bamboo",
+						"speed": 12
+					},
+					{
+						"block": "bed",
+						"speed": 12
+					},
+					{
+						"block": "cocoa",
+						"speed": 12
+					},
+					{
+						"block": "daylight_detector",
+						"speed": 12
+					},
+					{
+						"block": "red_mushroom_block",
+						"speed": 12
+					},
+					{
+						"block": "brown_mushroom_block",
+						"speed": 12
+					},
+					{
+						"block": "vine",
+						"speed": 12
+					},
+					{
+						"block": {
+							"tags": "query.any_tag('axeDiggable')"
+						},
+						"speed": 12
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 12
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 12
+					},
+					{
+						"block": "crafting_table",
+						"speed": 12
+					},
+					{
+						"block": "complementary:loot_crate",
+						"speed": 12
+					}
+				]
+			}
+		}
+	}
+}

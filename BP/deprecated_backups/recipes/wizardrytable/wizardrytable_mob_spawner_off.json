@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_mob_spawner_off"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:echo_shard"
+			},
+			"B": {
+				"item": "complementary:spawner_fragment"
+			},
+			"C": {
+				"item": "complementary:rune_essence"
+			}
+		},
+		"pattern": [
+			"ACA",
+			"ABA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:mob_spawner_off"
+		}
+	}
+}

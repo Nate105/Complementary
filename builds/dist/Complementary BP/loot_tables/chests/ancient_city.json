@@ -24,6 +24,10 @@
         },
         {
           "type": "item",
+          "name": "complementary:enchanted_codex_chain_strike_i"
+        },
+        {
+          "type": "item",
           "name": "minecraft:music_disc_otherside",
           "weight": 1
         },
@@ -31,25 +35,6 @@
           "type": "item",
           "name": "complementary:experience_charge",
           "weight": 1,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "item",
-          "name": "complementary:legendary_ink",
-          "weight": 1
-        },
-        {
-          "type": "item",
-          "name": "complementary:epic_ink",
-          "weight": 2,
           "functions": [
             {
               "function": "set_count",
@@ -180,20 +165,6 @@
             }
           ],
           "name": "minecraft:diamond_leggings"
-        },
-        {
-          "type": "item",
-          "name": "complementary:rare_ink",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ]
         },
         {
           "type": "item",

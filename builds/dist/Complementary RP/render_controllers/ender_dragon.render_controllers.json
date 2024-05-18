@@ -1,0 +1,58 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.ender_dragon_default": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			]
+		},
+		"controller.render.ender_dragon_death_pre_pass": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.dissolve_0"
+				}
+			],
+			"textures": [
+				"texture.exploding"
+			],
+			"part_visibility": [
+				{
+					"*": "query.death_ticks > 1.0"
+				}
+			],
+			"is_hurt_color": {
+				"r": "this",
+				"g": "this",
+				"b": "this",
+				"a": "query.death_ticks>1?variable.death_alpha:this"
+			}
+		},
+		"controller.render.ender_dragon_death_main_pass": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.dissolve_1"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

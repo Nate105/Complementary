@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pedestal.rotate_item": {
+			"animation_length": 1,
+			"bones": {
+				"rightitem": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"1.0": [
+							0,
+							175,
+							0
+						]
+					}
+				}
+			}
+		}
+	}
+}

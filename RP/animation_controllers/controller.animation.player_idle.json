@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player_idle": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"stands_still": "!q.is_moving"
+						}
+					]
+				},
+				"stands_still": {
+					"on_entry": [
+						"v.afk = q.life_time;"
+					],
+					"transitions": [
+						{
+							"afk": "(q.life_time - v.afk) >= 120 && !q.is_moving"
+						},
+						{
+							"default": "q.is_moving"
+						}
+					]
+				},
+				"afk": {
+					"on_entry": [
+						"v.idle_animation = math.random_integer(0,6);"
+					],
+					"animations": [
+						{
+							"yawning": "v.idle_animation == 0"
+						},
+						{
+							"check_bottom_1": "v.idle_animation == 1"
+						},
+						{
+							"check_bottom_2": "v.idle_animation == 2"
+						},
+						{
+							"look_around_1": "v.idle_animation == 3"
+						},
+						{
+							"look_around_2": "v.idle_animation == 4"
+						},
+						{
+							"check_outfit": "v.idle_animation == 5"
+						},
+						{
+							"dust_off": "v.idle_animation == 6"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.is_moving || query.any_animation_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}

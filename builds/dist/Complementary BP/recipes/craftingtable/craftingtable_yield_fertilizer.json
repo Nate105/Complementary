@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_yield_fertilizer"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"unlock": [
+			{
+				"item": "complementary:leafy_hook"
+			}
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:bone_meal"
+			},
+			"B": {
+				"item": "complementary:leafy_hook"
+			},
+			"C": {
+				"item": "complementary:sack"
+			},
+			"D": {
+				"item": "minecraft:tallgrass"
+			},
+			"E": {
+				"item": "minecraft:yellow_flower"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"DBE",
+			" C "
+		],
+		"result": {
+			"item": "complementary:yield_fertilizer",
+			"count": 4
+		}
+	}
+}

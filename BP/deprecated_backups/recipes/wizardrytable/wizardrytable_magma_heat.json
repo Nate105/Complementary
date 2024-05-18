@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:wizardrytable_magma_heat"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:rune_fire",
+				"count": 1
+			},
+			{
+				"item": "minecraft:cobblestone",
+				"count": 8
+			}
+		],
+		"result": {
+			"item": "minecraft:magma",
+			"count": 8
+		}
+	}
+}

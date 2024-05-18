@@ -1,0 +1,32 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_endersteel_upgrade_smithing_template_restoration"
+		},
+		"unlock": [
+			{
+				"item": "complementary:broken_endersteel_upgrade_smithing_template"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:endersteel_ingot"
+			},
+			"B": {
+				"item": "complementary:broken_endersteel_upgrade_smithing_template"
+			}
+		},
+		"pattern": [
+			"AAA",
+			"ABA",
+			"AAA"
+		],
+		"result": {
+			"item": "complementary:endersteel_upgrade_smithing_template"
+		}
+	}
+}

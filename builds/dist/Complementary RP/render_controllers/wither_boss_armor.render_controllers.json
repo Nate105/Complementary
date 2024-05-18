@@ -1,0 +1,68 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.wither_boss_armor_white": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.armor"
+				}
+			],
+			"textures": [
+				"texture.armor_white"
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_shield_powered"
+				}
+			],
+			"uv_anim": {
+				"offset": [
+					"(query.is_shield_powered?(math.cos(query.life_time*22.92)*3):0)",
+					"(query.is_shield_powered?(query.life_time*0.2):0)"
+				],
+				"scale": [
+					1,
+					1
+				]
+			},
+			"ignore_lighting": true
+		},
+		"controller.render.wither_boss_armor_blue": {
+			"geometry": "geometry.armor",
+			"materials": [
+				{
+					"*": "material.armor"
+				}
+			],
+			"textures": [
+				"texture.armor_blue"
+			],
+			"part_visibility": [
+				{
+					"*": "query.is_shield_powered"
+				}
+			],
+			"uv_anim": {
+				"offset": [
+					"(query.is_shield_powered)?(math.floor(query.life_time*20)+query.frame_alpha)*0.01:0",
+					"(query.is_shield_powered)?(math.floor(query.life_time*20)+query.frame_alpha)*0.01:0"
+				],
+				"scale": [
+					1,
+					1
+				]
+			},
+			"ignore_lighting": true,
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "complementary:arcane_beam",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/blocks/nothing"
+			},
+			"geometry": {
+				"default": "geometry.magic_sprite"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"flying": "animation.magic.arcane_shot"
+			},
+			"scripts": {
+				"animate": [
+					"flying"
+				]
+			},
+			"spawn_egg": {
+				"base_color": "#000000",
+				"overlay_color": "#FFFFFF"
+			},
+			"particle_emitters": {
+				"arcane_magic": "complementary:arcane_magic"
+			}
+		}
+	}
+}

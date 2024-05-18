@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:wizardrytable_ring_mana"
+		},
+		"tags": [
+			"wizardry_table"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:lapis_lazuli"
+			},
+			"B": {
+				"item": "minecraft:crying_obsidian"
+			}
+		},
+		"pattern": [
+			" A ",
+			"B B",
+			" B "
+		],
+		"result": {
+			"item": "complementary:mana_ring_i"
+		}
+	}
+}

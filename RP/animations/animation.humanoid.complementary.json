@@ -1,8 +1,8 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.humanoid.setup": {
-			"animation_length": 0.25,
+		"animation.humanoid.idle": {
+			"animation_length": 300,
 			"loop": false,
 			"bones": {
 				"body": {

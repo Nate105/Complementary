@@ -1,0 +1,171 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:endersteel_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "complementary_endersteel_shovel"
+			},
+			"minecraft:tags": {
+				"tags": [
+					"complementary:endersteel_tier",
+					"minecraft:is_shovel",
+					"minecraft:is_tool"
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 4104
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"complementary:endersteel_shovel"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					},
+					{
+						"items": [
+							"complementary:ruby"
+						],
+						"repair_amount": "query.max_durability * 0.50"
+					},
+					{
+						"items": [
+							"complementary:endersteel_ingot"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					}
+				]
+			},
+			"minecraft:damage": 6,
+			"minecraft:enchantable": {
+				"value": 18,
+				"slot": "shovel"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+						},
+						"speed": 12
+					},
+					{
+						"block": "complementary:packed_dirt",
+						"speed": 12
+					},
+					{
+						"block": "mud",
+						"speed": 12
+					},
+					{
+						"block": "red_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "blue_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "yellow_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "gray_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "lime_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "lime_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "pink_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "black_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "brown_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "cyan_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "green_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "green_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "white_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "orange_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "purple_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "magenta_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "light_blue_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "light_gray_concrete_powder",
+						"speed": 12
+					},
+					{
+						"block": "soul_sand",
+						"speed": 12
+					},
+					{
+						"block": "soul_soil",
+						"speed": 12
+					},
+					{
+						"block": "suspicious_sand",
+						"speed": 12
+					},
+					{
+						"block": "suspicious_gravel",
+						"speed": 12
+					},
+					{
+						"block": "dirt_with_roots",
+						"speed": 12
+					},
+					{
+						"block": "muddy_mangrove_roots",
+						"speed": 12
+					}
+				]
+			}
+		}
+	}
+}

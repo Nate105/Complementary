@@ -1,36 +1,18 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.70",
 	"minecraft:item": {
 		"description": {
 			"identifier": "complementary:magnet_strong",
-			"category": "equipment"
-		},
-		"events": {
-			"complementary:activate": {
-				"swing": {},
-				"run_command": {
-					"command": [
-						"/replaceitem entity @p slot.weapon.mainhand 0 complementary:magnet_strong_active 1 0",
-						"/playsound random.click @a ~~~ 1 0.8"
-					]
-				}
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.magnet.iron"
 			}
 		},
 		"components": {
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.magnet"
-			},
-			"minecraft:icon": {
-				"texture": "complementary_magnet_strong"
-			},
+			"minecraft:icon": "complementary_magnet_strong",
 			"minecraft:max_stack_size": 1,
 			"minecraft:display_name": {
 				"value": "Item Magnet\n§7Great Item Draw"
-			},
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "complementary:activate"
-				}
 			}
 		}
 	}

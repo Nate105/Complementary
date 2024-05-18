@@ -1,0 +1,25 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "complementary:scatter_surface_dirt_feature"
+		},
+		"iterations": "math.random_integer(60,70)",
+		"x": {
+			"extent": [
+				0,
+				12
+			],
+			"distribution": "gaussian"
+		},
+		"z": {
+			"extent": [
+				0,
+				12
+			],
+			"distribution": "gaussian"
+		},
+		"y": "q.heightmap(v.worldx, v.worldz) -1",
+		"places_feature": "complementary:surface_dirt_select_feature"
+	}
+}

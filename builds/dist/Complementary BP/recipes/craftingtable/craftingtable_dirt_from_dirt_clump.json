@@ -1,0 +1,26 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "complementary:craftingtable_dirt_from_dirt_clump"
+		},
+		"unlock": [
+			{
+				"item": "complementary:dirt_clump"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "complementary:dirt_clump",
+				"count": 4
+			}
+		],
+		"result": {
+			"item": "minecraft:dirt",
+			"count": 1
+		}
+	}
+}

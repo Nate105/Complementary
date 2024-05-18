@@ -94,8 +94,21 @@
         },
         {
           "type": "item",
-          "name": "complementary:ancient_manuscript",
-          "weight": 2
+          "name": "complementary:restoration_smithing_template",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§r§7Archeological Restoration",
+                "",
+                "§r§7Applies to:",
+                "§r§9 Fragmented Tools",
+                "§r§7Ingredients:",
+                "§r§9 Transmutable Alloy"
+              ]
+            }
+          ]
         }
       ]
     }

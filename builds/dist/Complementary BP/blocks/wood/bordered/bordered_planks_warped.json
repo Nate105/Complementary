@@ -16,7 +16,7 @@
 				"explosion_resistance": 3
 			},
 			"tag:axeDiggable": {},
-			"tag:wood_tool_materials": {}
+			"tag:minecraft:planks": {}
 		}
 	}
 }

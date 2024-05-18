@@ -6,7 +6,7 @@
 		],
 		"generated_with": {
 			"bridge": [
-				"2.7.15"
+				"2.7.17"
 			],
 			"dash": [
 				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
@@ -19,13 +19,13 @@
 		"min_engine_version": [
 			1,
 			20,
-			50
+			70
 		],
 		"uuid": "a18747c4-104c-4ade-82f1-7b3bb45d6d54",
 		"version": [
 			3,
-			0,
-			12
+			1,
+			0
 		]
 	},
 	"modules": [
@@ -34,8 +34,8 @@
 			"uuid": "863e6983-64f9-4652-a547-744339379daf",
 			"version": [
 				3,
-				0,
-				12
+				1,
+				0
 			]
 		},
 		{
@@ -46,8 +46,8 @@
 			"entry": "scripts/index.js",
 			"version": [
 				3,
-				0,
-				12
+				1,
+				0
 			]
 		}
 	],
@@ -56,21 +56,17 @@
 			"uuid": "869b909d-7b89-4089-bc2a-362f00038fba",
 			"version": [
 				3,
-				0,
-				12
+				1,
+				0
 			]
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.10.0-beta"
+			"version": "1.11.0-beta"
 		},
 		{
 			"module_name": "@minecraft/server-ui",
 			"version": "1.1.0"
-		},
-		{
-			"module_name": "@minecraft/server-gametest",
-			"version": "1.0.0-beta"
 		}
 	],
 	"capabilities": [

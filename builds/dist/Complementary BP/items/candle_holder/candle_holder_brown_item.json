@@ -1,16 +1,16 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
 			"identifier": "complementary:candle_holder_brown_item",
-			"category": "items"
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.deco.candleHolder"
+			}
 		},
 		"components": {
 			"minecraft:icon": {
 				"texture": "complementary_candle_holder_brown_item"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.deco.candleHolder"
 			},
 			"minecraft:block_placer": {
 				"block": "complementary:brown_candle_holder"

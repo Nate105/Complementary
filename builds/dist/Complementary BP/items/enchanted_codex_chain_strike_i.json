@@ -1,0 +1,20 @@
+{
+	"format_version": "1.20.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "complementary:enchanted_codex_chain_strike_i",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.enchantedBook"
+			}
+		},
+		"components": {
+			"minecraft:icon": "complementary_enchantment_codex",
+			"minecraft:max_stack_size": 1,
+			"minecraft:glint": true,
+			"minecraft:display_name": {
+				"value": "§eEnchanted Codex§7\nSharpness V\nUnbreaking III\n§lChain Strike I"
+			}
+		}
+	}
+}

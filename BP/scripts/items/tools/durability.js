@@ -1,16 +1,41 @@
-import { world, ItemStack, GameMode } from '@minecraft/server';
+import { world, ItemStack, GameMode, system } from '@minecraft/server';
 
 // This array defines the tool items that will lose durability.
 const toolTypeIds = [
-    'complementary:steel_pickaxe',
+    //Recreated Tiers
+    'complementary:wood_axe',
+    'complementary:wood_pickaxe',
+    'complementary:stone_axe',
+    'complementary:stone_pickaxe',
+    'complementary:iron_axe',
+    'complementary:iron_pickaxe',
+    'complementary:gold_axe',
+    'complementary:gold_pickaxe',
+    'complementary:diamond_axe',
+    'complementary:diamond_pickaxe',
+    'complementary:netherite_axe',
+    'complementary:netherite_pickaxe',
+    //Steel Tier
     'complementary:steel_axe',
+    'complementary:steel_pickaxe',
     'complementary:steel_shovel',
-    'complementary:steel_hoe'
+    'complementary:steel_hoe',
+    //Endersteel Tier
+    'complementary:endersteel_axe',
+    'complementary:endersteel_pickaxe',
+    'complementary:endersteel_shovel',
+    'complementary:endersteel_hoe',
+    //Platinum Tier
+    'complementary:platinum_pickaxe'
 ];
 
 // This array defines the weapon items that will lose durability.
 const weaponTypeIds = [
-    'complementary:steel_sword'
+    'complementary:steel_sword',
+    'complementary:endersteel_sword',
+    'complementary:platinum_sword',
+    'complementary:soulstealer',
+    'complementary:withered_sword'
 ];
 
 world.afterEvents.playerBreakBlock.subscribe(evd => {
@@ -65,9 +90,10 @@ world.afterEvents.playerBreakBlock.subscribe(evd => {
             player.playSound('random.break', { pitch: 1, location: player.location, volume: 1 })
             playerEquippableComp.setEquipment("Mainhand", new ItemStack('minecraft:air', 1));
         }
-        else;
+        else if (currentDamage < maxDurability) {
 
-        // This sets the item in the player's selected slot.
-        playerEquippableComp.setEquipment("Mainhand", itemUsed);
+            // This sets the item in the player's selected slot.
+            playerEquippableComp.setEquipment("Mainhand", itemUsed);
+        }
     }
 })

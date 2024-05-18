@@ -18,24 +18,27 @@
 		},
 		"events": {
 			"complementary:experience_handler": {
+				"swing": {},
 				"sequence": [
 					{
 						"condition": "!query.is_sneaking && query.block_state('complementary:fill_stage') > 0",
 						"run_command": {
 							"command": [
-								"/xp 15L @p",
+								"/xp 15L @s",
 								"/playsound random.levelup @a ~~~",
 								"/playsound respawn_anchor.deplete @a ~~~"
-							]
+							],
+							"target": "other"
 						}
 					},
 					{
 						"condition": "query.player_level > 14 && query.is_sneaking && query.block_state('complementary:fill_stage') < 3",
 						"run_command": {
 							"command": [
-								"/xp -15L @p",
+								"/xp -15L @s",
 								"/playsound respawn_anchor.charge @a ~~~"
-							]
+							],
+							"target": "other"
 						},
 						"set_block": {
 							"block_type": "complementary:experience_repository_1"
@@ -56,8 +59,9 @@
 						"run_command": {
 							"command": [
 								"/playsound beacon.deactivate @a ~~~ 10 0.5",
-								"/xp 15L @p"
-							]
+								"/xp 15L @s"
+							],
+							"target": "other"
 						}
 					},
 					{
@@ -65,8 +69,9 @@
 						"run_command": {
 							"command": [
 								"/playsound beacon.deactivate @a ~~~ 10 0.5",
-								"/xp 30L @p"
-							]
+								"/xp 30L @s"
+							],
+							"target": "other"
 						}
 					},
 					{
@@ -74,8 +79,9 @@
 						"run_command": {
 							"command": [
 								"/playsound beacon.deactivate @a ~~~ 10 0.5",
-								"/xp 45L @p"
-							]
+								"/xp 45L @s"
+							],
+							"target": "other"
 						}
 					}
 				]

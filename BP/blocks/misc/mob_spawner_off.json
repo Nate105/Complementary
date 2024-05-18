@@ -14,22 +14,25 @@
 				},
 				"decrement_stack": {},
 				"run_command": {
-					"command": "/playsound respawn_anchor.charge @a ~ ~ ~"
+					"command": "/playsound respawn_anchor.charge @a ~~~"
 				}
 			}
 		},
 		"components": {
 			"minecraft:material_instances": {
 				"*": {
-					"render_method": "alpha_test"
+					"texture": "complementary_mob_spawner_off",
+					"ambient_occlusion": true,
+					"render_method": "alpha_test",
+					"face_dimming": true
 				}
 			},
-			"minecraft:light_dampening": 5,
+			"minecraft:light_dampening": 15,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},
 			"minecraft:on_interact": {
-				"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:ruby')",
+				"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'complementary:soul')",
 				"event": "complementary:activate"
 			}
 		}

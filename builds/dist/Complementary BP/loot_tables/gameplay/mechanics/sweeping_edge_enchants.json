@@ -1,0 +1,211 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "complementary:endersteel_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "complementary:endersteel_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "complementary:steel_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "complementary:steel_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "complementary:withered_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "complementary:withered_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:wooden_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:wooden_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:stone_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:stone_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:iron_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:golden_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:golden_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:diamond_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:netherite_sword"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:netherite_sword",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "§r§l§7Sweeping Edge I"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

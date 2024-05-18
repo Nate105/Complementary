@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.bat": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ],
+      "is_hurt_color": {
+        "r": 1,
+        "g": 0,
+        "b": 0,
+        "a": 0.25
+      },
+      "on_fire_color": {
+        "a": 0
+      }
+    }
+  }
+}

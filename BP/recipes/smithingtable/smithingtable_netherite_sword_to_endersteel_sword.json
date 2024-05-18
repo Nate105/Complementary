@@ -1,0 +1,15 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_smithing_transform": {
+		"description": {
+			"identifier": "complementary:smithingtable_netherite_sword_to_endersteel_sword"
+		},
+		"tags": [
+			"smithing_table"
+		],
+		"template": "complementary:endersteel_upgrade_smithing_template",
+		"base": "complementary:netherite_sword",
+		"addition": "minecraft:netherite_ingot",
+		"result": "complementary:endersteel_sword"
+	}
+}

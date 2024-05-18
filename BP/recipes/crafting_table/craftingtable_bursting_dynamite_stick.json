@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "complementary:craftingtable_bursting_dynamite_stick"
+		},
+		"unlock": [
+			{
+				"item": "complementary:burst_fruit"
+			}
+		],
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"A": {
+				"item": "complementary:dynamite_stick"
+			},
+			"B": {
+				"item": "complementary:burst_fruit"
+			}
+		},
+		"pattern": [
+			" A ",
+			"ABA",
+			" A "
+		],
+		"result": {
+			"item": "complementary:burst_dynamite_stick",
+			"count": 4
+		}
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.magic.arcane_shot": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [
+						"query.camera_rotation(0)",
+						"query.camera_rotation(1)",
+						0.0
+					]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "arcane_magic",
+					"locator": "particles"
+				}
+			}
+		}
+	}
+}

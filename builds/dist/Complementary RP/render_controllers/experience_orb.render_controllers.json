@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.experience_orb": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"overlay_color": {
+				"r": "(math.sin(query.life_time*500)+1)*0.5",
+				"g": "1",
+				"b": "(math.sin(query.life_time*500+240)+1)*0.1",
+				"a": "0.5"
+			},
+			"ignore_lighting": true,
+			"uv_anim": {
+				"offset": [
+					"variable.u",
+					"variable.v"
+				],
+				"scale": [
+					1,
+					1
+				]
+			},
+			"is_hurt_color": {
+				"r": 1,
+				"g": 0,
+				"b": 0,
+				"a": 0.25
+			},
+			"on_fire_color": {
+				"a": 0
+			}
+		}
+	}
+}

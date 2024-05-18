@@ -17,7 +17,7 @@
 				},
 				"power": 2,
 				"breaks_blocks": false,
-				"causes_fire": true,
+				"causes_fire": false,
 				"fire_affected_by_griefing": false,
 				"fuse_lit": true
 			},

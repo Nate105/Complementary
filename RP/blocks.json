@@ -21,6 +21,11 @@
 		"sound": "grass",
 		"textures": "beetroot"
 	},
+	"tallgrass": {
+		"carried_textures": "tallgrass_carried",
+		"sound": "grass",
+		"textures": "complementary_grass_new"
+	},
 	"complementary:bordered_planks_oak": {
 		"sound": "wood",
 		"textures": "complementary_bordered_planks_oak"
@@ -589,10 +594,6 @@
 		"sound": "cloth",
 		"textures": "complementary_quilted_wool_brown"
 	},
-	"complementary:wizardry_table": {
-		"sound": "metal",
-		"brightness_gamma": 15
-	},
 	"complementary:creepy_grenade": {
 		"textures": {
 			"down": "complementary_creepy_grenade_bottom",
@@ -1000,5 +1001,153 @@
 	},
 	"complementary:burst_crop": {
 		"sound": "grass"
+	},
+	"complementary:apple_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_apple_crate_top",
+			"side": "complementary_apple_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:aroma_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_aroma_crate_top",
+			"side": "complementary_aroma_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:beetroot_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_beetroot_crate_top",
+			"side": "complementary_beetroot_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:burst_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_burst_crate_top",
+			"side": "complementary_burst_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:carrot_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_carrot_crate_top",
+			"side": "complementary_carrot_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:chorus_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_chorus_crate_top",
+			"side": "complementary_chorus_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:cocoa_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_cocoa_crate_top",
+			"side": "complementary_cocoa_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:melon_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_melon_crate_top",
+			"side": "complementary_melon_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:potato_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_potato_crate_top",
+			"side": "complementary_potato_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:stem_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_stem_crate_top",
+			"side": "complementary_stem_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:wart_crate": {
+		"sound": "cherry_wood",
+		"textures": {
+			"up": "complementary_wart_crate_top",
+			"side": "complementary_wart_crate_side",
+			"down": "complementary_planter_box_bottom"
+		}
+	},
+	"complementary:endersteel_block": {
+		"sound": "netherite",
+		"textures": "complementary_endersteel_block"
+	},
+	"hopper": {
+		"sound": "copper",
+		"textures": {
+			"down": "hopper_inside",
+			"east": "hopper_outside",
+			"north": "hopper_outside",
+			"south": "hopper_outside",
+			"up": "hopper_top",
+			"west": "hopper_outside"
+		}
+	},
+	"powered_comparator": {
+		"sound": "copper",
+		"textures": {
+			"down": "copper_block",
+			"side": "copper_block",
+			"up": "comparator_up"
+		}
+	},
+	"powered_repeater": {
+		"sound": "copper",
+		"textures": {
+			"down": "copper_block",
+			"side": "copper_block",
+			"up": "repeater_up"
+		}
+	},
+	"unpowered_comparator": {
+		"sound": "copper",
+		"textures": {
+			"down": "copper_block",
+			"side": "copper_block",
+			"up": "comparator_up"
+		}
+	},
+	"unpowered_repeater": {
+		"sound": "copper",
+		"textures": {
+			"down": "copper_block",
+			"side": "copper_block",
+			"up": "repeater_up"
+		}
+	},
+	"complementary:hookplant_crop_boxed": {
+		"sound": "vines",
+		"brightness_gamma": 5
+	},
+	"complementary:aroma_crop_boxed": {
+		"sound": "vines"
+	},
+	"complementary:burst_crop_boxed": {
+		"sound": "grass"
+	},
+	"complementary:rocks_block": {
+		"sound": "stone"
 	}
 }

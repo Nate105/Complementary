@@ -9,6 +9,7 @@
 		},
 		"events": {
 			"complementary:open": {
+				"swing": {},
 				"spawn_loot": {
 					"table": "loot_tables/blocks/loot_crate.json"
 				},

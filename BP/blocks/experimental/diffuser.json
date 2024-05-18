@@ -7,90 +7,435 @@
 				"category": "items",
 				"group": "itemGroup.name.redstone"
 			},
-			"traits": {
-				"minecraft:placement_direction": {
-					"enabled_states": [
-						"minecraft:facing_direction"
-					]
-				}
+			"states": {
+				"complementary:positive_potion_type": [
+					0, //None
+					1, //Healing
+					2, //Fire Resistance
+					3, //Regeneration
+					4, //Strength
+					5, //Swiftness
+					6, //Night Vision
+					7, //Invisibility
+					8, //Water Breathing
+					9, //Jump Boost
+					10, //Slow Falling
+					11,
+					12,
+					13,
+					14,
+					15
+				],
+				"complementary:negative_potion_type": [
+					0, //None
+					1, //Poison
+					2, //Weakness
+					3, //Harming
+					4, //Slowness
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15
+				]
 			}
 		},
-		"permutations": [
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'down'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							-90,
-							0,
-							0
-						]
+		"events": {
+			"complementary:add_potion": {
+				"sequence": [
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:glistering_melon_slice')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 1,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.instant_health ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:magma_cream')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 2,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.fire_resistance ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:ghast_tear')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 3,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.regeneration ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:blaze_powder')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 4,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.strength ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:sugar')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 5,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.speed ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:golden_carrot')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 6,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.night_vision ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:positive_potion_type') == 6",
+						"set_block_state": {
+							"complementary:positive_potion_type": 7,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.invisibility ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:pufferfish')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 8,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.water_breathing ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:rabbit_foot')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 9,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.jump_boost ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:phantom_membrane')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 10,
+							"complementary:negative_potion_type": 0
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.slow_falling ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:spider_eye')",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 1
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.poison ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:positive_potion_type') != 6 && query.block_state('complementary:negative_potion_type') != 1 && query.block_state('complementary:positive_potion_type') != 1 && query.block_state('complementary:positive_potion_type') != 5 && query.block_state('complementary:positive_potion_type') != 9",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 2
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.weakness ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:positive_potion_type') == 1",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 3
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.instant_damage ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:negative_potion_type') == 1",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 3
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.instant_damage ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:positive_potion_type') == 5",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 4
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.slowness ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
+					},
+					{
+						"condition": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:fermented_spider_eye') && query.block_state('complementary:positive_potion_type') == 9",
+						"set_block_state": {
+							"complementary:positive_potion_type": 0,
+							"complementary:negative_potion_type": 4
+						},
+						"run_command": {
+							"command": [
+								"/playsound random.potion.brewed @a ~~~",
+								"/particle complementary:potion_spell_initial_effect.slowness ~~1~"
+							]
+						},
+						"decrement_stack": {},
+						"swing": {}
 					}
-				}
+				]
 			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'up'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							90,
-							0,
-							0
-						]
+			"complementary:diffuse_effect": {
+				"sequence": [
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 1",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.instant_health ~~~",
+								"/effect @a[r=15] instant_health 1 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 2",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.fire_resistance ~~~",
+								"/effect @a[r=15] fire_resistance 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 3",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.regeneration ~~~",
+								"/effect @a[r=15] regeneration 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 4",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.strength ~~~",
+								"/effect @a[r=15] strength 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 5",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.speed ~~~",
+								"/effect @a[r=15] speed 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 6",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.night_vision ~~~",
+								"/effect @a[r=15] night_vision 14 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 7",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.invisibility ~~~",
+								"/effect @a[r=15] invisibility 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 8",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.water_breathing ~~~",
+								"/effect @a[r=15] water_breathing 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 9",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.jump_boost ~~~",
+								"/effect @a[r=15] jump_boost 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:positive_potion_type') == 10",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.slow_falling ~~~",
+								"/effect @a[r=15] slow_falling 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:negative_potion_type') == 1",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.poison ~~~",
+								"/effect @a[r=15] poison 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:negative_potion_type') == 2",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.weakness ~~~",
+								"/effect @a[r=15] weakness 4 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:negative_potion_type') == 3",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.instant_damage ~~~",
+								"/effect @a[r=15] instant_damage 1 0 false"
+							]
+						}
+					},
+					{
+						"condition": "query.block_state('complementary:negative_potion_type') == 4",
+						"run_command": {
+							"command": [
+								"/particle complementary:potion_spell_area_effect.slowness ~~~",
+								"/effect @a[r=15] slowness 4 0 false"
+							]
+						}
 					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'west'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'south'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							180,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:facing_direction') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							-90,
-							0
-						]
-					}
-				}
+				]
 			}
-		],
-		"events": {},
+		},
 		"components": {
+			"minecraft:on_interact": {
+				"event": "complementary:add_potion"
+			},
+			"minecraft:queued_ticking": {
+				"interval_range": [
+					60,
+					60
+				],
+				"looping": true,
+				"on_tick": {
+					"event": "complementary:diffuse_effect"
+				}
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 4
 			},
